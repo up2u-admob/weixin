@@ -1,0 +1,239 @@
+.ui-content {
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.main_conent img{
+	width: 100%;
+	height: auto;
+	margin: 0% 0% 0% 0%;
+	position: absolute;
+	float:left;
+	top:0%;
+	left:0%;
+	z-index: 0;
+}
+
+.main_nav {
+	width: 100%;
+	position: absolute;
+	margin: 0 0 0 0;
+	bottom: 2%;
+	z-index: 1;
+}
+
+.page_head {
+	top: 0%
+	z-index: 1;
+}
+
+.main_nav li{
+	list-style: none!important;
+	display: inline;
+	float: left;
+	width: 30%;
+	margin: 0% auto;
+}
+.main_nav li img{
+	width: 50%;
+	margin: 0% auto;
+}
+
+.main_default ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	left: 33%;
+	z-index: 1;
+}
+
+.main_default li{
+	float:left;
+	display:inline;
+	margin:60% 10% 0% 0%;
+	width:5%;
+}
+
+.main_default img{
+	width:60%; 
+	margin: 100% 30% 0 auto;
+}
+
+.main_list ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	left: 33%;
+	z-index: 2;
+}
+
+.main_list li{
+	float:left;
+	display:inline;
+	background: url("../img/main/2-1_0007s_0000_jiantou.png") no-repeat top center;
+	background-size: 55%;
+	margin:60% 10% 0% 0%;
+	width:5%;
+}
+
+.main_list img{
+	width:90%; 
+	margin: 100% auto 0 auto;
+}
+
+.select_bar {
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	margin: 0% auto;
+	top: 0%;
+	left: 20%;
+	display: none;
+	z-index: 1;
+ }
+ 
+.main_word ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	left: 48%;
+	z-index: 2;
+ }
+ 
+ .main_word li{
+	float:left;
+	display:inline;
+	margin:55% 10% 60% 0%;
+	width:5%;
+	display: none;
+}
+
+.main_word img{
+	width:90%; 
+	margin: 100% auto 0 auto;
+}
+
+
+
+.tea_title img{
+	width: 5.5%;
+	margin: 2.5% 3.0%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+} 
+
+.teacher_list {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+}
+
+.tea_whole_right {
+	width: 100%;
+	margin: 3.5% auto;
+}
+
+.tea_half_right, .tea_half_left {
+	width: 100%;
+	margin: 5.5% auto;
+}
+
+/*教学理念， 担任科目*/
+.tea_whole_right .concept, .tea_whole_right .course, .tea_half_right .concept, .tea_half_right .course, .tea_half_left .concept, .tea_half_left .course {
+	background: url("../img/main/2-1_0007s_0000_jiantou.png") no-repeat top left;
+	background-size: 7.5%;
+}
+/*****************************全身**********************************/
+/*照片*/
+.tea_whole_right .photo img{
+	width:42%;
+	float: right;
+}
+/*文字*/
+.tea_whole_right .name, .tea_whole_right .concept, .tea_whole_right .course {
+	width:45%;
+	float: right;
+	margin: 20% 1.5% 0% 10%;
+}
+/*文字1*/
+.tea_whole_right .name img{
+	width:60%;
+	margin: 0% 0% 0% 10%;
+}
+/*文字2*/
+.tea_whole_right .concept img{
+	width:110%;
+	margin: 0% 0% 0% 10%;
+}
+/*文字3*/
+.tea_whole_right .course img{
+	width:60%;
+	margin: 0% 0% 0% 10%;
+}
+/*****************************半身（左）**********************************/
+/*照片*/
+.tea_half_left .photo img{
+	width:52%;
+	float: left;
+}
+/*文字*/
+.tea_half_left .name, .tea_half_left .concept, .tea_half_left .course {
+	width:35%;
+	float: left;
+	margin: 5% 1.5% 0% 0%;
+}
+/*文字1*/
+.tea_half_left .name img{
+	width:63%;
+	margin: 0% 0% 0% 10%;
+}
+/*文字2*/
+.tea_half_left .concept img{
+	width:110%;
+	margin: 0% 0% 0% 10%;
+}
+/*文字3*/
+.tea_half_left .course img{
+	width:45%;
+	margin: 0% 0% 0% 10%;
+}
+/*****************************半身（右）**********************************/
+/*照片*/
+.tea_half_right .photo img{
+	width:52%;
+	float: right;
+}
+/*文字*/
+.tea_half_right .name, .tea_half_right .concept, .tea_half_right .course {
+	width:35%;
+	float: right;
+	margin: 5% 1.5% 0% 0%;
+}
+/*文字1*/
+.tea_half_right .name img{
+	width:70%;
+	margin: 0% 0% 0% 10%;
+}
+/*文字2*/
+.tea_half_right .concept img{
+	width:110%;
+	margin: 0% 0% 0% 10%;
+}
+/*文字3*/
+.tea_half_right .course img{
+	width:45%;
+	margin: 0% 0% 0% 10%;
+}
+
+
+
+
