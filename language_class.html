@@ -10,14 +10,225 @@
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/class.js"></script>
 
 <style type="text/css">
-#bigpicture img
+#english_background_1 img
 {
 	position: absolute;
-	width:auto;
-	height: 60%;
-	margin: 24% 0% 0% 3%;
+	width: 100%;
+	height: auto;
+	margin: -26% 0% 0% 0%;
+}
+#english_background_2 img
+{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: -20% 0% 0% 0%;
+}
+#english_background_3 img
+{
+	position: absolute;
+	width:50%;
+	height: auto;
+	margin: 40% 0% 0% 5%;
+}
+#english_background_4 img
+{
+	position: absolute;
+	width:50%;
+	height: auto;
+	margin: 35% 0% 0% 80%;
+}
+#english_background_5 img
+{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 80% 0% 0% 0%;
+}
+#main_class img
+{
+	position: absolute;
+	width:77%;
+	height: auto;
+	margin: 22% 0% 0% 15%;
+}
+#english_text_1 img
+{
+	position: absolute;
+	width: 28%;
+	height: auto;
+	margin: 36% 0% 0% 57%;
+}
+#english_text_2 img
+{
+	position: absolute;
+	width: 28%;
+	height: auto;
+	margin: 52% 0% 0% 21%;
+}
+#english_text_3 img
+{
+	position: absolute;
+	width: 28%;
+	height: auto;
+	margin: 71% 0% 0% 57%;
+}
+#japanese_title img
+{
+	position: absolute;
+	width: 28%;
+	height: auto;
+	margin: 22% 0% 0% 9%;
+}
+#japanese_branch img
+{
+	position: absolute;
+	width: 95%;
+	height: auto;
+	margin: -20% 0% 0% 8%;
+}
+#japanese_block_1 img
+{
+	position: absolute;
+	width: 40%;
+	height: auto;
+	margin: 22% 0% 0% 45%;
+}
+#japanese_block_2 img
+{
+	position: absolute;
+	width: 23%;
+	height: auto;
+	margin: 42% 0% 0% 9%;
+}
+#japanese_block_3 img
+{
+	position: absolute;
+	width: 27%;
+	height: auto;
+	margin: 48% 0% 0% 69%;
+}
+#japanese_block_4 img
+{
+	position: absolute;
+	width: 33%;
+	height: auto;
+	margin: 85% 0% 0% 16%;
+}
+#japanese_block_5 img
+{
+	position: absolute;
+	width: 33%;
+	height: auto;
+	margin: 79% 0% 0% 54%;
+}
+#japanese_sub_branch_1 img
+{
+	position: absolute;
+	width: 170%;
+	height: auto;
+	margin: -7% 0% 0% -70%;
+}
+#japanese_sub_block_1 img
+{
+	position: absolute;
+	width: 105%;
+	height: auto;
+	margin: 30% 0% 0% 0%;
+}
+#japanese_sub_text_1 img
+{
+	position: absolute;
+	width: 53%;
+	height: auto;
+	margin: 73% 0% 0% 31%;
+}
+#japanese_sub_branch_2 img
+{
+	position: absolute;
+	width: 170%;
+	height: auto;
+	margin: -55% 0% 0% 30%;
+}
+#japanese_sub_block_2 img
+{
+	position: absolute;
+	width: 85%;
+	height: auto;
+	margin: 45% 0% 0% 0%;
+}
+#japanese_sub_text_2 img
+{
+	position: absolute;
+	width: 43%;
+	height: auto;
+	margin: 86% 0% 0% 21%;
+}
+#japanese_sub_branch_3 img
+{
+	position: absolute;
+	width: 170%;
+	height: auto;
+	margin: -49% 0% 0% -86%;
+}
+#japanese_sub_block_3 img
+{
+	position: absolute;
+	width: 85%;
+	height: auto;
+	margin: 45% 0% 0% 15%;
+}
+#japanese_sub_text_3 img
+{
+	position: absolute;
+	width: 43%;
+	height: auto;
+	margin: 80% 0% 0% 40%;
+}
+#japanese_sub_branch_4 img
+{
+	position: absolute;
+	width: 170%;
+	height: auto;
+	margin: -140% 0% 0% 16%;
+}
+#japanese_sub_block_4 img
+{
+	position: absolute;
+	width: 85%;
+	height: auto;
+	margin: 27% 0% 0% 5%;
+}
+#japanese_sub_text_4 img
+{
+	position: absolute;
+	width: 43%;
+	height: auto;
+	margin: 70% 0% 0% 26%;
+}
+#japanese_sub_branch_5 img
+{
+	position: absolute;
+	width: 170%;
+	height: auto;
+	margin: -158% 0% 0% -75%;
+}
+#japanese_sub_block_5 img
+{
+	position: absolute;
+	width: 85%;
+	height: auto;
+	margin: -15% 0% 0% 7%;
+}
+#japanese_sub_text_5 img
+{
+	position: absolute;
+	width: 43%;
+	height: auto;
+	margin: 18% 0% 0% 28%;
 }
 </style>
 </head>
@@ -25,21 +236,175 @@
 <body>
 	<div data-role="page" id="page" data-add-back-btn="true">
 		
-		<div data-role="content" style="background:url('img/class/art/transparent.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
-			<div data-role="header" data-theme="c">
+		<div data-role="content" style="background:url('img/class/language/back1.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
 				<a href="javascript:history.back();" data-role="button" data-rel="back">返回</a>
 				<h1>语学类课程</h1>
 				<a href="index.html" data-icon="home"  rel="external">主页</a>
+			</div>			
+			<!-- first page -->
+			<div id="english_background_1"><img src="img/class/language/1.png"></img></div>
+			<div id="english_background_2"><img src="img/class/language/2.png"></img></div>
+			<div id="english_background_3"><img src="img/class/language/3.png"></img></div>
+			<div id="english_background_4"><img src="img/class/language/4.png"></img></div>
+			<div id="english_background_5"><img src="img/class/language/5.png"></img></div>
+			<div id="main_class"><img id="m-mark" src="img/class/language/6.png"></img>
+				<div id="english_text_1"><img src="img/class/language/7.png"></img></div>
+				<div id="english_text_2"><img src="img/class/language/8.png"></img></div>
+				<div id="english_text_3"><img src="img/class/language/9.png"></img></div>
 			</div>
-			
-			<div id="bigpicture"><a href="#subpage1"><img src="img/class/art/1_n.png"></img></a></div>
-			<div id="smalldot"><img src="img/class/art/1-2.png"></img></div>			
-			<div id="text1"><img src="img/class/art/2.png"></img></div>
-			<div id="text2"><img src="img/class/art/4.png"></img></div>
-			<div id="text3"><img src="img/class/art/6.png"></img></div>
-			<div id="text4"><img src="img/class/art/5.png"></img></div>
-			<div id="text5"><img src="img/class/art/3.png"></img></div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage2" style="width: 100%; padding-left: 0; border: 0; margin: 0;">日语课程</a>
+		</div>	
+	</div>
+	
+	<div data-role="page" id="subpage1" data-add-back-btn="true">	
+		<div data-role="content" style="background:url('img/class/language/back1.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#page" data-role="button" data-transition="back">返回</a>
+				<h1>英语课程</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+			    	<a href="#subpage2" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+			    </div>
+			</div>
+			<!-- subpage1 -->
+			<div id="english_background_1"><img src="img/class/language/1.png"></img></div>
+			<div id="english_background_2"><img src="img/class/language/2.png"></img></div>
+			<div id="english_background_3"><img src="img/class/language/3.png"></img></div>
+			<div id="english_background_4"><img src="img/class/language/4.png"></img></div>
+			<div id="english_background_5"><img src="img/class/language/5.png"></img></div>
+			<div id="main_class"><img src="img/class/language/6.png"></img>
+				<div id="english_text_1"><img src="img/class/language/7.png"></img></div>
+				<div id="english_text_2"><img src="img/class/language/8.png"></img></div>
+				<div id="english_text_3"><img src="img/class/language/9.png"></img></div>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage2" style="width: 100%; padding-left: 0; border: 0; margin: 0;">日语课程</a>
 		</div>
 	</div>
+	
+	<div data-role="page" id="subpage2" data-add-back-btn="true" style="overflow:hidden;">	
+		<div data-role="content" style="background:url('img/class/language/back2.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#page" data-role="button"  data-transition="back">返回</a>
+				<h1>日语课程</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+					<a href="#subpage1" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
+			    </div>
+			</div>
+			<!-- subpage2 -->
+			<div id="japanese_title"><img src="img/class/language/jp_title.png"></img></div>
+			<div id="japanese_branch"><img src="img/class/language/1-1.png"></img></div>
+			<div id="japanese_block_1"><a href="#subpage2sub1"><img src="img/class/language/2-1.png"></img></a></div>
+			<div id="japanese_block_2"><a href="#subpage2sub2"><img src="img/class/language/2-2.png"></img></a></div>
+			<div id="japanese_block_3"><a href="#subpage2sub3"><img src="img/class/language/2-3.png"></img></a></div>
+			<div id="japanese_block_4"><a href="#subpage2sub4"><img src="img/class/language/2-4.png"></img></a></div>
+			<div id="japanese_block_5"><a href="#subpage2sub5"><img src="img/class/language/2-5.png"></img></a></div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage1" style="width: 100%; padding-left: 0; border: 0; margin: 0;">英语课程</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage2sub1" data-add-back-btn="true" style="overflow:hidden;">	
+		<div data-role="content" style="background:url('img/class/language/back2.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#subpage2" data-role="button"  data-transition="back">返回</a>
+				<h1>日语基础班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+			    	<a href="#subpage2sub2" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+			    </div>
+			</div>
+			<!-- subpage2sub1 -->
+			<div id="japanese_sub_branch_1" ><img src="img/class/language/1-1.png"></img></div>
+			<div id="japanese_sub_block_1" ><img src="img/class/language/3-1.png"></img></div>
+			<div id="japanese_sub_text_1" ><img src="img/class/language/word/1.png"></img></div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage1" style="width: 100%; padding-left: 0; border: 0; margin: 0;">英语课程</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage2sub2" data-add-back-btn="true" style="overflow:hidden;">	
+		<div data-role="content" style="background:url('img/class/language/back2.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#subpage2" data-role="button"  data-transition="back">返回</a>
+				<h1>日语词汇班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a href="#subpage2sub1" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
+			    <a href="#subpage2sub3" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+			    </div>
+			</div>
+			<!-- subpage2sub2 -->
+			<div id="japanese_sub_branch_2"><img src="img/class/language/1-1.png"></img></div>
+			<div id="japanese_sub_block_2"><img src="img/class/language/3-2.png"></img></div>
+			<div id="japanese_sub_text_2"><img src="img/class/language/word/3.png"></img></div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage1" style="width: 100%; padding-left: 0; border: 0; margin: 0;">英语课程</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage2sub3" data-add-back-btn="true" style="overflow:hidden;">	
+		<div data-role="content" style="background:url('img/class/language/back2.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#subpage2" data-role="button"  data-transition="back">返回</a>
+				<h1>轻松口语班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a href="#subpage2sub2" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
+			    <a href="#subpage2sub4" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+			    </div>
+			</div>
+			<!-- subpage2sub3 -->
+			<div id="japanese_sub_branch_3"><img src="img/class/language/1-1.png"></img></div>
+			<div id="japanese_sub_block_3"><img src="img/class/language/3-3.png"></img></div>
+			<div id="japanese_sub_text_3"><img src="img/class/language/word/2.png"></img></div>
+			</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage1" style="width: 100%; padding-left: 0; border: 0; margin: 0;">英语课程</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage2sub4" data-add-back-btn="true" style="overflow:hidden;">	
+		<div data-role="content" style="background:url('img/class/language/back2.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#subpage2" data-role="button"  data-transition="back">返回</a>
+				<h1>留考300分技巧班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a href="#subpage2sub3" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
+			    <a href="#subpage2sub5" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+			    </div>
+			</div>
+			<!-- subpage2sub4 -->
+			<div id="japanese_sub_branch_4"><img src="img/class/language/1-1.png"></img></div>
+			<div id="japanese_sub_block_4"><img src="img/class/language/3-4.png"></img></div>
+			<div id="japanese_sub_text_4"><img src="img/class/language/word/5.png"></img></div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage1" style="width: 100%; padding-left: 0; border: 0; margin: 0;">英语课程</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage2sub5" data-add-back-btn="true" style="overflow:hidden;">	
+		<div data-role="content" style="background:url('img/class/language/back2.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
+				<a href="#subpage2" data-role="button"  data-transition="back">返回</a>
+				<h1>N1对策班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a href="#subpage2sub4" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
+			    </div>
+			</div>
+			<!-- subpage2sub5 -->
+			<div id="japanese_sub_branch_5"><img src="img/class/language/1-1.png" ></img></div>
+			<div id="japanese_sub_block_5"><img src="img/class/language/3-5.png"></img></div>
+			<div id="japanese_sub_text_5"><img src="img/class/language/word/4.png"></img></div>
+		</div>
+		<div data-role="footer" data-theme="c" style="z-index: 1; bottom:0%; position: absolute; width: 100%;">
+			<a href="#subpage1" style="width: 100%; padding-left: 0; border: 0; margin: 0;">英语课程</a>
+		</div>
+	</div>
+	
 </body>
 </html>
