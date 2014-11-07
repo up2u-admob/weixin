@@ -19,12 +19,14 @@ $(function () {
 		
 		//nav button clicked
         $(".main_nav img").click(function () {
+			var source_img = this.alt;
+			
 			//remove animation, will not show next time when page load
 			$(".gwd-image_2").removeClass("animated fadeInLeft");
 			$(".gwd-image_3").removeClass("animated fadeInLeft");
 			$(".gwd-image_5").removeClass("animated fadeInRight");
 			$(".main_nav img").removeClass("animated fadeInUp");
-		    $(".video_img").removeClass("animated bounceIn");
+		    $(".video_img").removeClass("animated bounceIn");	
 			
 			//clicked button jump
 			var  _this = $(this);
@@ -41,9 +43,16 @@ $(function () {
 			//locate to new page after 1200ms then button in animation start
 			setTimeout(function(){
 			    $(".main_nav img").removeClass("animated fadeOutDown");
-				location.href= href;
+				location.href = href;
 				$(".main_nav img").addClass("animated fadeInUp");
-				teachermain_page_load();
+				if (source_img == "teacher_main")
+				{
+					teachermain_page_load();
+				}
+				else if (source_img== "class_main")
+				{
+					classmain_page_load();
+				}
 			},1200);
         });
 		
@@ -70,6 +79,23 @@ $(function () {
     			$(".main_list li").removeClass("animated fadeInDown");
     			$("#background_1").removeClass("animated fadeOutDown");
                 $("#background_3").removeClass("animated fadeOutDown");
+            },4000);
+		}
+		
+		function classmain_page_load(){
+			$(".main_list2 ul").css("display", "none");
+			$(".main_word2 li").css("display", "block");
+			$(".main_word2 li").addClass("animated zoomIn");
+			
+			setTimeout(function(){
+			    $(".main_word2 li").removeClass("animated zoomIn");
+				$(".main_word2 li").css("display", "none");
+				$(".main_list2 ul").css("display", "block");
+				$(".main_list2 li").addClass("animated fadeInDown");
+			},2000);
+			
+			setTimeout(function(){
+    			$(".main_list2 li").removeClass("animated fadeInDown");
             },4000);
 		}
 		
