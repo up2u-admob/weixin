@@ -26,6 +26,8 @@
 .page_head {
 	top: 0%
 	z-index: 1;
+	position: absolute;
+	width: 100%;
 }
 
 .main_nav li{
