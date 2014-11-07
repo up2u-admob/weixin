@@ -100,4 +100,30 @@ $(function () {
 			},500);
         });
         
+        //2nd level pages link list clicked
+		$(".main_list2 img").click(function () {
+			//clicked item changed into red
+			var  _this = this;
+            var src = this.src;
+			this.src = this.src+"r.png";
+			//white bar show
+			$(".select_bar").css("display", "block");
+			//calc white bar position
+			var left = parseInt(this.alt.slice(-1)) * 13;
+			$(".select_bar").css("left", left+"%");
+			//calc white animate
+			$(".select_bar").animate({left: "-10%",width:'110%'});
+			
+			//set item color to black, hide white bar after 1s
+			setTimeout(function(){
+			    location.href= _this.alt.slice(0, -1)+".html";
+			},400);
+			setTimeout(function(){
+				var src = _this.src;
+				_this.src = _this.src.slice(0, -5);
+				
+				$(".select_bar").css("display", "none");
+				$(".select_bar").css("width", "10%");
+			},500);
+        });
     });
