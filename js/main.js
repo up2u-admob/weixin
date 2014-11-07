@@ -1,27 +1,30 @@
 
 $(function () {
-		$("#gwd-image_2").addClass("animated fadeInLeft");	//title in
-		$("#gwd-image_3").addClass("animated fadeInLeft");
-		$("#gwd-image_5").addClass("animated fadeInRight");	//text in
+		$(".gwd-image_2").addClass("animated fadeInLeft");	//title in
+		$(".gwd-image_3").addClass("animated fadeInLeft");
+		$(".gwd-image_5").addClass("animated fadeInRight");	//text in
 		$(".main_nav img").css("display", "none");	//button hide
-		$("#video_img").css("display", "none");
+		$(".video_img").css("display", "none");
+		$(".video_text").css("display", "none");
 		
 		//button animation after 500ms
 		setTimeout(function(){
 			$(".main_nav img").css("display", "block");
-			$("#video_img").css("display", "block");
+			$(".video_img").css("display", "block");
+			$(".video_text").css("display", "block");
 			$(".main_nav img").addClass("animated fadeInUp");
-			$("#video_img").addClass("animated bounceIn");
+			$(".video_img").addClass("animated bounceIn");
+			$(".video_text").addClass("animated fadeInRight");
 		},500);
 		
 		//nav button clicked
         $(".main_nav img").click(function () {
 			//remove animation, will not show next time when page load
-			$("#gwd-image_2").removeClass("animated fadeInLeft");
-			$("#gwd-image_3").removeClass("animated fadeInLeft");
-			$("#gwd-image_5").removeClass("animated fadeInRight");
+			$(".gwd-image_2").removeClass("animated fadeInLeft");
+			$(".gwd-image_3").removeClass("animated fadeInLeft");
+			$(".gwd-image_5").removeClass("animated fadeInRight");
 			$(".main_nav img").removeClass("animated fadeInUp");
-		    $("#video_img").removeClass("animated bounceIn");
+		    $(".video_img").removeClass("animated bounceIn");
 			
 			//clicked button jump
 			var  _this = $(this);

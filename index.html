@@ -7,47 +7,13 @@
 <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+<link rel="stylesheet" type="text/css" href="./css/main_style.css" />
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="./js/main.js"></script>
 
-<style type="text/css">
-      #gwd-image_2{
-        position: absolute;
-        width: 43%;
-        height: auto;
-        top: 4.3%;
-        left: 9.5%;
-      }
-      #gwd-image_3 {
-        position: absolute;
-        left: 12%;
-        height: auto;
-        width: 38%;
-        top: 11%;
-      }
-      #video_img {
-        position: absolute;
-        top: 27.8%;
-        height: auto;
-        width: 16.5%;
-        left: 22.7%;
-      }
-      #gwd-image_5 {
-        position: absolute;
-        left: 42.2%;
-        width: 22%;
-        height: auto;
-        top: 31.8%;
-      }
-	  
-	  .main_nav img, #video_img{
-		 -animation-duration: 1s;
-		 -webkit-animation-duration: 1s;
-		 -moz-animation-duration: 1s;
-	  }
-    </style>
+
 </head>
 
 <body>
@@ -59,11 +25,17 @@
 			<a href="#" data-icon="home">主页</a>
 		</div>-->
 		<div data-role="content"  style="background: url('img/main/2-1g.jpg') repeat-y; background-size:100%; height:100%; z-index: 0;">
-			<div >
-          <img src="img/main/2-1_0001_trasform.png" id="gwd-image_2" style="">
-          <img src="img/main/2-1_0000_weixin.png" id="gwd-image_3" style="">
-          <a href='test.html'  rel="external"><img id="video_img" src="img/main/2-1_0002_play.png" style=""></a>
-          <img src="img/main/2-1_0003_cm.png" id="gwd-image_5" style="">
+			<div class="gwd-image_2">
+				<ul><li><img src="img/main/2-1_0001_trasform.png" style=""></li></ul>
+			</div>
+			<div  class="gwd-image_3">
+				<ul><li><img src="img/main/2-1_0000_weixin.png"  style=""></li></ul>
+			</div>
+			<div class="video_img">
+	          <ul><li><a href='test.html'  rel="external"><img  src="img/main/2-1_0002_play.png" style=""></a></li></ul>
+			</div>
+			<div class="video_text">
+	          <ul><li><img src="img/main/2-1_0003_cm.png"  style=""></li></ul>
 			</div>
 			
 			<div class="main_nav">
