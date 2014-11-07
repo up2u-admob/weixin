@@ -28,6 +28,7 @@
 	z-index: 1;
 	position: absolute;
 	width: 100%;
+	z-index: 1;
 }
 
 .main_nav li{

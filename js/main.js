@@ -99,4 +99,5 @@ $(function () {
 				$(".select_bar").css("width", "10%");
 			},500);
         });
+        
     });
