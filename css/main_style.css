@@ -107,7 +107,7 @@
 .main_default li{
 	float:left;
 	display:inline;
-	margin:60% 10% 0% 0%;
+	margin:50% 10% 0% 0%;
 	width:5%;
 }
 
@@ -130,7 +130,7 @@
 	display:inline;
 	background: url("../img/main/2-1_0007s_0000_jiantou.png") no-repeat top center;
 	background-size: 55%;
-	margin:60% 10% 0% 0%;
+	margin:50% 10% 0% 0%;
 	width:5%;
 }
 
@@ -154,7 +154,7 @@
 	display:inline;
 	background: url("../img/main/2-1_0007s_0000_jiantou.png") no-repeat top center;
 	background-size: 55%;
-	margin:60% 6.5% 0% 0%;
+	margin:50% 6.5% 0% 0%;
 	width:5%;
 }
 
@@ -177,7 +177,7 @@
  .main_word li{
 	float:left;
 	display:inline;
-	margin:55% 10% 60% 0%;
+	margin:50% 10% 60% 0%;
 	width:5%;
 	display: none;
 }
@@ -202,7 +202,7 @@
  .main_word2 li{
 	float:left;
 	display:inline;
-	margin:37% 10% 60% 0%;
+	margin:32% 10% 60% 0%;
 	width:5%;
 	
 }
