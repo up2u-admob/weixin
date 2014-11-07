@@ -4,7 +4,7 @@
       }
       .gwd-image_2 ul{
         width: 100%;
-		height: 100%;
+		height: auto;
 		position: absolute;
 		margin: 0 0 0 0;
 		padding: 0% 0% 0% 0%;
@@ -12,7 +12,7 @@
       }
       .gwd-image_2 li{
         width: 100%;
-		height: 100%;
+		height: auto;
 		list-style: none!important;
 		display: inline;
 		margin: 0 0 0 0;
@@ -21,21 +21,20 @@
 		width: 43%;
 		margin: 6% 0% 0% 9.5%;
 		}
-      .gwd-image_3{
+      .gwd-image_3 {
         width: 100%;
         height: auto;
       }
       .gwd-image_3 ul{
         width: 100%;
-		height: 100%;
+		height: auto;
 		position: absolute;
 		margin: 0 0 0 0;
 		padding: 0% 0% 0% 0%;
-		z-index: 1;
       }
       .gwd-image_3 li{
         width: 100%;
-		height: 100%;
+		height: auto;
 		list-style: none!important;
 		display: inline;
 		margin: 0 0 0 0;
@@ -50,7 +49,7 @@
       }
       .video_img ul{
         width: 100%;
-		height: 100%;
+		height: auto;
 		position: absolute;
 		margin: 42% 0 0 23%;
 		padding: 0% 0% 0% 0%;
