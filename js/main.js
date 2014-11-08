@@ -35,6 +35,11 @@ $(function () {
 			//get page url
 			var href = "index.html#"+this.alt;
 			
+			if (this.alt == "contact_main")
+			{
+				href = "contact.html";
+			}
+			
 			//nav button out after button jumped(200ms)
 			setTimeout(function(){
 				_this.removeClass("animated bounceIn");
