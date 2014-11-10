@@ -1,6 +1,11 @@
 var text_1_big = false;
 var text_2_big = false;
 var text_3_big = false;
+var japanese_1_big = false;
+var japanese_2_big = false;
+var japanese_3_big = false;
+var japanese_4_big = false;
+var japanese_5_big = false;
 
 mainInAni = "flipIn";
 mainOutAni = "flipOut";
@@ -60,71 +65,66 @@ $(function () {
 	     }
 	})
 	
-		$("#english_text_3").click(function () {
-    	if (!text_3_big)
+	$("#english_text_3").click(function () {
+	if (!text_3_big)
+	{
+    	$("#main_class1").animate({width:'170%', top: '-35%', left: '-60%'}, "slow");
+     	text_1_big = false;
+		text_2_big = false;
+		text_3_big = true;
+     }
+     else
+     {
+     	$("#main_class1").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
+     	text_1_big = false;
+		text_2_big = false;
+		text_3_big = false;
+     }
+	})
+	
+	$("#japanese_block_1").click(function () {
+    	if (!japanese_1_big)
     	{
-	    	$("#main_class1").animate({width:'170%', top: '-35%', left: '-60%'}, "slow");
-	     	text_1_big = false;
-			text_2_big = false;
-			text_3_big = true;
+	    	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
+	    	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
+	     	japanese_1_big = true;
+			japanese_2_big = false;
+			japanese_3_big = false;
+			japanese_4_big = false;
+			japanese_5_big = false;
 	     }
-	     else
-	     {
-	     	$("#main_class1").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
-	     	text_1_big = false;
-			text_2_big = false;
-			text_3_big = false;
-	     }
+	})
+	$("#japanese_sub_block_1").click(function () {
+    	if (japanese_1_big)
+	    {
+	     	$("#main_class").animate({width:'95%', top: '-5%', left: '8%'}, "slow");
+	     	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
+	     	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
+	     	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
+	     	japanese_1_big = false;
+			japanese_2_big = false;
+			japanese_3_big = false;
+			japanese_4_big = false;
+			japanese_5_big = false;
+	    }
+	})
+	$("#japanese_sub_text_1").click(function () {
+    	if (japanese_1_big)
+	    {
+	     	$("#main_class").animate({width:'95%', top: '-5%', left: '8%'}, "slow");
+	     	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
+	     	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
+	     	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
+	     	japanese_1_big = false;
+			japanese_2_big = false;
+			japanese_3_big = false;
+			japanese_4_big = false;
+			japanese_5_big = false;
+	    }
 	})
 });
 
-var isdrag = false;   
-var tx, x, ty, y;
 
-var supportTouch = 'ontouchend' in document;
-var EVENTNAME_TOUCHSTART = supportTouch ? 'touchstart' : 'mousedown';
-var EVENTNAME_TOUCHMOVE = supportTouch ? 'touchmove' : 'mousemove';
-var EVENTNAME_TOUCHEND = supportTouch ? 'touchend' : 'mouseup';
-
-document.addEventListener(EVENTNAME_TOUCHSTART, startHandler);  
-document.addEventListener(EVENTNAME_TOUCHMOVE, moveHandler);  
-document.addEventListener(EVENTNAME_TOUCHEND, stopHandler);  
-
-function moveHandler(e){   
-  if (isdrag)
-  { 
-	  if (supportTouch)
-	  {
-		  $("#main_class1").css("left", tx + e.touches[0].pageX - x);
-		  $("#main_class1").css("top", ty + e.touches[0].pageY - y);
-	  }
-	  else
-	  {
-		  $("#main_class1").css("left", tx + e.pageX - x);
-		  $("#main_class1").css("top", ty + e.pageY - y);
-	  }
-   }   
-   return false;   
-}   
-  
-function startHandler(e){       
-   tx = parseInt(document.getElementById("main_class1").style.left + 0);  
-   ty = parseInt(document.getElementById("main_class1").style.top + 0);  
-   if (supportTouch)
-   { 
-   		x = e.touches[0].pageX;
-   		y = e.touches[0].pageY; 
-   }
-   else
-   {
-   		x = e.pageX;
-   		y = e.pageY;
-   }
-   isdrag = true; 
-   return false;   
-} 
-
-function stopHandler(e){   
-  isdrag = false;    
-}   
    
