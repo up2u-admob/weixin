@@ -2,8 +2,13 @@
 $(document).ready(function(){
 
 		console.log($(".teacher_list").children("div"))
-		$(".teacher_list").children("div").each(function(){
-			$(this).css("visibility","hidden");
+		$(".teacher_list").children("div").each(function(i){
+			if(i == 0){
+				showTeacher($(this));
+			}else{
+				$(this).css("visibility","hidden");
+			}
+			
 		});
 		
 		$(window).scroll(function () { 
@@ -20,7 +25,7 @@ $(document).ready(function(){
   });
   
   function isInWindow(tea){
-	if(tea.offset().top + ( tea.height() * 0.6) <= $(window).height()){
+	if(tea.offset().top + ( tea.height() * 0.3) <= $(window).height()){
 		return true;
 	}
 	return false;
@@ -28,6 +33,9 @@ $(document).ready(function(){
   
   function showTeacher(tea){
 	tea.css("visibility", "visible");
+	if(tea.attr('class').indexOf("other") >= 0){
+		return;
+	}
 	var p = tea.children("div.photo");
 	var n = p.next("div");
 	var c = n.next("div");

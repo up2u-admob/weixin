@@ -1,5 +1,5 @@
 
-$(function () {
+$(document).ready(function(){
 		$(".gwd-image_2").addClass("animated fadeInLeft");	//title in
 		$(".gwd-image_3").addClass("animated fadeInLeft");
 		$(".gwd-image_5").addClass("animated fadeInRight");	//text in
@@ -13,7 +13,7 @@ $(function () {
 			$(".video_img").css("display", "block");
 			$(".video_text").css("display", "block");
 			$(".main_nav img").addClass("animated fadeInUp");
-			$(".video_img").addClass("animated bounceIn");
+			$(".video_img").addClass("animated bounceInLeft");
 			$(".video_text").addClass("animated fadeInRight");
 		},500);
 		
@@ -26,7 +26,7 @@ $(function () {
 			$(".gwd-image_3").removeClass("animated fadeInLeft");
 			$(".gwd-image_5").removeClass("animated fadeInRight");
 			$(".main_nav img").removeClass("animated fadeInUp");
-		    $(".video_img").removeClass("animated bounceIn");	
+		    $(".video_img").removeClass("animated bounceInLeft");
 			
 			//clicked button jump
 			var  _this = $(this);
@@ -39,7 +39,6 @@ $(function () {
 			{
 				href = "contact.html";
 			}
-			
 			//nav button out after button jumped(200ms)
 			setTimeout(function(){
 				_this.removeClass("animated bounceIn");
@@ -67,11 +66,13 @@ $(function () {
 			$("#background_2").css("display", "none");
 			$("#background_3").css("display", "block");
 			$(".main_word li").css("display", "block");
+			$(".main_word ul").css("z-index", "1");
 			$(".main_word li").addClass("animated zoomIn");
 			
 			setTimeout(function(){
 			    $(".main_word li").removeClass("animated zoomIn");
 				$(".main_word li").css("display", "none");
+				$(".main_word ul").css("z-index", "-1");
 				$(".main_list ul").css("display", "block");
 				$(".main_list li").addClass("animated fadeInDown");
 				$("#background_1").addClass("animated fadeOutDown");
@@ -90,11 +91,13 @@ $(function () {
 		function classmain_page_load(){
 			$(".main_list2 ul").css("display", "none");
 			$(".main_word2 li").css("display", "block");
+			$(".main_word2 ul").css("z-index", "1");
 			$(".main_word2 li").addClass("animated zoomIn");
 			
 			setTimeout(function(){
 			    $(".main_word2 li").removeClass("animated zoomIn");
 				$(".main_word2 li").css("display", "none");
+				$(".main_word2 ul").css("z-index", "-1");
 				$(".main_list2 ul").css("display", "block");
 				$(".main_list2 li").addClass("animated fadeInDown");
 			},2000);

@@ -13,7 +13,31 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/contact.js"></script>
+<style>
+.ui-btn, .ui-btn:visited{background-color:transparent!important; border-color:transparent!important;}
+.ui-icon-come-back:after {background:url('./img/return.png') no-repeat 0 0; background-size:100%;}
+ .ui-icon-arrow-r:after {background:url("./img/under.png") no-repeat 0 0; background-size:100%;}
+.ui-icon-arrow-l:after {background:url("./img/top.png") no-repeat 0 0; background-size:100%;}
 
+.center-l{ 
+ height: 40px;
+ width: 40px;
+ position:absolute;
+ left:5%;
+ top:40%;
+ margin-top: -20px;
+ margin-left: - 20px;
+ }
+.center-r{ 
+ height: 40px;
+ width: 40px;
+ position:absolute;
+ right:5%;
+ top:40%;
+ margin-top: -20px;
+ margin-left: - 20px;
+ }
+</style>
 </head>
 
 <body>
@@ -21,10 +45,28 @@
 	<div data-role="page" id="page" data-add-back-btn="true">
 		
 		<div data-role="content" style="background:url('img/contact/3_0000_back.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a data-role="button" style="padding:0;width:36px;" href="./index.html"  rel="external" data-inline="true" data-transition="fade">
+					  <img style="width:100%" src="./img/return.png" border="0"/>
+				</a>
+				<h1>联系我们</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+		
+				 </div>
+			 </div>
 			<!-- content -->
+			<div style="width:100%">
+			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
+			<a class="center-l" href="#page3"  data-inline="true">
+					  <img style="width:100%" src="./img/left.png" border="0"/>
+					</a>
+			<a class="center-r" href="#page2"  data-inline="true" data-transition="slide">
+					  <img style="width:100%" src="./img/right.png" border="0"/>
+					</a>
 			<div id="contact_page_1"><img src="img/contact/3_0002s_0001_.png"></img></div>
 			<div id="contact_page_2"><img src="img/contact/3_0002s_0002_.png"></img></div>
-			<div id="contact_page_3"><img src="img/contact/3_0002s_0000_.png"></img></div>
+			<div id="contact_page_3"><a href="https://docs.google.com/forms/d/1IZ82VX2c7TWWVBQtR_zC1Ed1uDJPy7ylwFiS4pGmdCw/viewform?usp=send_form"  rel="external"><img src="img/contact/3_0002s_0000_.png"></img></a></div>
+			</div>
 			<div class="main_nav">
 			<ul>
 				<li ><img alt="teacher_main" src="img/main/2-1_0000s_0000_.png"   style="width:50%; margin: 0 auto 0 auto;"/></li>
@@ -43,12 +85,30 @@
 	<div data-role="page" id="page2" data-add-back-btn="true">
 		
 		<div data-role="content" style="background:url('img/contact/3_0000_back.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a data-role="button" style="padding:0;width:36px;" href="./index.html"  rel="external" data-inline="true" data-transition="fade">
+					  <img style="width:100%" src="./img/return.png" border="0"/>
+				</a>
+				<h1>联系我们</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+					
+				 </div>
+			 </div>
+			 <div style="width:100%">
+			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
+				<a class="center-l" href="#page"  data-inline="true">
+					  <img style="width:100%" src="./img/left.png" border="0"/>
+					</a>
+					<a class="center-r" href="#page3"  data-inline="true">
+					  <img style="width:100%" src="./img/right.png" border="0"/>
+					</a>
 			<!-- content -->
-			<div id="contact_page2_1"><img src="img/contact/3_0001s_0000_.png"></img></div>
-			<div id="contact_page2_2"><img src="img/contact/3_0001s_0001_.png"></img></div>
+			<div id="contact_page2_1"><a href="#weixin" data-transition="flip"><img src="img/contact/3_0001s_0000_.png"></a></img></div>
+			<div id="contact_page2_2"><a href="#weibo" data-transition="flip"><img src="img/contact/3_0001s_0001_.png"></a></img></div>
 			<div id="contact_page2_3"><img src="img/contact/3_0001s_0004_.png"></img></div>
 			<div id="contact_page2_4"><img src="img/contact/3_0001s_0003_.png"></img></div>
 			<div id="contact_page2_5"><img src="img/contact/3_0001s_0002_.png"></img></div>
+			</div>
 			<div class="main_nav">
 			<ul>
 				<li ><img alt="teacher_main" src="img/main/2-1_0000s_0000_.png"   style="width:50%; margin: 0 auto 0 auto;"/></li>
@@ -67,9 +127,79 @@
 	<div data-role="page" id="page3" data-add-back-btn="true">
 		
 		<div data-role="content" style="background:url('img/contact/3_0000_back.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a data-role="button" style="padding:0;width:36px;" href="./index.html"  rel="external" data-inline="true" data-transition="fade">
+					  <img style="width:100%" src="./img/return.png" border="0"/>
+				</a>
+				<h1>联系我们</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+					
+				 </div>
+			 </div>
+			 <div style="width:100%">
+			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
+			<a class="center-l" href="#page2"  data-inline="true">
+					  <img style="width:100%" src="./img/left.png" border="0"/>
+					</a>
+					<a class="center-r" href="#page1"  data-inline="true">
+					  <img style="width:100%" src="./img/right.png" border="0"/>
+					</a>
 			<!-- content -->
 			<div id="contact_page3_1"><img src="img/contact/3_0000s_0000_.png"></img></div>
 			<div id="contact_page3_2"><img src="img/contact/3_0000s_0001_.png"></img></div>
+			</div>
+			<div class="main_nav">
+			<ul>
+				<li ><img alt="teacher_main" src="img/main/2-1_0000s_0000_.png"   style="width:50%; margin: 0 auto 0 auto;"/></li>
+				<li ><img alt="class_main"  src="img/main/2-1_0000s_0001_.png"   style="width:35%; margin: 7.5% auto 7.5%  auto;"/></li>
+				<li ><img alt="contact_main"  src="img/main/2-1_0000s_0002_.png"   style="width:35%; margin: 7.5% auto 7.5%  auto;" /></li>
+			</ul>
+			<ul>
+				<li><img src="img/main/2-1_0000s_0003_.png" /></li>
+				<li><img src="img/main/2-1_0000s_0004_.png" /></li>
+				<li><img src="img/main/2-1_0000s_0005_.png" /></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="weixin" data-add-back-btn="true">
+		
+		<div data-role="content" style="background:url('img/contact/3_0000_back.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a data-role="button" style="padding:0;width:36px;" href="#page2"  data-inline="true" data-transition="flip">
+					  <img style="width:100%" src="./img/return.png" border="0"/>
+				</a>
+				<h1>官方微信</h1>
+			 </div>
+			<!-- content -->
+			<div style="width:100%;"><img  style="width:80%; margin:0 10%;" src="img/contact/weixin.jpg"></img></div>
+			<div class="main_nav">
+			<ul>
+				<li ><img alt="teacher_main" src="img/main/2-1_0000s_0000_.png"   style="width:50%; margin: 0 auto 0 auto;"/></li>
+				<li ><img alt="class_main"  src="img/main/2-1_0000s_0001_.png"   style="width:35%; margin: 7.5% auto 7.5%  auto;"/></li>
+				<li ><img alt="contact_main"  src="img/main/2-1_0000s_0002_.png"   style="width:35%; margin: 7.5% auto 7.5%  auto;" /></li>
+			</ul>
+			<ul>
+				<li><img src="img/main/2-1_0000s_0003_.png" /></li>
+				<li><img src="img/main/2-1_0000s_0004_.png" /></li>
+				<li><img src="img/main/2-1_0000s_0005_.png" /></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="weibo" data-add-back-btn="true">
+		
+		<div data-role="content" style="background:url('img/contact/3_0000_back.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a data-role="button" style="padding:0;width:36px;" href="#page2"  data-inline="true" data-transition="flip">
+					  <img style="width:100%" src="./img/return.png" border="0"/>
+				</a>
+				<h1>官方微博</h1>
+			 </div>
+			<!-- content -->
+			<div style="width:100%;"><img style="width:80%; margin:0 10%;"  src="img/contact/weibo.jpg"></img></div>
 			<div class="main_nav">
 			<ul>
 				<li ><img alt="teacher_main" src="img/main/2-1_0000s_0000_.png"   style="width:50%; margin: 0 auto 0 auto;"/></li>

@@ -11,121 +11,165 @@
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/class.js"></script>
-
+<script>
+    mainInAni = "flipInX";
+    mainOutAni = "flipOutX";
+    itemInAni = "fadeInUp";
+    itemOutAni = "fadeOutDown";
+    </script>
 <style type="text/css">
-#main_class img
+	#main_class{
+		position: absolute;
+		width: 100%;
+	}
+	
+	#main_class img{
+		width: 100%;
+	}
+
+#waku1
 {
 	position: absolute;
-	width: 60%;
+	width: 42%;
 	height: auto;
-	margin: 24% 0% 0% 46%;
+	top:2.5%;
+	left: 5%;
 }
 
-#waku1 img
+#waku2
 {
 	position: absolute;
-	width: 36%;
+	width: 42%;
 	height: auto;
-	margin: 44% 0% 0% 12%;
+	top:15%;
+	left: 50%;
 }
 
-#waku2 img
+#waku3
 {
 	position: absolute;
-	width: 36%;
+	width: 42%;
 	height: auto;
-	margin: 66% 0% 0% 58%;
+	top:35%;
+	left: 12%;
 }
 
-#waku3 img
+
+#waku4
 {
 	position: absolute;
-	width: 36%;
+	width: 42%;
 	height: auto;
-	margin: 85.5% 0% 0% 12%;
+	top:50%;
+	left: 39%;
 }
 
-#waku1_text img
+#waku5
 {
 	position: absolute;
-	width: 34%;
+	width: 42%;
 	height: auto;
-	margin: 47% 0% 0% 13%;
+	top: 68%;
+	left: 50%;
 }
 
-#waku2_text img
-{
-	position: absolute;
-	width: 33%;
-	height: auto;
-	margin: 67% 0% 0% 60%;
-}
 
-#waku3_text img
-{
-	position: absolute;
-	width: 34%;
-	height: auto;
-	margin: 87% 0% 0% 13%;
-}
 </style>
 
 </head>
 
 <body>
-	<div data-role="page" id="page" data-add-back-btn="true">
+	<div data-role="page" id="page" data-add-back-btn="true"  style="background:url('img/class/math/back.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
 		
-		<div data-role="content" style="background:url('img/class/bachelor2/5_1.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+		<div data-role="content">
 			<div data-role="header" data-theme="c">
-				<a href="javascript:history.back();" data-role="button" data-rel="back">返回</a>
-				<h1 style="color:white;">学部理科课程</h1>
+				<a href="index.html#class_main" data-role="button" rel="external">返回</a>
+				<h1>学部理科课程</h1>
 				<a href="index.html" data-icon="home"  rel="external">主页</a>
 			</div>
 			
-			<div id="main_class"><img id="m-mark" src="img/class/bachelor2/1.png"></img>
-				<div id="waku1"><img src="img/class/bachelor2/2.png"></img></div>
-				<div id="waku2"><img src="img/class/bachelor2/3.png"></img></div>
-				<div id="waku3"><img src="img/class/bachelor2/4.png"></img></div>
-				<div id="waku1_text"><a href="#subpage1"><img src="img/class/bachelor2/2-1.png"></img></a></div>
-				<div id="waku2_text"><a href="#subpage2"><img src="img/class/bachelor2/3-1.png"></img></a></div>
-				<div id="waku3_text"><a href="#subpage3"><img src="img/class/bachelor2/4-1.png"></img></a></div>
+			<div id="main_class">
+				<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
+				<div id="waku1"><a href="#subpage1" data-transition="fade">
+                    <img src="img/class/math/a.png"></img>
+                </a></div>
+				<div id="waku2"><a href="#subpage2" data-transition="fade">
+                    <img src="img/class/math/b.png"></img>
+                </a></div>
+				<div id="waku3"><a href="#subpage3" data-transition="fade">
+                    <img src="img/class/math/c.png"></img>
+                </a></div>
+				<div id="waku4"><a href="#subpage4" data-transition="fade">
+                    <img src="img/class/math/d.png"></img>
+                </a></div>
+				<div id="waku5"><a href="#subpage5" data-transition="fade">
+                    <img src="img/class/math/e.png"></img>
+                </a></div>
 			</div>
 						
 		</div>
 	</div>
 	
 	<div data-role="page" id="subpage1" data-add-back-btn="true">	
-		<div data-role="content" style="background:url('img/class/bachelor2/20_1.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+		<div data-role="content" style="background:url('img/class/math/l1.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
 			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="back">返回</a>
-				<h1 style="color:white;">电气电子工学</h1>
+				<a href="#page" data-role="button"  data-transition="pop">返回</a>
+				<h1>理科数学基础班</h1>
 				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-			    <a href="#subpage2" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+			    <a href="#subpage2" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
 			    </div>
+				
 			</div>
 		</div>
 	</div>
 	
 	<div data-role="page" id="subpage2" data-add-back-btn="true">	
-		<div data-role="content" style="background:url('img/class/bachelor2/21_1.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+		<div data-role="content" style="background:url('img/class/math/l2.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
 			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="back">返回</a>
-				<h1 style="color:white;">情报工学</h1>
+				<a href="#page" data-role="button"  data-transition="pop">返回</a>
+				<h1>理科数学留考班</h1>
 				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-				<a href="#subpage1" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
-			    <a href="#subpage3" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true">下一页</a>
+				<a href="#subpage1" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
+			    <a href="#subpage3" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
 			    </div>
+				
 			</div>
 		</div>
 	</div>
 	
 	<div data-role="page" id="subpage3" data-add-back-btn="true">	
-		<div data-role="content" style="background:url('img/class/bachelor2/22_1.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+		<div data-role="content" style="background:url('img/class/math/l3.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
 			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="back">返回</a>
-				<h1 style="color:white;">机械工学</h1>
+				<a href="#page" data-role="button"  data-transition="pop">返回</a>
+				<h1>理科综合基础班</h1>
 				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-				<a href="#subpage2" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true">上一页</a>
+				<a href="#subpage2" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
+			    <a href="#subpage4" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
+			    </div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage4" data-add-back-btn="true">	
+		<div data-role="content" style="background:url('img/class/math/l4.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a href="#page" data-role="button"  data-transition="pop">返回</a>
+				<h1>理科综合留考班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a href="#subpage3" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
+			    <a href="#subpage5" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
+			    </div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="subpage5" data-add-back-btn="true">	
+		<div data-role="content" style="background:url('img/class/math/l5.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+			<div data-role="header" data-theme="c">
+				<a href="#page" data-role="button"  data-transition="pop">返回</a>
+				<h1>理科校内考培训班</h1>
+				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+				<a href="#subpage4" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
 			    </div>
 			</div>
 		</div>

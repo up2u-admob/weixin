@@ -1,3 +1,7 @@
+var mainInAni = "fadeInLeft";
+var mainOutAni = "fadeOutLeft";
+var itemInAni = "flipInY";
+var itemOutAni = "flipOutY";
 
 $(document).ready(function(){
 		loadMenu();
@@ -29,20 +33,20 @@ $(document).ready(function(){
         });
 		
   function removeAnimaMenu(){
-		$("#m-mark").removeClass("animated fadeOutLeft");
-		removeAnimaItems($("#main_class"), "flipInY");
+		$("#m-mark").removeClass("animated "+mainOutAni);
+		removeAnimaItems($("#main_class"), itemInAni);
   }
   function loadMenu(){
 		hideItems($("#main_class") , true);
-		$("#m-mark").addClass("animated fadeInLeft");
+		$("#m-mark").addClass("animated "+mainInAni);
 		setTimeout(function(){
-			animaItems($("#main_class"), "flipInY");
+			animaItems($("#main_class"), itemInAni);
 		},1000);
   }
   function unloadMenu(){
-	animaItems($("#main_class"), "flipOutY");
+	animaItems($("#main_class"), itemOutAni);
 	setTimeout(function(){
-		$("#m-mark").addClass("animated fadeOutLeft");
+		$("#m-mark").addClass("animated "+mainOutAni);
 	},500 * $("#main_class").children("div").size());
   }
   function hideItems(parent, hideOrNot){
