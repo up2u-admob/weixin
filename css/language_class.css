@@ -141,18 +141,20 @@
 #japanese_sub_block_1
 {
 	position: absolute;
-	width: 105%;
+	width: 40%;
 	height: auto;
-	top: 4%;
-	left: 0%;
+	top: 14.5%;
+	left: 47%;
+	display: none;
 }
 #japanese_sub_text_1
 {
 	position: absolute;
-	width: 53%;
+	width: 21%;
 	height: auto;
-	top: 28%;
-	left: 31%;
+	top: 23%;
+	left: 59.5%;
+	display: none;
 }
 #japanese_sub_branch_2
 {
