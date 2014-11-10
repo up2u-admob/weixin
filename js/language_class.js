@@ -25,7 +25,7 @@ function unloadMenu1(){
 	},500 * $("#main_class1").children("div").size());
 }
 
-$(function () {
+$(function () {    
     $("#english_text_1").click(function () {
     	if (!text_1_big)
     	{
@@ -77,3 +77,54 @@ $(function () {
 	     }
 	})
 });
+
+var isdrag = false;   
+var tx, x, ty, y;
+
+var supportTouch = 'ontouchend' in document;
+var EVENTNAME_TOUCHSTART = supportTouch ? 'touchstart' : 'mousedown';
+var EVENTNAME_TOUCHMOVE = supportTouch ? 'touchmove' : 'mousemove';
+var EVENTNAME_TOUCHEND = supportTouch ? 'touchend' : 'mouseup';
+
+document.addEventListener(EVENTNAME_TOUCHSTART, startHandler);  
+document.addEventListener(EVENTNAME_TOUCHMOVE, moveHandler);  
+document.addEventListener(EVENTNAME_TOUCHEND, stopHandler);  
+
+function moveHandler(e){   
+  if (isdrag)
+  { 
+	  if (supportTouch)
+	  {
+		  $("#main_class1").css("left", tx + e.touches[0].pageX - x);
+		  $("#main_class1").css("top", ty + e.touches[0].pageY - y);
+	  }
+	  else
+	  {
+		  $("#main_class1").css("left", tx + e.pageX - x);
+		  $("#main_class1").css("top", ty + e.pageY - y);
+	  }
+   }   
+   return false;   
+}   
+  
+function startHandler(e){       
+   tx = parseInt(document.getElementById("main_class1").style.left + 0);  
+   ty = parseInt(document.getElementById("main_class1").style.top + 0);  
+   if (supportTouch)
+   { 
+   		x = e.touches[0].pageX;
+   		y = e.touches[0].pageY; 
+   }
+   else
+   {
+   		x = e.pageX;
+   		y = e.pageY;
+   }
+   isdrag = true; 
+   return false;   
+} 
+
+function stopHandler(e){   
+  isdrag = false;    
+}   
+   
