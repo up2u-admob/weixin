@@ -103,7 +103,7 @@ $(function () {
     	if (!japanese_2_big)
     	{
     		restoreJapaneseSubMenu();
-	    	$("#main_class").animate({width:'240%', top: '-42%', left: '-6%'}, "slow");
+	    	$("#main_class").animate({width:'240%', top: '-62%', left: '-6%'}, "slow");
 	    	$("#japanese_block_2 img").animate({opacity: 'toggle'}, "slow");
 	    	$("#japanese_sub_block_2").animate({opacity: 'toggle'}, "slow");
 	    	$("#japanese_sub_text_2").animate({opacity: 'toggle'}, "slow");
@@ -137,7 +137,7 @@ $(function () {
 		if (!japanese_4_big)
     	{
     		restoreJapaneseSubMenu();
-	    	$("#main_class").animate({width:'240%', top: '-105%', left: '-20%'}, "slow");
+	    	$("#main_class").animate({width:'240%', top: '-125%', left: '-20%'}, "slow");
 	    	$("#japanese_block_4 img").animate({opacity: 'toggle'}, "slow");
 	    	$("#japanese_sub_block_4").animate({opacity: 'toggle'}, "slow");
 	    	$("#japanese_sub_text_4").animate({opacity: 'toggle'}, "slow");
