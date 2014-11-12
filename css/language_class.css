@@ -1,8 +1,8 @@
-	#main_class, #main_class1{
-		position: absolute;
-		width: 100%;
-		top: -5%;
-	}
+#main_class, #main_class1{
+	position: absolute;
+	width: 100%;
+	top: -5%;
+}
 #english_background_1 img
 {
 	position: absolute;
@@ -137,7 +137,8 @@
 	height: auto;
 	top: 14.5%;
 	left: 47%;
-	display: none;
+	opacity:0;
+	-webkit-opacity:0;
 }
 #japanese_sub_text_1
 {
@@ -146,7 +147,8 @@
 	height: auto;
 	top: 23%;
 	left: 59.5%;
-	display: none;
+	opacity:0;
+	-webkit-opacity:0;
 }
 #japanese_sub_block_2
 {

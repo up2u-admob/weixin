@@ -42,6 +42,8 @@ $(document).ready(function(){
 		setTimeout(function(){
 			animaItems($("#main_class"), itemInAni);
 		},1000);
+
+		
   }
   function unloadMenu(){
 	animaItems($("#main_class"), itemOutAni);
@@ -56,12 +58,19 @@ $(document).ready(function(){
 	});
   }
   function animaItems(parent, anima){
-	parent.children("div").each(function(i){
+	parent.children(".ani").each(function(i){
 		var child = $(this);
 		setTimeout(function(){
 			child.css("visibility", "visible");
 			child.addClass("animated "+anima);
+			setTimeout(function(){
+				child.removeClass("animated "+anima);
+			},300);
 		},500 * i);
+	});
+	parent.children(".noani").each(function(i){
+		var child = $(this);
+		child.css("visibility", "visible");
 	});
   }
   

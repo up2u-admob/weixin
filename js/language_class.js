@@ -82,23 +82,9 @@ $(document).ready(function () {
 	     }
 		})
 		
-		$("#japanese_block_1").click(function () {
-	    	if (!japanese_1_big)
-	    	{
-	    		restoreJapaneseSubMenu();
-		    	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
-		    	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
-		     	japanese_1_big = true;
-				japanese_2_big = false;
-				japanese_3_big = false;
-				japanese_4_big = false;
-				japanese_5_big = false;
-		     }
-		})
-		$("#japanese_sub_block_1").click(restoreJapaneseMenu);
-		$("#japanese_sub_text_1").click(restoreJapaneseMenu);
+		$("#japanese_block_1").click(changeSubBlock1);
+		$("#japanese_sub_block_1").click(changeSubBlock1);
+		$("#japanese_sub_text_1").click(changeSubBlock1);
 		$("#japanese_block_2").click(function () {
 	    	if (!japanese_2_big)
 	    	{
@@ -169,10 +155,52 @@ $(document).ready(function () {
 		$("#japanese_sub_text_5").click(restoreJapaneseMenu);
 });
 
+function changeSubBlock1()
+{
+	if (!japanese_1_big)
+	{
+		zoomSubBlock1();
+     }
+     else
+     {
+     restoreJapaneseMenu();
+     }
+}
+
+function zoomSubBlock1()
+{
+	restoreJapaneseSubMenu();
+	$("#main_class").css({ 
+		"width":"240%",
+		"top":"-28%",
+		"left":"-113%",
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
+	$("#japanese_block_1").css({ 
+    	"opacity":"0",
+    	"-webkit-opacity":"0",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});	     	
+	$("#japanese_sub_block_1").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+	$("#japanese_sub_text_1").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 	japanese_1_big = true;
+	japanese_2_big = false;
+	japanese_3_big = false;
+	japanese_4_big = false;
+	japanese_5_big = false;
+}
    
 function restoreJapaneseMenu()
 {
- 	$("#main_class").animate({width:'95%', top: '-5%', left: '8%'}, "slow");
+ 	$("#main_class").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
 	restoreJapaneseSubMenu();
 }
 
@@ -180,33 +208,78 @@ function restoreJapaneseSubMenu()
 {
 	if (japanese_1_big)
     {
-     	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
-     	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
-     	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
+	    $("#japanese_block_1").css({ 
+	    	"opacity":"1",
+	    	"-webkit-opacity":"1",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_block_1").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_text_1").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_2_big)
     {
-    	$("#japanese_block_2 img").animate({opacity: 'toggle'}, "slow");
-	 	$("#japanese_sub_block_2").animate({opacity: 'toggle'}, "slow");
-     	$("#japanese_sub_text_2").animate({opacity: 'toggle'}, "slow");
+    	$("#japanese_block_2").css({ 
+	    	"opacity":"1",
+	    	"-webkit-opacity":"1",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_block_2").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_text_2").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_3_big)
     {
-    	$("#japanese_block_3 img").animate({opacity: 'toggle'}, "slow");
-	 	$("#japanese_sub_block_3").animate({opacity: 'toggle'}, "slow");
-     	$("#japanese_sub_text_3").animate({opacity: 'toggle'}, "slow");
+    	$("#japanese_block_3").css({ 
+	    	"opacity":"1",
+	    	"-webkit-opacity":"1",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_block_3").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_text_3").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_4_big)
     {
-    	$("#japanese_block_4 img").animate({opacity: 'toggle'}, "slow");
-	 	$("#japanese_sub_block_4").animate({opacity: 'toggle'}, "slow");
-     	$("#japanese_sub_text_4").animate({opacity: 'toggle'}, "slow");
+    	$("#japanese_block_4").css({ 
+	    	"opacity":"1",
+	    	"-webkit-opacity":"1",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_block_4").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_text_4").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_5_big)
     {
-    	$("#japanese_block_5 img").animate({opacity: 'toggle'}, "slow");
-	 	$("#japanese_sub_block_5").animate({opacity: 'toggle'}, "slow");
-     	$("#japanese_sub_text_5").animate({opacity: 'toggle'}, "slow");
+    	$("#japanese_block_5").css({ 
+	    	"opacity":"1",
+	    	"-webkit-opacity":"1",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_block_5").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 		$("#japanese_sub_text_5").css({ 
+ 			"opacity":"0",
+	    	"-webkit-opacity":"0",
+     		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
     }
  	japanese_1_big = false;
 	japanese_2_big = false;
