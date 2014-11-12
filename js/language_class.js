@@ -173,15 +173,15 @@ function zoomSubBlock1()
 	$("#japanese_block_1").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});	     	
+    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 1s linear 1s",});	     	
 	$("#japanese_sub_block_1").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
 	$("#japanese_sub_text_1").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
  	japanese_1_big = true;
 	japanese_2_big = false;
 	japanese_3_big = false;
@@ -203,15 +203,15 @@ function zoomSubBlock2()
 	$("#japanese_block_2").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});		     	
+    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});		     	
 	$("#japanese_sub_block_2").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
 	$("#japanese_sub_text_2").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
  	japanese_1_big = false;
 	japanese_2_big = true;
 	japanese_3_big = false;
@@ -233,15 +233,15 @@ function zoomSubBlock3()
 	$("#japanese_block_3").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});	     	
+    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});	     	
 	$("#japanese_sub_block_3").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
 	$("#japanese_sub_text_3").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
  	japanese_1_big = false;
 	japanese_2_big = false;
 	japanese_3_big = true;
@@ -263,15 +263,15 @@ function zoomSubBlock4()
 	$("#japanese_block_4").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});	 	
+    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});	 	
 	$("#japanese_sub_block_4").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
 	$("#japanese_sub_text_4").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
  	japanese_1_big = false;
 	japanese_2_big = false;
 	japanese_3_big = false;
@@ -293,15 +293,15 @@ function zoomSubBlock5()
 	$("#japanese_block_5").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});	     	
+    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});	     	
 	$("#japanese_sub_block_5").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
 	$("#japanese_sub_text_5").css({ 
 		"opacity":"1",
     	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
  	japanese_1_big = false;
 	japanese_2_big = false;
 	japanese_3_big = false;
@@ -329,75 +329,75 @@ function restoreJapaneseSubMenu()
 	    $("#japanese_block_1").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
+    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
  		$("#japanese_sub_block_1").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_1").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
     }
     else if(japanese_2_big)
     {
     	$("#japanese_block_2").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
+    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_2").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_2").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
     }
     else if(japanese_3_big)
     {
     	$("#japanese_block_3").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
+    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_3").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_3").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
     }
     else if(japanese_4_big)
     {
     	$("#japanese_block_4").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
+    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_4").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_4").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
     }
     else if(japanese_5_big)
     {
     	$("#japanese_block_5").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
+    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_5").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_5").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 1s linear 1s, -webkit-opacity 1s linear 1s",});
+    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
     }
  	japanese_1_big = false;
 	japanese_2_big = false;
