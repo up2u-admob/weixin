@@ -196,12 +196,15 @@ function zoomSubBlock1()
 function zoomSubBlock2()
 {
 	restoreJapaneseSubMenu();
-	$("#main_class").css({ 
+/*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-82%",
 		"left":"-6%",
 		"-webkit-transform":"translateZ(0)",
-		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
+	$("#main_class").css({ 
+		"-webkit-transform":"translateZ(0) scale(1) translate(28%, 11%)",
+		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_2").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",
@@ -227,12 +230,15 @@ function zoomSubBlock2()
 function zoomSubBlock3()
 {
 	restoreJapaneseSubMenu();
-	$("#main_class").css({ 
+/*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-58%",
 		"left":"-131%",
 		"-webkit-transform":"translateZ(0)",
-		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
+	$("#main_class").css({ 
+		"-webkit-transform":"translateZ(0) scale(1) translate(-30%, 13%)",
+		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_3").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",
@@ -258,12 +264,15 @@ function zoomSubBlock3()
 function zoomSubBlock4()
 {
 	restoreJapaneseSubMenu();
-	$("#main_class").css({ 
+/*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-135%",
 		"left":"-20%",
 		"-webkit-transform":"translateZ(0)",
-		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
+	$("#main_class").css({ 
+		"-webkit-transform":"translateZ(0) scale(1) translate(22%, -5%)",
+		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_4").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",
@@ -289,12 +298,15 @@ function zoomSubBlock4()
 function zoomSubBlock5()
 {
 	restoreJapaneseSubMenu();
-	$("#main_class").css({ 
+/*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-111%",
 		"left":"-124%",
 		"-webkit-transform":"translateZ(0)",
-		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
+	$("#main_class").css({ 
+		"-webkit-transform":"translateZ(0) scale(1) translate(-28%, -4%)",
+		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_5").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",

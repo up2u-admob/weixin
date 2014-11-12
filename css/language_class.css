@@ -81,7 +81,8 @@
 	position: absolute;
 	width: 28%;
 	height: auto;
-	margin: 10% 0% 0% 9%;
+	top: 10%;
+	left: 9%;
 }
 #main_class img
 {
