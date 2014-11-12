@@ -165,26 +165,22 @@ function zoomSubBlock1()
 /*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-28%",
-		"left":"-113%",
-		"-webkit-transform":"translateZ(0)",
+		"left":"-113%",		
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(1) translate(-17%, 20%)",
+		"-webkit-transform":"scale(1) translate(-17%, 20%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_1").css({ 
     	"opacity":"0",
-    	"-webkit-opacity":"0",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"0",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	     	
 	$("#japanese_sub_block_1").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
 	$("#japanese_sub_text_1").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  	japanese_1_big = true;
 	japanese_2_big = false;
@@ -199,26 +195,22 @@ function zoomSubBlock2()
 /*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-82%",
-		"left":"-6%",
-		"-webkit-transform":"translateZ(0)",
+		"left":"-6%",		
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(1) translate(28%, 11%)",
+		"-webkit-transform":"scale(1) translate(28%, 11%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_2").css({ 
     	"opacity":"0",
-    	"-webkit-opacity":"0",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"0",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});		     	
 	$("#japanese_sub_block_2").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
 	$("#japanese_sub_text_2").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
  	japanese_1_big = false;
 	japanese_2_big = true;
@@ -233,26 +225,22 @@ function zoomSubBlock3()
 /*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-58%",
-		"left":"-131%",
-		"-webkit-transform":"translateZ(0)",
+		"left":"-131%",		
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(1) translate(-30%, 13%)",
+		"-webkit-transform":"scale(1) translate(-30%, 13%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_3").css({ 
     	"opacity":"0",
-    	"-webkit-opacity":"0",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"0",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	     	
 	$("#japanese_sub_block_3").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
 	$("#japanese_sub_text_3").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
  	japanese_1_big = false;
 	japanese_2_big = false;
@@ -267,26 +255,22 @@ function zoomSubBlock4()
 /*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-135%",
-		"left":"-20%",
-		"-webkit-transform":"translateZ(0)",
+		"left":"-20%",		
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(1) translate(22%, -5%)",
+		"-webkit-transform":"scale(1) translate(22%, -5%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_4").css({ 
     	"opacity":"0",
-    	"-webkit-opacity":"0",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"0",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	 	
 	$("#japanese_sub_block_4").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
 	$("#japanese_sub_text_4").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
  	japanese_1_big = false;
 	japanese_2_big = false;
@@ -301,26 +285,22 @@ function zoomSubBlock5()
 /*	$("#main_class").css({ 
 		"width":"240%",
 		"top":"-111%",
-		"left":"-124%",
-		"-webkit-transform":"translateZ(0)",
+		"left":"-124%",		
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(1) translate(-28%, -4%)",
+		"-webkit-transform":"scale(1) translate(-28%, -4%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_5").css({ 
     	"opacity":"0",
-    	"-webkit-opacity":"0",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"0",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	     	
 	$("#japanese_sub_block_5").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
 	$("#japanese_sub_text_5").css({ 
 		"opacity":"1",
-    	"-webkit-opacity":"1",
-    	"-webkit-transform":"translateZ(0)",
+    	"-webkit-opacity":"1",    	
     	"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
  	japanese_1_big = false;
 	japanese_2_big = false;
@@ -337,7 +317,7 @@ function restoreJapaneseMenu()
 		"left":"0%",
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(0.4) translate(0%, 0%)",
+		"-webkit-transform":"scale(0.4) translate(0%, 0%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	restoreJapaneseSubMenu();
 }
@@ -348,90 +328,75 @@ function restoreJapaneseSubMenu()
     {
 	    $("#japanese_block_1").css({ 
 	    	"opacity":"1",
-	    	"-webkit-opacity":"1",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"1",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});	
  		$("#japanese_sub_block_1").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_text_1").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_2_big)
     {
     	$("#japanese_block_2").css({ 
 	    	"opacity":"1",
-	    	"-webkit-opacity":"1",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"1",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_block_2").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_text_2").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_3_big)
     {
     	$("#japanese_block_3").css({ 
 	    	"opacity":"1",
-	    	"-webkit-opacity":"1",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"1",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_block_3").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_text_3").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_4_big)
     {
     	$("#japanese_block_4").css({ 
 	    	"opacity":"1",
-	    	"-webkit-opacity":"1",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"1",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_block_4").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_text_4").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
     }
     else if(japanese_5_big)
     {
     	$("#japanese_block_5").css({ 
 	    	"opacity":"1",
-	    	"-webkit-opacity":"1",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"1",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_block_5").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
  		$("#japanese_sub_text_5").css({ 
  			"opacity":"0",
-	    	"-webkit-opacity":"0",
-     		"-webkit-transform":"translateZ(0)",
+	    	"-webkit-opacity":"0",     		
     		"-webkit-transition":"opacity 2s ease-out 0s, -webkit-opacity 2s ease-out 0s",});
     }
  	japanese_1_big = false;
