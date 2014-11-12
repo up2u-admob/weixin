@@ -85,6 +85,7 @@ $(function () {
 	$("#japanese_block_1").click(function () {
     	if (!japanese_1_big)
     	{
+    		restoreJapaneseSubMenu();
 	    	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
 	    	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
 	    	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
@@ -96,35 +97,121 @@ $(function () {
 			japanese_5_big = false;
 	     }
 	})
-	$("#japanese_sub_block_1").click(function () {
-    	if (japanese_1_big)
-	    {
-	     	$("#main_class").animate({width:'95%', top: '-5%', left: '8%'}, "slow");
-	     	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
-	     	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
-	     	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
+	$("#japanese_sub_block_1").click(restoreJapaneseMenu);
+	$("#japanese_sub_text_1").click(restoreJapaneseMenu);
+	$("#japanese_block_2").click(function () {
+    	if (!japanese_2_big)
+    	{
+    		restoreJapaneseSubMenu();
+	    	$("#main_class").animate({width:'240%', top: '-42%', left: '-6%'}, "slow");
+	    	$("#japanese_block_2 img").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_block_2").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_text_2").animate({opacity: 'toggle'}, "slow");
+	     	japanese_1_big = false;
+			japanese_2_big = true;
+			japanese_3_big = false;
+			japanese_4_big = false;
+			japanese_5_big = false;
+	     }
+	})
+	$("#japanese_sub_block_2").click(restoreJapaneseMenu);
+	$("#japanese_sub_text_2").click(restoreJapaneseMenu);
+	$("#japanese_block_3").click(function () {
+    	if (!japanese_3_big)
+    	{
+    		restoreJapaneseSubMenu();
+	    	$("#main_class").animate({width:'240%', top: '-58%', left: '-131%'}, "slow");
+	    	$("#japanese_block_3 img").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_block_3").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_text_3").animate({opacity: 'toggle'}, "slow");
+	     	japanese_1_big = false;
+			japanese_2_big = false;
+			japanese_3_big = true;
+			japanese_4_big = false;
+			japanese_5_big = false;
+	     }
+	})
+	$("#japanese_sub_block_3").click(restoreJapaneseMenu);
+	$("#japanese_sub_text_3").click(restoreJapaneseMenu);
+	$("#japanese_block_4").click(function () {
+		if (!japanese_4_big)
+    	{
+    		restoreJapaneseSubMenu();
+	    	$("#main_class").animate({width:'240%', top: '-105%', left: '-20%'}, "slow");
+	    	$("#japanese_block_4 img").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_block_4").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_text_4").animate({opacity: 'toggle'}, "slow");
+	     	japanese_1_big = false;
+			japanese_2_big = false;
+			japanese_3_big = false;
+			japanese_4_big = true;
+			japanese_5_big = false;
+	     }
+	})
+	$("#japanese_sub_block_4").click(restoreJapaneseMenu);
+	$("#japanese_sub_text_4").click(restoreJapaneseMenu);
+	$("#japanese_block_5").click(function () {
+		if (!japanese_5_big)
+    	{
+    		restoreJapaneseSubMenu();
+	    	$("#main_class").animate({width:'240%', top: '-111%', left: '-124%'}, "slow");
+	    	$("#japanese_block_5 img").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_block_5").animate({opacity: 'toggle'}, "slow");
+	    	$("#japanese_sub_text_5").animate({opacity: 'toggle'}, "slow");
 	     	japanese_1_big = false;
 			japanese_2_big = false;
 			japanese_3_big = false;
 			japanese_4_big = false;
-			japanese_5_big = false;
-	    }
+			japanese_5_big = true;
+	     }
 	})
-	$("#japanese_sub_text_1").click(function () {
-    	if (japanese_1_big)
-	    {
-	     	$("#main_class").animate({width:'95%', top: '-5%', left: '8%'}, "slow");
-	     	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
-	     	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
-	     	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
-	     	japanese_1_big = false;
-			japanese_2_big = false;
-			japanese_3_big = false;
-			japanese_4_big = false;
-			japanese_5_big = false;
-	    }
-	})
+	$("#japanese_sub_block_5").click(restoreJapaneseMenu);
+	$("#japanese_sub_text_5").click(restoreJapaneseMenu);
 });
 
+function restoreJapaneseMenu()
+{
+ 	$("#main_class").animate({width:'95%', top: '-5%', left: '8%'}, "slow");
+	restoreJapaneseSubMenu();
+}
+
+function restoreJapaneseSubMenu()
+{
+	if (japanese_1_big)
+    {
+     	$("#japanese_block_1 img").animate({opacity: 'toggle'}, "slow");
+     	$("#japanese_sub_block_1").animate({opacity: 'toggle'}, "slow");
+     	$("#japanese_sub_text_1").animate({opacity: 'toggle'}, "slow");
+    }
+    else if(japanese_2_big)
+    {
+    	$("#japanese_block_2 img").animate({opacity: 'toggle'}, "slow");
+	 	$("#japanese_sub_block_2").animate({opacity: 'toggle'}, "slow");
+     	$("#japanese_sub_text_2").animate({opacity: 'toggle'}, "slow");
+    }
+    else if(japanese_3_big)
+    {
+    	$("#japanese_block_3 img").animate({opacity: 'toggle'}, "slow");
+	 	$("#japanese_sub_block_3").animate({opacity: 'toggle'}, "slow");
+     	$("#japanese_sub_text_3").animate({opacity: 'toggle'}, "slow");
+    }
+    else if(japanese_4_big)
+    {
+    	$("#japanese_block_4 img").animate({opacity: 'toggle'}, "slow");
+	 	$("#japanese_sub_block_4").animate({opacity: 'toggle'}, "slow");
+     	$("#japanese_sub_text_4").animate({opacity: 'toggle'}, "slow");
+    }
+    else if(japanese_5_big)
+    {
+    	$("#japanese_block_5 img").animate({opacity: 'toggle'}, "slow");
+	 	$("#japanese_sub_block_5").animate({opacity: 'toggle'}, "slow");
+     	$("#japanese_sub_text_5").animate({opacity: 'toggle'}, "slow");
+    }
+ 	japanese_1_big = false;
+	japanese_2_big = false;
+	japanese_3_big = false;
+	japanese_4_big = false;
+	japanese_5_big = false;
+}
 
    
