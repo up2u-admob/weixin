@@ -33,7 +33,7 @@ function unloadMenu1(){
 }
 
 $(document).ready(function () {   
-		$("#main_class1").bind({
+/*		$("#main_class1").bind({
 		    'touchstart mousedown': function(e) {
 		        e.preventDefault();
 		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
@@ -55,14 +55,13 @@ $(document).ready(function () {
 		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
 		        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
 		    },
-		    /* タッチの終了、マウスのドラッグの終了 */
 		    'touchend mouseup': function(e) {
 		        if (!this.touched) {
 		            return;
 		        }
 		        this.touched = false;
 		    }
-		});
+		});*/
 
 		$("#english_text_1").click(changeEnglishSubBlock1); 
 		$("#english_text_2").click(changeEnglishSubBlock2); 
