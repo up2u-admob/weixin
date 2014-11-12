@@ -85,74 +85,18 @@ $(document).ready(function () {
 		$("#japanese_block_1").click(changeSubBlock1);
 		$("#japanese_sub_block_1").click(changeSubBlock1);
 		$("#japanese_sub_text_1").click(changeSubBlock1);
-		$("#japanese_block_2").click(function () {
-	    	if (!japanese_2_big)
-	    	{
-	    		restoreJapaneseSubMenu();
-		    	$("#main_class").animate({width:'240%', top: '-82%', left: '-6%'}, "slow");
-		    	$("#japanese_block_2 img").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_block_2").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_text_2").animate({opacity: 'toggle'}, "slow");
-		     	japanese_1_big = false;
-				japanese_2_big = true;
-				japanese_3_big = false;
-				japanese_4_big = false;
-				japanese_5_big = false;
-		     }
-		})
-		$("#japanese_sub_block_2").click(restoreJapaneseMenu);
-		$("#japanese_sub_text_2").click(restoreJapaneseMenu);
-		$("#japanese_block_3").click(function () {
-	    	if (!japanese_3_big)
-	    	{
-	    		restoreJapaneseSubMenu();
-		    	$("#main_class").animate({width:'240%', top: '-58%', left: '-131%'}, "slow");
-		    	$("#japanese_block_3 img").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_block_3").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_text_3").animate({opacity: 'toggle'}, "slow");
-		     	japanese_1_big = false;
-				japanese_2_big = false;
-				japanese_3_big = true;
-				japanese_4_big = false;
-				japanese_5_big = false;
-		     }
-		})
-		$("#japanese_sub_block_3").click(restoreJapaneseMenu);
-		$("#japanese_sub_text_3").click(restoreJapaneseMenu);
-		$("#japanese_block_4").click(function () {
-			if (!japanese_4_big)
-	    	{
-	    		restoreJapaneseSubMenu();
-		    	$("#main_class").animate({width:'240%', top: '-135%', left: '-20%'}, "slow");
-		    	$("#japanese_block_4 img").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_block_4").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_text_4").animate({opacity: 'toggle'}, "slow");
-		     	japanese_1_big = false;
-				japanese_2_big = false;
-				japanese_3_big = false;
-				japanese_4_big = true;
-				japanese_5_big = false;
-		     }
-		})
-		$("#japanese_sub_block_4").click(restoreJapaneseMenu);
-		$("#japanese_sub_text_4").click(restoreJapaneseMenu);
-		$("#japanese_block_5").click(function () {
-			if (!japanese_5_big)
-	    	{
-	    		restoreJapaneseSubMenu();
-		    	$("#main_class").animate({width:'240%', top: '-111%', left: '-124%'}, "slow");
-		    	$("#japanese_block_5 img").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_block_5").animate({opacity: 'toggle'}, "slow");
-		    	$("#japanese_sub_text_5").animate({opacity: 'toggle'}, "slow");
-		     	japanese_1_big = false;
-				japanese_2_big = false;
-				japanese_3_big = false;
-				japanese_4_big = false;
-				japanese_5_big = true;
-		     }
-		})
-		$("#japanese_sub_block_5").click(restoreJapaneseMenu);
-		$("#japanese_sub_text_5").click(restoreJapaneseMenu);
+		$("#japanese_block_2").click(changeSubBlock2);
+		$("#japanese_sub_block_2").click(changeSubBlock2);
+		$("#japanese_sub_text_2").click(changeSubBlock2);
+		$("#japanese_block_3").click(changeSubBlock3);
+		$("#japanese_sub_block_3").click(changeSubBlock3);
+		$("#japanese_sub_text_3").click(changeSubBlock3);
+		$("#japanese_block_4").click(changeSubBlock4);
+		$("#japanese_sub_block_4").click(changeSubBlock4);
+		$("#japanese_sub_text_4").click(changeSubBlock4);
+		$("#japanese_block_5").click(changeSubBlock5);
+		$("#japanese_sub_block_5").click(changeSubBlock5);
+		$("#japanese_sub_text_5").click(changeSubBlock5);
 });
 
 function changeSubBlock1()
@@ -160,6 +104,54 @@ function changeSubBlock1()
 	if (!japanese_1_big)
 	{
 		zoomSubBlock1();
+     }
+     else
+     {
+     restoreJapaneseMenu();
+     }
+}
+
+function changeSubBlock2()
+{
+	if (!japanese_2_big)
+	{
+		zoomSubBlock2();
+     }
+     else
+     {
+     restoreJapaneseMenu();
+     }
+}
+
+function changeSubBlock3()
+{
+	if (!japanese_3_big)
+	{
+		zoomSubBlock3();
+     }
+     else
+     {
+     restoreJapaneseMenu();
+     }
+}
+
+function changeSubBlock4()
+{
+	if (!japanese_4_big)
+	{
+		zoomSubBlock4();
+     }
+     else
+     {
+     restoreJapaneseMenu();
+     }
+}
+
+function changeSubBlock5()
+{
+	if (!japanese_5_big)
+	{
+		zoomSubBlock5();
      }
      else
      {
@@ -175,7 +167,6 @@ function zoomSubBlock1()
 		"top":"-28%",
 		"left":"-113%",
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
-//	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
 	$("#japanese_block_1").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",
@@ -197,6 +188,126 @@ function zoomSubBlock1()
 	japanese_4_big = false;
 	japanese_5_big = false;
 }
+
+function zoomSubBlock2()
+{
+	restoreJapaneseSubMenu();
+	$("#main_class").css({ 
+		"width":"240%",
+		"top":"-82%",
+		"left":"-6%",
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+	$("#japanese_block_2").css({ 
+    	"opacity":"0",
+    	"-webkit-opacity":"0",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});	     	
+	$("#japanese_sub_block_2").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+	$("#japanese_sub_text_2").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 	japanese_1_big = false;
+	japanese_2_big = true;
+	japanese_3_big = false;
+	japanese_4_big = false;
+	japanese_5_big = false;
+}
+
+function zoomSubBlock3()
+{
+	restoreJapaneseSubMenu();
+	$("#main_class").css({ 
+		"width":"240%",
+		"top":"-58%",
+		"left":"-131%",
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+	$("#japanese_block_3").css({ 
+    	"opacity":"0",
+    	"-webkit-opacity":"0",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});	     	
+	$("#japanese_sub_block_3").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+	$("#japanese_sub_text_3").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 	japanese_1_big = false;
+	japanese_2_big = false;
+	japanese_3_big = true;
+	japanese_4_big = false;
+	japanese_5_big = false;
+}
+
+function zoomSubBlock4()
+{
+	restoreJapaneseSubMenu();
+	$("#main_class").css({ 
+		"width":"240%",
+		"top":"-135%",
+		"left":"-20%",
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+	$("#japanese_block_4").css({ 
+    	"opacity":"0",
+    	"-webkit-opacity":"0",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});	     	
+	$("#japanese_sub_block_4").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+	$("#japanese_sub_text_4").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 	japanese_1_big = false;
+	japanese_2_big = false;
+	japanese_3_big = false;
+	japanese_4_big = true;
+	japanese_5_big = false;
+}
+
+function zoomSubBlock5()
+{
+	restoreJapaneseSubMenu();
+	$("#main_class").css({ 
+		"width":"240%",
+		"top":"-111%",
+		"left":"-124%",
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+	$("#japanese_block_5").css({ 
+    	"opacity":"0",
+    	"-webkit-opacity":"0",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});	     	
+	$("#japanese_sub_block_5").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+	$("#japanese_sub_text_5").css({ 
+		"opacity":"1",
+    	"-webkit-opacity":"1",
+    	"-webkit-transition":"opacity 2s ease-out 0s",
+ 		"-webkit-transition":"-webkit-opacity 2s ease-out 0s",});
+ 	japanese_1_big = false;
+	japanese_2_big = false;
+	japanese_3_big = false;
+	japanese_4_big = false;
+	japanese_5_big = true;
+}
    
 function restoreJapaneseMenu()
 {
@@ -205,7 +316,6 @@ function restoreJapaneseMenu()
 		"top":"-5%",
 		"left":"0%",
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
-// 	$("#main_class").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
 	restoreJapaneseSubMenu();
 }
 
