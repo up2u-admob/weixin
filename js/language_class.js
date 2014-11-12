@@ -7,6 +7,8 @@ var japanese_3_big = false;
 var japanese_4_big = false;
 var japanese_5_big = false;
 
+var isTouch = ('ontouchstart' in window);
+
 mainInAni = "flipIn";
 mainOutAni = "flipOut";
 itemInAni = "fadeIn";
@@ -31,6 +33,37 @@ function unloadMenu1(){
 }
 
 $(document).ready(function () {   
+		$("#main_class1").bind({
+		    'touchstart mousedown': function(e) {
+		        e.preventDefault();
+		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
+		        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
+		        this.left = parseInt($(this).css('left'));
+		        this.top = parseInt($(this).css('top'));
+		         
+		        this.touched = true;
+		    },
+		    'touchmove mousemove': function(e) {
+		        if (!this.touched) {
+		            return;
+		        }
+		        e.preventDefault();
+		        //alert($(this).css('left'));
+		        this.left = this.left - (this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX) );
+		        this.top = this.top - (this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY) );
+		        $(this).css({'left':this.left, 'top':this.top});
+		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
+		        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
+		    },
+		    /* タッチの終了、マウスのドラッグの終了 */
+		    'touchend mouseup': function(e) {
+		        if (!this.touched) {
+		            return;
+		        }
+		        this.touched = false;
+		    }
+		});
+
 		$("#english_text_1").click(changeEnglishSubBlock1); 
 		$("#english_text_2").click(changeEnglishSubBlock2); 
 		$("#english_text_3").click(changeEnglishSubBlock3); 
