@@ -1,9 +1,14 @@
 
-
-#main_class, #main_class1{
+#main_class{
 	position: absolute;
 	width: 250%;
 	top: -73%;
+	left: -72%
+}
+#main_class1{
+	position: absolute;
+	width: 250%;
+	top: -79%;
 	left: -72%
 }
 #english_background_1 img
@@ -11,7 +16,7 @@
 	position: absolute;
 	width: 100%;
 	height: auto;
-	top: -26%;
+	top: -18%;
 	left: 0%;
 }
 #english_background_2 img
@@ -19,7 +24,7 @@
 	position: absolute;
 	width: 100%;
 	height: auto;
-	top: -20%;
+	top: -12%;
 	left: 0%;
 }
 #english_background_3 img
@@ -27,7 +32,7 @@
 	position: absolute;
 	width:50%;
 	height: auto;
-	top: 40%;
+	top: 26%;
 	left: 5%;
 }
 #english_background_4 img
@@ -35,7 +40,7 @@
 	position: absolute;
 	width:50%;
 	height: auto;
-	top: 35%;
+	top: 16%;
 	left: 80%;
 }
 #english_background_5 img
@@ -43,7 +48,7 @@
 	position: absolute;
 	width: 100%;
 	height: auto;
-	top: 80%;
+	top: 37%;
 	left: 0%;
 }
 #main_class1 img

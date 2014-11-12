@@ -5,8 +5,12 @@ var itemOutAni = "flipOutY";
 
 $(document).ready(function(){
 		loadMenu();
+		loadMenu1();
 		$("#main_class").css({ 
-		"-webkit-transform":"translateZ(0) scale(0.4)",
+		"-webkit-transform":"scale(0.4)",
+		"-webkit-transition":"-webkit-transform 1s ease-out 0s",});
+		$("#main_class1").css({ 
+		"-webkit-transform":"scale(0.4)",
 		"-webkit-transition":"-webkit-transform 1s ease-out 0s",});
   });
   

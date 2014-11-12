@@ -1,6 +1,6 @@
-var text_1_big = false;
-var text_2_big = false;
-var text_3_big = false;
+var english_1_big = false;
+var english_2_big = false;
+var english_3_big = false;
 var japanese_1_big = false;
 var japanese_2_big = false;
 var japanese_3_big = false;
@@ -30,136 +30,166 @@ function unloadMenu1(){
 	},500 * $("#main_class1").children("div").size());
 }
 
-$(document).ready(function () {    
-	    $("#english_text_1").click(function () {
-	    	if (!text_1_big)
-	    	{
-		    	$("#main_class1").animate({width:'170%', top: '-10%', left: '-68%'}, "slow");
-		     	text_1_big = true;
-				text_2_big = false;
-				text_3_big = false;
-		     }
-		     else
-		     {
-		     	$("#main_class1").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
-		     	text_1_big = false;
-				text_2_big = false;
-				text_3_big = false;
-		     }
-		})
+$(document).ready(function () {   
+		$("#english_text_1").click(changeEnglishSubBlock1); 
+		$("#english_text_2").click(changeEnglishSubBlock2); 
+		$("#english_text_3").click(changeEnglishSubBlock3); 
 		
-		$("#english_text_2").click(function () {
-	    	if (!text_2_big)
-	    	{
-		    	$("#main_class1").animate({width:'170%', top: '-25%', left: '-7%'}, "slow");
-		     	text_1_big = false;
-				text_2_big = true;
-				text_3_big = false;
-		     }
-		     else
-		     {
-		     	$("#main_class1").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
-		     	text_1_big = false;
-				text_2_big = false;
-				text_3_big = false;
-		     }
-		})
-		
-		$("#english_text_3").click(function () {
-		if (!text_3_big)
-		{
-	    	$("#main_class1").animate({width:'170%', top: '-35%', left: '-60%'}, "slow");
-	     	text_1_big = false;
-			text_2_big = false;
-			text_3_big = true;
-	     }
-	     else
-	     {
-	     	$("#main_class1").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
-	     	text_1_big = false;
-			text_2_big = false;
-			text_3_big = false;
-	     }
-		})
-		
-		$("#japanese_block_1").click(changeSubBlock1);
-		$("#japanese_sub_block_1").click(changeSubBlock1);
-		$("#japanese_sub_text_1").click(changeSubBlock1);
-		$("#japanese_block_2").click(changeSubBlock2);
-		$("#japanese_sub_block_2").click(changeSubBlock2);
-		$("#japanese_sub_text_2").click(changeSubBlock2);
-		$("#japanese_block_3").click(changeSubBlock3);
-		$("#japanese_sub_block_3").click(changeSubBlock3);
-		$("#japanese_sub_text_3").click(changeSubBlock3);
-		$("#japanese_block_4").click(changeSubBlock4);
-		$("#japanese_sub_block_4").click(changeSubBlock4);
-		$("#japanese_sub_text_4").click(changeSubBlock4);
-		$("#japanese_block_5").click(changeSubBlock5);
-		$("#japanese_sub_block_5").click(changeSubBlock5);
-		$("#japanese_sub_text_5").click(changeSubBlock5);
+		$("#japanese_block_1").click(changeJapaneseSubBlock1);
+		$("#japanese_sub_block_1").click(changeJapaneseSubBlock1);
+		$("#japanese_sub_text_1").click(changeJapaneseSubBlock1);
+		$("#japanese_block_2").click(changeJapaneseSubBlock2);
+		$("#japanese_sub_block_2").click(changeJapaneseSubBlock2);
+		$("#japanese_sub_text_2").click(changeJapaneseSubBlock2);
+		$("#japanese_block_3").click(changeJapaneseSubBlock3);
+		$("#japanese_sub_block_3").click(changeJapaneseSubBlock3);
+		$("#japanese_sub_text_3").click(changeJapaneseSubBlock3);
+		$("#japanese_block_4").click(changeJapaneseSubBlock4);
+		$("#japanese_sub_block_4").click(changeJapaneseSubBlock4);
+		$("#japanese_sub_text_4").click(changeJapaneseSubBlock4);
+		$("#japanese_block_5").click(changeJapaneseSubBlock5);
+		$("#japanese_sub_block_5").click(changeJapaneseSubBlock5);
+		$("#japanese_sub_text_5").click(changeJapaneseSubBlock5);
 });
 
-function changeSubBlock1()
+function changeEnglishSubBlock1()
+{
+	if (!english_1_big)
+	{
+		zoomEnglishSubBlock1();
+	}
+	else
+	{
+		restoreEnglishMenu();
+	}
+}
+
+function changeEnglishSubBlock2()
+{
+	if (!english_2_big)
+	{
+		zoomEnglishSubBlock2();
+	}
+	else
+	{
+		restoreEnglishMenu();
+	}
+}
+
+function changeEnglishSubBlock3()
+{
+	if (!english_3_big)
+	{
+		zoomEnglishSubBlock3();
+	}
+	else
+	{
+		restoreEnglishMenu();
+	}
+}
+
+function zoomEnglishSubBlock1()
+{
+	$("#main_class1").css({ 
+		"-webkit-transform":"scale(1) translate(-18%, 19%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+ 	english_1_big = true;
+	english_2_big = false;
+	english_3_big = false;
+}
+
+function zoomEnglishSubBlock2()
+{
+	$("#main_class1").css({ 
+		"-webkit-transform":"scale(1) translate(8%, 11%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+ 	english_1_big = false;
+	english_2_big = true;
+	english_3_big = false;
+}
+
+function zoomEnglishSubBlock3()
+{
+	$("#main_class1").css({ 
+		"-webkit-transform":"scale(1) translate(-17%, 3%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+ 	english_1_big = false;
+	english_2_big = false;
+	english_3_big = true;
+}
+
+function restoreEnglishMenu()
+{
+	$("#main_class1").css({ 
+		"-webkit-transform":"scale(0.4) translate(0%, 0%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+	english_1_big = false;
+	english_2_big = false;
+	english_3_big = false;
+}
+
+
+function changeJapaneseSubBlock1()
 {
 	if (!japanese_1_big)
 	{
-		zoomSubBlock1();
-     }
-     else
-     {
-     restoreJapaneseMenu();
-     }
+		zoomJapaneseSubBlock1();
+	}
+	else
+	{
+		restoreJapaneseMenu();
+	}
 }
 
-function changeSubBlock2()
+function changeJapaneseSubBlock2()
 {
 	if (!japanese_2_big)
 	{
-		zoomSubBlock2();
-     }
-     else
-     {
-     restoreJapaneseMenu();
-     }
+		zoomJapaneseSubBlock2();
+	}
+	else
+	{
+		restoreJapaneseMenu();
+	}
 }
 
-function changeSubBlock3()
+function changeJapaneseSubBlock3()
 {
 	if (!japanese_3_big)
 	{
-		zoomSubBlock3();
-     }
-     else
-     {
-     restoreJapaneseMenu();
-     }
+		zoomJapaneseSubBlock3();
+	}
+	else
+	{
+		restoreJapaneseMenu();
+	}
 }
 
-function changeSubBlock4()
+function changeJapaneseSubBlock4()
 {
 	if (!japanese_4_big)
 	{
-		zoomSubBlock4();
-     }
-     else
-     {
-     restoreJapaneseMenu();
-     }
+		zoomJapaneseSubBlock4();
+	}
+	else
+	{
+		restoreJapaneseMenu();
+	}
 }
 
-function changeSubBlock5()
+function changeJapaneseSubBlock5()
 {
 	if (!japanese_5_big)
 	{
-		zoomSubBlock5();
-     }
-     else
-     {
-     restoreJapaneseMenu();
-     }
+		zoomJapaneseSubBlock5();
+	}
+	else
+	{
+		restoreJapaneseMenu();
+	}
 }
 
-function zoomSubBlock1()
+function zoomJapaneseSubBlock1()
 {
 	restoreJapaneseSubMenu();
 /*	$("#main_class").css({ 
@@ -189,7 +219,7 @@ function zoomSubBlock1()
 	japanese_5_big = false;
 }
 
-function zoomSubBlock2()
+function zoomJapaneseSubBlock2()
 {
 	restoreJapaneseSubMenu();
 /*	$("#main_class").css({ 
@@ -219,7 +249,7 @@ function zoomSubBlock2()
 	japanese_5_big = false;
 }
 
-function zoomSubBlock3()
+function zoomJapaneseSubBlock3()
 {
 	restoreJapaneseSubMenu();
 /*	$("#main_class").css({ 
@@ -249,7 +279,7 @@ function zoomSubBlock3()
 	japanese_5_big = false;
 }
 
-function zoomSubBlock4()
+function zoomJapaneseSubBlock4()
 {
 	restoreJapaneseSubMenu();
 /*	$("#main_class").css({ 
@@ -279,7 +309,7 @@ function zoomSubBlock4()
 	japanese_5_big = false;
 }
 
-function zoomSubBlock5()
+function zoomJapaneseSubBlock5()
 {
 	restoreJapaneseSubMenu();
 /*	$("#main_class").css({ 
