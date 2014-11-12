@@ -166,6 +166,7 @@ function zoomSubBlock1()
 		"width":"240%",
 		"top":"-28%",
 		"left":"-113%",
+		"-webkit-transform":"translateZ(0)",
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
 	$("#japanese_block_1").css({ 
     	"opacity":"0",
