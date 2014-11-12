@@ -175,7 +175,7 @@ function zoomSubBlock1()
 		"top":"-28%",
 		"left":"-113%",
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
-	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
+//	$("#main_class").animate({width:'240%', top: '-28%', left: '-113%'}, "slow");
 	$("#japanese_block_1").css({ 
     	"opacity":"0",
     	"-webkit-opacity":"0",
@@ -200,7 +200,12 @@ function zoomSubBlock1()
    
 function restoreJapaneseMenu()
 {
- 	$("#main_class").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
+	$("#main_class").css({ 
+		"width":"100%",
+		"top":"-5%",
+		"left":"0%",
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+// 	$("#main_class").animate({width:'100%', top: '-5%', left: '0%'}, "slow");
 	restoreJapaneseSubMenu();
 }
 
