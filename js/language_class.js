@@ -329,7 +329,7 @@ function restoreJapaneseSubMenu()
 	    $("#japanese_block_1").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 0s, -webkit-opacity 1s linear 0s",});	
+    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});	
  		$("#japanese_sub_block_1").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
@@ -344,7 +344,7 @@ function restoreJapaneseSubMenu()
     	$("#japanese_block_2").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 0s, -webkit-opacity 1s linear 0s",});
+    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
  		$("#japanese_sub_block_2").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
@@ -359,7 +359,7 @@ function restoreJapaneseSubMenu()
     	$("#japanese_block_3").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 0s, -webkit-opacity 1s linear 0s",});
+    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
  		$("#japanese_sub_block_3").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
@@ -374,7 +374,7 @@ function restoreJapaneseSubMenu()
     	$("#japanese_block_4").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 0s, -webkit-opacity 1s linear 0s",});
+    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
  		$("#japanese_sub_block_4").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
@@ -389,7 +389,7 @@ function restoreJapaneseSubMenu()
     	$("#japanese_block_5").css({ 
 	    	"opacity":"1",
 	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 1s linear 0s, -webkit-opacity 1s linear 0s",});
+    		"-webkit-transition":"opacity 1s linear 2s, -webkit-opacity 1s linear 2s",});
  		$("#japanese_sub_block_5").css({ 
  			"opacity":"0",
 	    	"-webkit-opacity":"0",     		
