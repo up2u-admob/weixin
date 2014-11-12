@@ -169,12 +169,7 @@ function zoomSubBlock1()
 		"-webkit-transform":"translateZ(0)",
 		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
 	$("#main_class").css({ 
-		//"top":"-28%",
-		//"left":"-113%",
-		"-webkit-transform":"translateZ(0) scale(2.4) translate(-17%, 20%)",
-		//"-webkit-transform":"scale(2.4), translateY(-28%)",
-		//"-webkit-transform":"translateX(-113%)",
-		//"-webkit-transform":"translateY(-28%)",
+		"-webkit-transform":"translateZ(0) scale(1) translate(-17%, 20%)",
 		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	$("#japanese_block_1").css({ 
     	"opacity":"0",
@@ -324,11 +319,14 @@ function zoomSubBlock5()
    
 function restoreJapaneseMenu()
 {
-	$("#main_class").css({ 
+	/*$("#main_class").css({ 
 		"width":"100%",
 		"top":"-5%",
 		"left":"0%",
-		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});
+		"-webkit-transition":"width 2s ease-out 0s, top 2s ease-out 0s, left 2s ease-out 0s",});*/
+	$("#main_class").css({ 
+		"-webkit-transform":"translateZ(0) scale(0.4) translate(0%, 0%)",
+		"-webkit-transition":"-webkit-transform 2s ease-out 0s",});
 	restoreJapaneseSubMenu();
 }
 

@@ -5,6 +5,9 @@ var itemOutAni = "flipOutY";
 
 $(document).ready(function(){
 		loadMenu();
+		$("#main_class").css({ 
+		"-webkit-transform":"translateZ(0) scale(0.4)",
+		"-webkit-transition":"-webkit-transform 1s ease-out 0s",});
   });
   
   $("#main_class img").click(function () {
