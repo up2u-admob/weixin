@@ -1,4 +1,4 @@
-var mainInAni = "fadeInLeft";
+var mainInAni = "fadeIn";
 var mainOutAni = "fadeOutLeft";
 var itemInAni = "flipInY";
 var itemOutAni = "flipOutY";
@@ -20,7 +20,7 @@ $(document).ready(function(){
   }
   function loadMenu(){
 		hideItems($("#main_class") , true);
-//		$("#m-mark").addClass("animated "+mainInAni);
+		$("#m-mark").addClass("animated "+mainInAni);
 		setTimeout(function(){
 			animaItems($("#main_class"), itemInAni);
 		},1000);
