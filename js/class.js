@@ -10,31 +10,6 @@ $(document).ready(function(){
 		"-webkit-transform-origin": "left top",
 		"-webkit-transition":"-webkit-transform 1s ease-out 0s",});
   });
-  
-  $("#main_class img").click(function () {
-		//remove animation, will not show next time when page load
-		$("#video_img").removeClass("animated bounceIn");
-			
-			//clicked button jump
-			var  _this = $(this);
-            _this.addClass("animated bounceIn");
-			
-			//get page url
-			var href = "index.html#"+this.alt;
-			
-			//nav button out after button jumped(200ms)
-			setTimeout(function(){
-				_this.removeClass("animated bounceIn");
-			    $(".main_nav img").addClass("animated fadeOutDown");
-			},200);
-			//locate to new page after 1200ms then button in animation start
-			setTimeout(function(){
-			    $(".main_nav img").removeClass("animated fadeOutDown");
-				location.href= href;
-				$(".main_nav img").addClass("animated fadeInUp");
-				teachermain_page_load();
-			},1200);
-        });
 		
   function removeAnimaMenu(){
 		$("#m-mark").removeClass("animated "+mainOutAni);
@@ -58,7 +33,7 @@ $(document).ready(function(){
   function hideItems(parent, hideOrNot){
 	var h = hideOrNot ? "hidden": "visible";
 	parent.children("div").each(function(i){
-		$(this).css("visibility", h);
+		$(this).css("visibility", "hidden");
 	});
   }
   function animaItems(parent, anima){
