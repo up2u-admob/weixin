@@ -5,84 +5,6 @@
 	top: -6%;
 	left: 0%;
 }
-#main_class1{
-	position: absolute;
-	width: 250%;
-	top: -6%;
-	left: 0%;
-}
-#english_background_1 img
-{
-	position: absolute;
-	width: 100%;
-	height: auto;
-	top: -18%;
-	left: 0%;
-}
-#english_background_2 img
-{
-	position: absolute;
-	width: 100%;
-	height: auto;
-	top: -12%;
-	left: 0%;
-}
-#english_background_3 img
-{
-	position: absolute;
-	width:50%;
-	height: auto;
-	top: 26%;
-	left: 5%;
-}
-#english_background_4 img
-{
-	position: absolute;
-	width:50%;
-	height: auto;
-	top: 16%;
-	left: 80%;
-}
-#english_background_5 img
-{
-	position: absolute;
-	width: 100%;
-	height: auto;
-	top: 37%;
-	left: 0%;
-}
-#main_class1 img
-{
-	position: absolute;
-	width:77%;
-	height: auto;
-	top: 12%;
-	left: 15%;
-}
-#english_text_1
-{
-	position: absolute;
-	width: 32%;
-	height: auto;
-	top: 20.5%;
-	left: 54%;
-}
-#english_text_2
-{
-	position: absolute;
-	width: 32%;
-	height: auto;
-	top: 29.5%;
-	left: 18.5%;
-}
-#english_text_3
-{
-	position: absolute;
-	width: 32%;
-	height: auto;
-	top: 40%;
-	left: 53%;
-}
 #japanese_title img
 {
 	position: absolute;
@@ -239,14 +161,3 @@
 	opacity:0;
 	-webkit-opacity:0;
 }
-.subpageNsubN{
-	position: absolute;
-	width: 100%;
-}
-.subpageNsubN img{
-  	position: absolute;
-    width: 100%;
-    height: auto;
-    top: 30%;
-    left: 0%;
-  }

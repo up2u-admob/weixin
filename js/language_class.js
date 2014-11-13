@@ -1,6 +1,3 @@
-var english_1_big = false;
-var english_2_big = false;
-var english_3_big = false;
 var japanese_1_big = false;
 var japanese_2_big = false;
 var japanese_3_big = false;
@@ -9,31 +6,9 @@ var japanese_5_big = false;
 
 var isTouch = ('ontouchstart' in window);
 
-mainInAni = "flipIn";
-mainOutAni = "flipOut";
-itemInAni = "fadeIn";
-itemOutAni = "fadeOut";
-		
-function removeAnimaMenu1(){
-	$("#m-mark1").removeClass("animated "+mainOutAni);
-	removeAnimaItems($("#main_class1"), itemInAni);
-}
-function loadMenu1(){
-	hideItems($("#main_class1") , true);
-	$("#m-mark1").addClass("animated "+mainInAni);
-	setTimeout(function(){
-		animaItems($("#main_class1"), itemInAni);
-		},1000);
-}
-function unloadMenu1(){
-	animaItems($("#main_class1"), itemOutAni);
-	setTimeout(function(){
-		$("#m-mark1").addClass("animated "+mainOutAni);
-	},500 * $("#main_class1").children("div").size());
-}
 
 $(document).ready(function () {   
-/*		$("#main_class1").bind({
+/*		$("#main_class").bind({
 		    'touchstart mousedown': function(e) {
 		        e.preventDefault();
 		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
@@ -62,10 +37,6 @@ $(document).ready(function () {
 		        this.touched = false;
 		    }
 		});*/
-
-		$("#english_text_1").click(changeEnglishSubBlock1); 
-		$("#english_text_2").click(changeEnglishSubBlock2); 
-		$("#english_text_3").click(changeEnglishSubBlock3); 
 		
 		$("#japanese_block_1").click(changeJapaneseSubBlock1);
 		$("#japanese_sub_block_1").click(changeJapaneseSubBlock1);
@@ -84,81 +55,6 @@ $(document).ready(function () {
 		$("#japanese_sub_text_5").click(changeJapaneseSubBlock5);
 });
 
-function changeEnglishSubBlock1()
-{
-	if (!english_1_big)
-	{
-		zoomEnglishSubBlock1();
-	}
-	else
-	{
-		restoreEnglishMenu();
-	}
-}
-
-function changeEnglishSubBlock2()
-{
-	if (!english_2_big)
-	{
-		zoomEnglishSubBlock2();
-	}
-	else
-	{
-		restoreEnglishMenu();
-	}
-}
-
-function changeEnglishSubBlock3()
-{
-	if (!english_3_big)
-	{
-		zoomEnglishSubBlock3();
-	}
-	else
-	{
-		restoreEnglishMenu();
-	}
-}
-
-function zoomEnglishSubBlock1()
-{
-	$("#main_class1").css({ 
-		"-webkit-transform":"scale(1) translate(-47%, -12%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
- 	english_1_big = true;
-	english_2_big = false;
-	english_3_big = false;
-}
-
-function zoomEnglishSubBlock2()
-{
-	$("#main_class1").css({ 
-		"-webkit-transform":"scale(1) translate(-20%, -17%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
- 	english_1_big = false;
-	english_2_big = true;
-	english_3_big = false;
-}
-
-function zoomEnglishSubBlock3()
-{
-	$("#main_class1").css({ 
-		"-webkit-transform":"scale(1) translate(-47%, -27%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
- 	english_1_big = false;
-	english_2_big = false;
-	english_3_big = true;
-}
-
-function restoreEnglishMenu()
-{
-	$("#main_class1").css({ 
-		"-webkit-transform":"scale(0.4) translate(0%, 0%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
-	english_1_big = false;
-	english_2_big = false;
-	english_3_big = false;
-}
 
 
 function changeJapaneseSubBlock1()
