@@ -4,7 +4,7 @@ var itemInAni = "flipInY";
 var itemOutAni = "flipOutY";
 
 $(document).ready(function(){
-		//loadMenu();
+		loadMenu();
 		$("#main_class").css({ 
 		"-webkit-transform":"scale(0.4)",
 		"-moz-transform":"scale(0.4)",
