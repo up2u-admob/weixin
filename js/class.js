@@ -1,4 +1,4 @@
-var mainInAni = "fadeIn";
+var mainInAni = "fadeInRight";
 var mainOutAni = "fadeOutLeft";
 var itemInAni = "flipInY";
 var itemOutAni = "flipOutY";
