@@ -4,7 +4,7 @@ var itemInAni = "flipInY";
 var itemOutAni = "flipOutY";
 
 $(document).ready(function(){
-		//loadMenu();
+		loadMenu();
 		$("#main_class").css({ 
 		"-webkit-transform":"scale(0.4)",
 		"-moz-transform":"scale(0.4)",
@@ -34,7 +34,7 @@ $(document).ready(function(){
   function hideItems(parent, hideOrNot){
 	var h = hideOrNot ? "hidden": "visible";
 	parent.children("div").each(function(i){
-		$(this).css("visibility", "hidden");
+		$(this).css("visibility", h);
 	});
   }
   function animaItems(parent, anima){
