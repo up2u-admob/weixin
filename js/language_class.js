@@ -127,19 +127,24 @@ function zoomJapaneseSubBlock1()
 		"-webkit-transition":"width 1s linear 0s, top 1s linear 0s, left 1s linear 0s",});*/
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-47%, -11%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-47%, -11%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
 	$("#japanese_block_1").css({ 
-    	"opacity":"0",
-    	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 1s linear 1s",});	     	
+    	"-webkit-opacity":"0",
+    	"-moz-opacity":"0",
+    	"-webkit-transition":"-webkit-opacity 1s linear 1s",
+    	"-moz-transition":"-moz-opacity 1s linear 1s",});	     	
 	$("#japanese_sub_block_1").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
 	$("#japanese_sub_text_1").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  	japanese_1_big = true;
 	japanese_2_big = false;
 	japanese_3_big = false;
@@ -157,19 +162,24 @@ function zoomJapaneseSubBlock2()
 		"-webkit-transition":"width 1s linear 0s, top 1s linear 0s, left 1s linear 0s",});*/
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-5%, -24%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-5%, -24%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
 	$("#japanese_block_2").css({ 
-    	"opacity":"0",
-    	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});		     	
+    	"-webkit-opacity":"0",
+    	"-moz-opacity":"0",
+    	"-webkit-transition":"-webkit-opacity 1s linear 1s",
+    	"-moz-transition":"-moz-opacity 1s linear 1s",});	  	     	
 	$("#japanese_sub_block_2").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});	
 	$("#japanese_sub_text_2").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  	japanese_1_big = false;
 	japanese_2_big = true;
 	japanese_3_big = false;
@@ -187,19 +197,24 @@ function zoomJapaneseSubBlock3()
 		"-webkit-transition":"width 1s linear 0s, top 1s linear 0s, left 1s linear 0s",});*/
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-55%, -22%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-55%, -22%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
 	$("#japanese_block_3").css({ 
-    	"opacity":"0",
-    	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});	     	
+    	"-webkit-opacity":"0",
+    	"-moz-opacity":"0",
+    	"-webkit-transition":"-webkit-opacity 1s linear 1s",
+    	"-moz-transition":"-moz-opacity 1s linear 1s",});	      	
 	$("#japanese_sub_block_3").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
 	$("#japanese_sub_text_3").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  	japanese_1_big = false;
 	japanese_2_big = false;
 	japanese_3_big = true;
@@ -217,19 +232,24 @@ function zoomJapaneseSubBlock4()
 		"-webkit-transition":"width 1s linear 0s, top 1s linear 0s, left 1s linear 0s",});*/
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-11%, -39%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-11%, -39%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-webkit-transform 1s linear 0s",});
 	$("#japanese_block_4").css({ 
-    	"opacity":"0",
-    	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});	 	
+    	"-webkit-opacity":"0",
+    	"-moz-opacity":"0",
+    	"-webkit-transition":"-webkit-opacity 1s linear 1s",
+    	"-moz-transition":"-moz-opacity 1s linear 1s",});	    
 	$("#japanese_sub_block_4").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
 	$("#japanese_sub_text_4").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  	japanese_1_big = false;
 	japanese_2_big = false;
 	japanese_3_big = false;
@@ -247,19 +267,24 @@ function zoomJapaneseSubBlock5()
 		"-webkit-transition":"width 1s linear 0s, top 1s linear 0s, left 1s linear 0s",});*/
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-52%, -38%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-52%, -38%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
 	$("#japanese_block_5").css({ 
-    	"opacity":"0",
-    	"-webkit-opacity":"0",    	
-    	"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});	     	
+    	"-webkit-opacity":"0",
+    	"-moz-opacity":"0",
+    	"-webkit-transition":"-webkit-opacity 1s linear 1s",
+    	"-moz-transition":"-moz-opacity 1s linear 1s",});	        	
 	$("#japanese_sub_block_5").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
 	$("#japanese_sub_text_5").css({ 
-		"opacity":"1",
-    	"-webkit-opacity":"1",    	
-    	"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+		"-webkit-opacity":"1",
+    	"-moz-opacity":"1",    	
+    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  	japanese_1_big = false;
 	japanese_2_big = false;
 	japanese_3_big = false;
@@ -276,7 +301,9 @@ function restoreJapaneseMenu()
 		"-webkit-transition":"width 1s linear 0s, top 1s linear 0s, left 1s linear 0s",});*/
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(0.4) translate(0%, 0%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(0.4) translate(0%, 0%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
 	restoreJapaneseSubMenu();
 }
 
@@ -285,77 +312,92 @@ function restoreJapaneseSubMenu()
 	if (japanese_1_big)
     {
 	    $("#japanese_block_1").css({ 
-	    	"opacity":"1",
-	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});	
+	    	"-webkit-opacity":"1",
+	    	"-moz-opacity":"1",    	
+	    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+	    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_1").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_1").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
     }
     else if(japanese_2_big)
     {
     	$("#japanese_block_2").css({ 
-	    	"opacity":"1",
-	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
+	    	"-webkit-opacity":"1",
+	    	"-moz-opacity":"1",    	
+	    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+	    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_2").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_2").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
     }
     else if(japanese_3_big)
     {
     	$("#japanese_block_3").css({ 
-	    	"opacity":"1",
-	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
+	    	"-webkit-opacity":"1",
+	    	"-moz-opacity":"1",    	
+	    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+	    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_3").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_3").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
     }
     else if(japanese_4_big)
     {
     	$("#japanese_block_4").css({ 
-	    	"opacity":"1",
-	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
+	    	"-webkit-opacity":"1",
+	    	"-moz-opacity":"1",    	
+	    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+	    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_4").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_4").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
     }
     else if(japanese_5_big)
     {
     	$("#japanese_block_5").css({ 
-	    	"opacity":"1",
-	    	"-webkit-opacity":"1",     		
-    		"-webkit-transition":"opacity 0.5s linear 1.5s, -webkit-opacity 0.5s linear 1.5s",});
+	    	"-webkit-opacity":"1",
+	    	"-moz-opacity":"1",    	
+	    	"-webkit-transition":"-webkit-opacity 0.5s linear 1.5s",
+	    	"-moz-transition":"-moz-opacity 0.5s linear 1.5s",});
  		$("#japanese_sub_block_5").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
  		$("#japanese_sub_text_5").css({ 
- 			"opacity":"0",
-	    	"-webkit-opacity":"0",     		
-    		"-webkit-transition":"opacity 0.5s linear 1s, -webkit-opacity 0.5s linear 1s",});
+ 			"-webkit-opacity":"0",
+	    	"-moz-opacity":"0",     		
+    		"-webkit-transition":"-webkit-opacity 0.5s linear 1s",
+    		"-moz-transition":"-moz-opacity 0.5s linear 1s",});
     }
  	japanese_1_big = false;
 	japanese_2_big = false;

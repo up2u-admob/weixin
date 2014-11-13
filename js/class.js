@@ -7,8 +7,11 @@ $(document).ready(function(){
 		loadMenu();
 		$("#main_class").css({ 
 		"-webkit-transform":"scale(0.4)",
+		"-moz-transform":"scale(0.4)",
 		"-webkit-transform-origin": "left top",
-		"-webkit-transition":"-webkit-transform 1s ease-out 0s",});
+		"-moz-transform-origin": "left top",
+		"-webkit-transition":"-webkit-transform 1s ease-out 0s",
+		"-moz-transition":"-moz-transform 1s ease-out 0s",});
   });
 		
   function removeAnimaMenu(){

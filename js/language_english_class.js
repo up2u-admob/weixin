@@ -85,7 +85,9 @@ function zoomEnglishSubBlock1()
 {
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-47%, -12%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-47%, -12%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
  	english_1_big = true;
 	english_2_big = false;
 	english_3_big = false;
@@ -95,7 +97,9 @@ function zoomEnglishSubBlock2()
 {
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-20%, -17%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-20%, -17%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
  	english_1_big = false;
 	english_2_big = true;
 	english_3_big = false;
@@ -105,7 +109,9 @@ function zoomEnglishSubBlock3()
 {
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(1) translate(-47%, -27%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(1) translate(-47%, -27%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
  	english_1_big = false;
 	english_2_big = false;
 	english_3_big = true;
@@ -115,7 +121,9 @@ function restoreEnglishMenu()
 {
 	$("#main_class").css({ 
 		"-webkit-transform":"scale(0.4) translate(0%, 0%)",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",});
+		"-moz-transform":"scale(0.4) translate(0%, 0%)",
+		"-webkit-transition":"-webkit-transform 1s linear 0s",
+		"-moz-transition":"-moz-transform 1s linear 0s",});
 	english_1_big = false;
 	english_2_big = false;
 	english_3_big = false;
