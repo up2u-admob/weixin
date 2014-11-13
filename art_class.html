@@ -18,8 +18,8 @@
 
 <body>
 	<div data-role="page" id="page" data-add-back-btn="true">
-		<div data-role="content" style="background:url('img/class/art/transparent.png') no-repeat; background-size:100%; width:100%;height:auto; z-index: 0; overflow:hidden;">
-			<div data-role="header" data-theme="c">
+		<div data-role="content" style="background:url('img/class/art/transparent.png') no-repeat; background-size:100%; width:100%;height:auto; overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
                 <a href="index.html#class_main" data-role="button" rel="external">返回</a>
 				<h1>美术类课程</h1>
 				<a href="index.html" data-icon="home" rel="external">主页</a>
@@ -27,22 +27,20 @@
 			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
 			<div id="main_class">
 				<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-				<a href="#subpage1"  data-transition="flip">
-					<img id="m-mark" src="img/class/art/1_n.png"></img>
-					<div class="ani" id="smalldot"><img src="img/class/art/1-2.png"></img></div>			
-					<div class="ani" id="text1"><img src="img/class/art/2.png"></img></div>
-					<div class="ani" id="text2"><img src="img/class/art/4.png"></img></div>
-					<div class="ani" id="text3"><img src="img/class/art/6.png"></img></div>
-					<div class="ani" id="text4"><img src="img/class/art/5.png"></img></div>
-					<div class="ani" id="text5"><img src="img/class/art/3.png"></img></div>
-				</a>
+				<a href="#subpage1"  data-transition="flip"><img id="m-mark" src="img/class/art/1_n.png"></a></img>
+				<div class="ani" id="text1"><a href="#subpage1"  data-transition="flip"><img src="img/class/art/2.png"></img></a></div>
+				<div class="ani" id="text2"><a href="#subpage1"  data-transition="flip"><img src="img/class/art/4.png"></img></a></div>
+				<div class="ani" id="text3"><a href="#subpage1"  data-transition="flip"><img src="img/class/art/6.png"></img></a></div>
+				<div class="ani" id="text4"><a href="#subpage1"  data-transition="flip"><img src="img/class/art/5.png"></img></a></div>
+				<div class="ani" id="text5"><a href="#subpage1"  data-transition="flip"><img src="img/class/art/3.png"></img></a></div>	
+				<div class="ani" id="smalldot"><a href="#subpage1"  data-transition="flip"><img src="img/class/art/1-2.png"></img></a></div>			
 			</div>
 		</div>
 	</div>
 	
 	<div data-role="page" id="subpage1" data-add-back-btn="true">	
-		<div data-role="content" style="background:url('img/class/art/1_s.jpg') no-repeat; background-size:100%; height:auto; z-index: 0;">
-			<div data-role="header" data-theme="c">
+		<div data-role="content" style="background:url('img/class/art/1_s.jpg') no-repeat; background-size:100%; height:auto;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
 				<a href="#page" data-role="button"  data-transition="pop">返回</a>
 				<h1>学部专攻课程</h1>
 				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
@@ -54,8 +52,8 @@
 	</div>
 	
 	<div data-role="page" id="subpage2" data-add-back-btn="true">	
-		<div data-role="content" style="background:url('img/class/art/1_t.jpg') no-repeat; background-size:100%; height:auto z-index: 0;">
-			<div data-role="header" data-theme="c">
+		<div data-role="content" style="background:url('img/class/art/1_t.jpg') no-repeat; background-size:100%; height:auto;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
 				<a href="#page" data-role="button"  data-transition="pop">返回</a>
 				<h1>大学院专攻课程</h1>
 				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
