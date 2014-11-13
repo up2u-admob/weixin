@@ -8,7 +8,7 @@ var isTouch = ('ontouchstart' in window);
 
 
 $(document).ready(function () {   
-		$("#main_class").bind({
+/*		$("#main_class").bind({
 		    'touchstart mousedown': function(e) {
 		        e.preventDefault();
 		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
@@ -36,7 +36,7 @@ $(document).ready(function () {
 		        }
 		        this.touched = false;
 		    }
-		});
+		});*/
 		
 		$("#japanese_block_1").click(changeJapaneseSubBlock1);
 		$("#japanese_sub_block_1").click(changeJapaneseSubBlock1);
