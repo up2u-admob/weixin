@@ -26,33 +26,4 @@ $(document).ready(function () {
 		$.mobile.changePage("#subpage1", {transition:"flip"});
 	}); 
 	
-	$("#art_page").bind({
-		    'touchstart mousedown': function(e) {
-		        e.preventDefault();
-		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
-		        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
-		        this.left = parseInt($(this).css('left'));
-		        this.top = parseInt($(this).css('top'));
-		         
-		        this.touched = true;
-		    },
-		    'touchmove mousemove': function(e) {
-		        if (!this.touched) {
-		            return;
-		        }
-		        e.preventDefault();
-		        //alert($(this).css('left'));
-		        this.left = this.left - (this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX) );
-		        this.top = this.top - (this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY) );
-		        $(this).css({'left':this.left, 'top':this.top});
-		        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
-		        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
-		    },
-		    'touchend mouseup': function(e) {
-		        if (!this.touched) {
-		            return;
-		        }
-		        this.touched = false;
-		    }
-		});
 });
