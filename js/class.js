@@ -24,8 +24,6 @@ $(document).ready(function(){
 		setTimeout(function(){
 			animaItems($("#main_class"), itemInAni);
 		},1000);
-
-		
   }
   function unloadMenu(){
 	animaItems($("#main_class"), itemOutAni);
