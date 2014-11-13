@@ -20,10 +20,10 @@ $(document).ready(function(){
   }
   function loadMenu(){
 		hideItems($("#main_class") , true);
-		$("#m-mark").addClass("animated "+mainInAni);
-//		setTimeout(function(){
-//			animaItems($("#main_class"), itemInAni);
-//		},1000);
+//		$("#m-mark").addClass("animated "+mainInAni);
+		setTimeout(function(){
+			animaItems($("#main_class"), itemInAni);
+		},1000);
   }
   function unloadMenu(){
 	animaItems($("#main_class"), itemOutAni);
