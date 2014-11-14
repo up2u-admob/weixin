@@ -37,7 +37,7 @@ $(document).ready(function () {
 	        if (Math.abs(deltaY) > 15)
 	        {
 	        console.log(deltaY);
-	        	delta = delta + deltaY / Math.abs(deltaY) * 5;
+	        	delta = delta + deltaY / Math.abs(deltaY) * 20;
 		        rotateMMark(delta);
 		        showSubBlock(delta);
 		    }
