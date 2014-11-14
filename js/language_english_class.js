@@ -4,10 +4,10 @@ var english_3_big = false;
 
 var isTouch = ('ontouchstart' in window);
 
-mainInAni = "flipIn";
+mainInAni = "zoomIn";
 mainOutAni = "flipOut";
-itemInAni = "fadeIn";
-itemOutAni = "fadeOut";
+itemInAni = "flipInX";
+itemOutAni = "flipOutX";
 		
 $(document).ready(function () {   
 /*		$("#main_class").bind({

@@ -10,8 +10,8 @@
   	position: absolute;
     width: 52%;
     height: auto;
-    top: 25%;
-    left: 25%;
+    top: 0%;
+    left: 0%;
 }
 
 #m-mark {
@@ -19,38 +19,90 @@
     width: 100%;
     height: auto;
     top: 25%;
-    left: 0%;
+    left: 24%;
 }
   
-#sub1{
-  	position: absolute;
-    width: 32%;
-    height: auto;
-    top: 20%;
-    left: 0%;
+#title1{
+	position: absolute;
+	top: 17%;
+	left: 5%;
+	width: 34%;
+	height: auto;
 }
-#sub1 img, #sub2 img, #sub3 img, #sub4 img{
-  	position:relative;
-  	top: 5%;
+#title2{
+	position: absolute;
+	top: 14%;
+	left: 71%;
+	width: 34%;
+	height: auto;
 }
-#sub2{
-  	position: absolute;
-    width: 42%;
-    height: auto;
-    top: 14%;
-    left: 56%;
+#title3{
+	position: absolute;
+	top: 51%;
+	left: 77%;
+	width: 34%;
+	height: auto;
 }
-#sub3{
-  	position: absolute;
-    width: 39%;
-    height: auto;
-    top: 50%;
-    left: 64%;
+#title4{
+	position: absolute;
+	top: 55%;
+	left: 17%;
+	width: 34%;
+	height: auto;
 }
-#sub4{
-  	position: absolute;
-    width: 40%;
-    height: auto;
-    top: 51%;
-    left: 4.5%;
+#text1{
+	position: absolute;
+	top: 23%;
+	left: 5%;
+	width: 39%;
+	height: auto;
+}
+#text2{
+	position: absolute;
+	top: 19%;
+	left: 71%;
+	width: 40%;
+	height: auto;
+}
+#text3{
+	position: absolute;
+	top: 56%;
+	left: 77%;
+	width: 39%;
+	height: auto;
+}
+#text4{
+	position: absolute;
+	top: 60%;
+	left: 17%;
+	width: 38%;
+	height: auto;
+}
+#dot1{
+	position: absolute;
+	top: 31%;
+	left: 13%;
+	width: 22%;
+	height: auto;
+}
+#dot2{
+	position: absolute;
+	top: 21%;
+	left: 58%;
+	width:22%;
+	height: auto;
+}
+#dot3{
+	position: absolute;
+	top: 44%;
+	left: 75%;
+	width: 13%;
+	height: auto;
+}
+#dot4{
+	position: absolute;
+	top: 53%;
+	left: 30%;
+	width: 21%;
+	height: auto;
 }

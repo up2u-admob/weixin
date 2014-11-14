@@ -10,8 +10,8 @@ $(document).ready(function(){
 		"-moz-transform":"scale(0.4)",
 		"-webkit-transform-origin": "left top",
 		"-moz-transform-origin": "left top",
-		"-webkit-transition":"-webkit-transform 1s ease-out 0s",
-		"-moz-transition":"-moz-transform 1s ease-out 0s",});
+		"-webkit-transition":"-webkit-transform 0s ease-out 0s",
+		"-moz-transition":"-moz-transform 0s ease-out 0s",});
   });
 		
   function removeAnimaMenu(){
@@ -33,20 +33,38 @@ $(document).ready(function(){
   }
   function hideItems(parent, hideOrNot){
 	var h = hideOrNot ? "hidden": "visible";
-	parent.children("div").each(function(i){
+	parent.children(".ani").each(function(i){
+		$(this).css("visibility", h);
+	});
+	parent.children(".noani").each(function(i){
 		$(this).css("visibility", h);
 	});
   }
   function animaItems(parent, anima){
 	parent.children(".ani").each(function(i){
 		var child = $(this);
-		setTimeout(function(){
-			child.css("visibility", "visible");
-			child.addClass("animated "+anima);
+		if(child.children(".ani").size() > 0){
+			child.children(".ani").each(function(){
+				var grandchild = $(this);
+				setTimeout(function(){
+					grandchild.css("visibility", "visible");
+					grandchild.addClass("animated "+anima);
+					setTimeout(function(){
+						grandchild.removeClass("animated "+anima);
+					},300);
+				},500 * i);
+			});
+		}
+		else{
 			setTimeout(function(){
-				child.removeClass("animated "+anima);
-			},300);
-		},500 * i);
+				child.css("visibility", "visible");
+				child.addClass("animated "+anima);
+				setTimeout(function(){
+					child.removeClass("animated "+anima);
+				},300);
+			},500 * i);
+		}
+		
 	});
 	parent.children(".noani").each(function(i){
 		var child = $(this);
