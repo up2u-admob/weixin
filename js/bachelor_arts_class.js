@@ -71,7 +71,8 @@ function changeSubBlock(degree)
 		moveSubBlock(2, 1, "-375%, 340%", "-318%, 229%");
 		moveSubBlock(3, 1, "-407%, -459%", "-355%, -197%");
 		moveSubBlock(4, 1, "-67%, -538%", "-61%, -253%");
-		setDotVisibility(1, "0", 1);
+		setDotVisibility(1, "0", 0);
+		setDotVisibility(1, "1", 1);
 		setDotVisibility(2, "0", 1);
 		setDotVisibility(3, "0", 1);
 		setDotVisibility(4, "0", 1);
@@ -95,53 +96,49 @@ function showSubBlock(degree)
 	{
 		if (cur_sub != 1)
 		{
-			setDotVisibility(1, "0", 1);
-			setDotVisibility(1, "1", 1, 5);
+			setDotVisiility1to0to1(1);
 			cur_sub = 1;
+			setSubBlockVisibility(1, "1", 1, 1);
+			setSubBlockVisibility(2, "0", 1);
+			setSubBlockVisibility(3, "0", 1);
+			setSubBlockVisibility(4, "0", 1);
 		}
-		setSubBlockVisibility(1, "1", 1, 1);
-		setSubBlockVisibility(2, "0", 1);
-		setSubBlockVisibility(3, "0", 1);
-		setSubBlockVisibility(4, "0", 1);
 	}
-	if (((degree-5) % 360 > 180) && ((degree-5) % 360 <= 270))//2
+	else if (((degree-5) % 360 > 180) && ((degree-5) % 360 <= 270))//2
 	{
 		if (cur_sub != 2)
 		{
-			setDotVisibility(1, "0", 1);
-			setDotVisibility(1, "1", 1, 5);
+			setDotVisiility1to0to1(1);
 			cur_sub = 2;
+			setSubBlockVisibility(1, "0", 1);
+			setSubBlockVisibility(2, "1", 1, 1);
+			setSubBlockVisibility(3, "0", 1);
+			setSubBlockVisibility(4, "0", 1);
 		}
-		setSubBlockVisibility(1, "0", 1);
-		setSubBlockVisibility(2, "1", 1, 1);
-		setSubBlockVisibility(3, "0", 1);
-		setSubBlockVisibility(4, "0", 1);
 	}
-	if (((degree-5) % 360 > 90) && ((degree-5) % 360 <= 180))//3
+	else if (((degree-5) % 360 > 90) && ((degree-5) % 360 <= 180))//3
 	{
 		if (cur_sub != 3)
 		{
-			setDotVisibility(1, "0", 1);
-			setDotVisibility(1, "1", 1, 5);
+			setDotVisiility1to0to1(1);
 			cur_sub = 3;
+			setSubBlockVisibility(1, "0", 1);
+			setSubBlockVisibility(2, "0", 1);
+			setSubBlockVisibility(3, "1", 1, 1);
+			setSubBlockVisibility(4, "0", 1);
 		}
-		setSubBlockVisibility(1, "0", 1);
-		setSubBlockVisibility(2, "0", 1);
-		setSubBlockVisibility(3, "1", 1, 1);
-		setSubBlockVisibility(4, "0", 1);
 	}
-	if (((degree-5) % 360 > 00) && ((degree-5) % 360 <= 90))//4
+	else if (((degree-5) % 360 > 00) && ((degree-5) % 360 <= 90))//4
 	{
 		if (cur_sub != 4)
 		{
-			setDotVisibility(1, "0", 1);
-			setDotVisibility(1, "1", 1, 5);
+			setDotVisiility1to0to1(1);
 			cur_sub = 4;
+			setSubBlockVisibility(1, "0", 1);
+			setSubBlockVisibility(2, "0", 1);
+			setSubBlockVisibility(3, "0", 1);
+			setSubBlockVisibility(4, "1", 1, 1);
 		}
-		setSubBlockVisibility(1, "0", 1);
-		setSubBlockVisibility(2, "0", 1);
-		setSubBlockVisibility(3, "0", 1);
-		setSubBlockVisibility(4, "1", 1, 1);
 	}
 	sub_big = true;
 }
@@ -188,14 +185,23 @@ function setSubBlockVisibility(subNumber, opa, aniTime, startTime)
 		"-moz-transition":"-moz-opacity "+ aniTime +"s linear " + startTime + "s",});	
 }
 
-function setDotVisibility(subNumber,opa, aniTime, startTime)
+function setDotVisiility1to0to1(subNumber)
+{
+console.log("aaaaaaaa");
+	subNumber = arguments[0] ? arguments[0] : 1;
+	$("#dot"+subNumber).addClass("dotVisiility1to0to1");
+	setTimeout(function(){
+		$("#dot"+subNumber).removeClass("dotVisiility1to0to1");
+	},2000);
+}
+
+function setDotVisibility(subNumber, opa, aniTime, startTime)
 {
 	subNumber = arguments[0] ? arguments[0] : 1;
 	opa = arguments[1] ? arguments[1] : "1";
 	aniTime = arguments[2] ? arguments[2] : 0;
 	startTime = arguments[3] ? arguments[3] : 0;
-console.log("subNumber"+subNumber + " opa" + opa + " aniTime" + aniTime + " startTime"+startTime);
-	$("#dot"+subNumber+" img").css({ 
+	$("#dot"+subNumber).css({ 
 		"-webkit-opacity": opa,
 		"-moz-opacity": opa,
 		"-webkit-transition":"-webkit-opacity "+ aniTime +"s linear " + startTime + "s",
@@ -219,6 +225,7 @@ function restore()
 	setDotVisibility(3, "1");
 	setDotVisibility(4, "1");
 	sub_big = false;
+	cur_sub = 0;
 }
 
 function rotateMMark(rotateParameter)
