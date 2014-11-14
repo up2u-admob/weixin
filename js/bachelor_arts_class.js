@@ -34,13 +34,14 @@ $(document).ready(function () {
 	        this.top = this.top - (this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY) );
 	        deltaX = this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        deltaY = this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY);
-	        if (Math.abs(deltaY) > 10)
+	        if (Math.abs(deltaY) > 15)
 	        {
-	        	delta = delta + deltaY / Math.abs(deltaY) * 3;
+	        console.log(deltaY);
+	        	delta = delta + deltaY / Math.abs(deltaY) * 5;
 		        rotateMMark(delta);
 		        showSubBlock(delta);
 		    }
-/*			if (deltaY > 1)
+/*			if (deltaY > 30)
 			{
 				sub_big = false;
 				switch (cur_sub)
@@ -61,7 +62,7 @@ $(document).ready(function () {
 						break;
 				}
 			}
-			else if (deltaY < -1)
+			else if (deltaY < -30)
 			{
 				sub_big = false;
 				switch (cur_sub)
