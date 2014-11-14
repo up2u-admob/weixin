@@ -1,5 +1,6 @@
 var sub_big = false;
-var delta = 0;
+var delta = 320;
+var cur_sub = 0;
 
 var isTouch = ('ontouchstart' in window);
 
@@ -18,9 +19,10 @@ $(document).ready(function () {
 	        this.top = parseInt($(this).css('top'));
 	         
 	        this.touched = true;
-	        zoomMainClass("1", "-3%, -24%");
-	        showSubBlock(delta);
-	        sub_big = true;
+	        if (!sub_big)
+	        {
+	        	changeSubBlock(delta);
+	        }
 	    },
 	    'touchmove mousemove': function(e) {
 	        if (!this.touched) {
@@ -35,7 +37,7 @@ $(document).ready(function () {
 	        if (Math.abs(deltaY) > 1)
 	        {
 	        	//console.log(deltaY);
-	        	delta = delta + deltaY / Math.abs(deltaY);
+	        	delta = delta + deltaY / Math.abs(deltaY) * 3;
 		        rotateMMark(delta);
 		        showSubBlock(delta);
 		    }
@@ -64,10 +66,17 @@ function changeSubBlock(degree)
 {
 	if (!sub_big)
 	{
-		delta = degree;
-		rotateMMark(delta);
 		zoomMainClass("1", "-3%, -24%");
-	 	sub_big = true;
+		moveSubBlock(1, 1, "0%, 196%", "0%, 176%");
+		moveSubBlock(2, 1, "-375%, 340%", "-318%, 229%");
+		moveSubBlock(3, 1, "-407%, -459%", "-355%, -197%");
+		moveSubBlock(4, 1, "-67%, -538%", "-61%, -253%");
+		setDotVisibility(1, "0", 1);
+		setDotVisibility(2, "0", 1);
+		setDotVisibility(3, "0", 1);
+		setDotVisibility(4, "0", 1);
+		rotateMMark(degree);
+		showSubBlock(degree);	 	
 	}
 	else
 	{
@@ -81,22 +90,60 @@ function showSubBlock(degree)
 	{
 		degree = degree + 360;
 	}
+
 	if (((degree-5) % 360 > 270) && ((degree-5) % 360 <= 360))//1
 	{
-		setSubBlockVisibility(1, "visible");
-		moveSubBlock(1, 1, "0%, 196%", "0%, 176%", "28%, 392%");
-		setSubBlockVisibility(2, "hidden");
-		setSubBlockVisibility(3, "hidden");
-		setSubBlockVisibility(4, "hidden");
+		if (cur_sub != 1)
+		{
+			setDotVisibility(1, "0", 1);
+			setDotVisibility(1, "1", 1, 5);
+			cur_sub = 1;
+		}
+		setSubBlockVisibility(1, "1", 1, 1);
+		setSubBlockVisibility(2, "0", 1);
+		setSubBlockVisibility(3, "0", 1);
+		setSubBlockVisibility(4, "0", 1);
 	}
-	if (((degree-5) % 360 > 180) && ((degree-5) % 360 <= 270))//1
+	if (((degree-5) % 360 > 180) && ((degree-5) % 360 <= 270))//2
 	{
-		setSubBlockVisibility(1, "visible");
-		moveSubBlock(1, 1, "0%, 196%", "0%, 176%", "28%, 392%");
-		setSubBlockVisibility(2, "hidden");
-		setSubBlockVisibility(3, "hidden");
-		setSubBlockVisibility(4, "hidden");
+		if (cur_sub != 2)
+		{
+			setDotVisibility(1, "0", 1);
+			setDotVisibility(1, "1", 1, 5);
+			cur_sub = 2;
+		}
+		setSubBlockVisibility(1, "0", 1);
+		setSubBlockVisibility(2, "1", 1, 1);
+		setSubBlockVisibility(3, "0", 1);
+		setSubBlockVisibility(4, "0", 1);
 	}
+	if (((degree-5) % 360 > 90) && ((degree-5) % 360 <= 180))//3
+	{
+		if (cur_sub != 3)
+		{
+			setDotVisibility(1, "0", 1);
+			setDotVisibility(1, "1", 1, 5);
+			cur_sub = 3;
+		}
+		setSubBlockVisibility(1, "0", 1);
+		setSubBlockVisibility(2, "0", 1);
+		setSubBlockVisibility(3, "1", 1, 1);
+		setSubBlockVisibility(4, "0", 1);
+	}
+	if (((degree-5) % 360 > 00) && ((degree-5) % 360 <= 90))//4
+	{
+		if (cur_sub != 4)
+		{
+			setDotVisibility(1, "0", 1);
+			setDotVisibility(1, "1", 1, 5);
+			cur_sub = 4;
+		}
+		setSubBlockVisibility(1, "0", 1);
+		setSubBlockVisibility(2, "0", 1);
+		setSubBlockVisibility(3, "0", 1);
+		setSubBlockVisibility(4, "1", 1, 1);
+	}
+	sub_big = true;
 }
 
 function moveSubBlock(subNumber, zoomParameter, titlePositionParameter, textPositionParameter, dotPositionParameter)
@@ -105,41 +152,72 @@ function moveSubBlock(subNumber, zoomParameter, titlePositionParameter, textPosi
 	zoomParameter = arguments[1] ? arguments[1] : 1;
 	titlePositionParameter = arguments[2] ? arguments[2] : "0%, 0%";
 	textPositionParameter = arguments[3] ? arguments[3] : "0%, 0%";
-	dotPositionParameter = arguments[4] ? arguments[4] : "0%, 0%";
+	dotPositionParameter = arguments[4] ? arguments[4] : "28%, 392%";
 	$("#title" + subNumber +" img").css({ 
 		"-webkit-transform":"scale("+ zoomParameter +") translate(" + titlePositionParameter + ")",
 		"-moz-transform":"scale("+ zoomParameter +") translate(" + titlePositionParameter + ")",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",
-		"-moz-transition":"-moz-transform 1s linear 0s",});
+		"-webkit-transition":"-webkit-transform 0s linear 0s",
+		"-moz-transition":"-moz-transform 0s linear 0s",});
 	$("#text" + subNumber +" img").css({ 
 		"-webkit-transform":"scale("+ zoomParameter +") translate(" + textPositionParameter + ")",
 		"-moz-transform":"scale("+ zoomParameter +") translate(" + textPositionParameter + ")",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",
-		"-moz-transition":"-moz-transform 1s linear 0s",});
+		"-webkit-transition":"-webkit-transform 0s linear 0s",
+		"-moz-transition":"-moz-transform 0s linear 0s",});
 	$("#dot" + subNumber +" img").css({ 
-		"-webkit-transform":"scale("+ zoomParameter +") translate(" + dotPositionParameter + ")",
-		"-moz-transform":"scale("+ zoomParameter +") translate(" + dotPositionParameter + ")",
-		"-webkit-transition":"-webkit-transform 1s linear 0s",
-		"-moz-transition":"-moz-transform 1s linear 0s",});
+		"-webkit-transform":"translate(" + dotPositionParameter + ")",
+		"-moz-transform":"translate(" + dotPositionParameter + ")",
+		"-webkit-transition":"-webkit-transform 0s linear 0s",
+		"-moz-transition":"-moz-transform 0s linear 0s",});
 }
 
-function setSubBlockVisibility(subNumber, visibility)
+function setSubBlockVisibility(subNumber, opa, aniTime, startTime)
 {
 	subNumber = arguments[0] ? arguments[0] : 1;
-	visibility = arguments[1] ? arguments[1] : "visible";
-	$("#title"+subNumber).css("visibility", visibility);
-	$("#text"+subNumber).css("visibility", visibility);
-	$("#dot"+subNumber).css("visibility", visibility);
+	opa = arguments[1] ? arguments[1] : "1";
+	aniTime = arguments[2] ? arguments[2] : 0;
+	startTime = arguments[3] ? arguments[3] : 0;
+	$("#title"+subNumber).css({ 
+		"-webkit-opacity": opa,
+		"-moz-opacity": opa,
+		"-webkit-transition":"-webkit-opacity "+ aniTime +"s linear " + startTime + "s",
+		"-moz-transition":"-moz-opacity "+ aniTime +"s linear " + startTime + "s",});
+	$("#text"+subNumber).css({ 
+		"-webkit-opacity": opa,
+		"-moz-opacity": opa,
+		"-webkit-transition":"-webkit-opacity " + aniTime + "s linear " + startTime + "s",
+		"-moz-transition":"-moz-opacity "+ aniTime +"s linear " + startTime + "s",});	
+}
+
+function setDotVisibility(subNumber,opa, aniTime, startTime)
+{
+	subNumber = arguments[0] ? arguments[0] : 1;
+	opa = arguments[1] ? arguments[1] : "1";
+	aniTime = arguments[2] ? arguments[2] : 0;
+	startTime = arguments[3] ? arguments[3] : 0;
+console.log("subNumber"+subNumber + " opa" + opa + " aniTime" + aniTime + " startTime"+startTime);
+	$("#dot"+subNumber+" img").css({ 
+		"-webkit-opacity": opa,
+		"-moz-opacity": opa,
+		"-webkit-transition":"-webkit-opacity "+ aniTime +"s linear " + startTime + "s",
+		"-moz-transition":"-moz-opacity "+ aniTime +"s linear " + startTime + "s",});	
 }
 
 function restore()
 {
+	moveSubBlock(1, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+	moveSubBlock(2, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+	moveSubBlock(3, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+	moveSubBlock(4, 1, "0%, 0%", "0%, 0%", "0%, 0%");
 	rotateMMark();
 	zoomMainClass("0.4", "0%, 0%");
-	setSubBlockVisibility(1, "visible");
-	setSubBlockVisibility(2, "visible");
-	setSubBlockVisibility(3, "visible");
-	setSubBlockVisibility(4, "visible");
+	setSubBlockVisibility(1, "1", 1);
+	setSubBlockVisibility(2, "1", 1);
+	setSubBlockVisibility(3, "1", 1);
+	setSubBlockVisibility(4, "1", 1);
+	setDotVisibility(1, "1");
+	setDotVisibility(2, "1");
+	setDotVisibility(3, "1");
+	setDotVisibility(4, "1");
 	sub_big = false;
 }
 
