@@ -7,221 +7,50 @@
 <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+<link rel="stylesheet" type="text/css" href="./css/bachelor_arts_class.css" />
 
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="./js/class.js"></script>
-<script>
-    mainInAni = "rollIn";
-    mainOutAni = "rollOut";
-    itemInAni = "flipInX";
-    itemOutAni = "flipOutX";
-    </script>
-	<style type="text/css">
-	#main_class, .sub_class{
-		position: absolute;
-		width:100%;
-		height: auto;
-	}
-      #main_class img{
-      	position: absolute;
-        width: 52%;
-        height: auto;
-        top: 25%;
-        left: 25%;
-      }
-	  .mc_sub_right{
-		width: 40%;
-		float: right;
-	  }
-	  .mc_sub_right img{
-		position: absolute;
-		width: 100%;
-		height: auto;
-		right: 0%;
-	  }
+<script src="./js/bachelor_arts_class.js"></script>
 
-	  .sub_content{
-		width: 45%;
-		top:2%;
-	  }
-	  .sub_content img{
-		position:absolute;
-      	top: 44%;
-	  	width: 47%;
-	  	left:10%;
-	  }
-	  
-      #sub1{
-      	position: absolute;
-        width: 32%;
-        height: auto;
-        top: 20%;
-        left: 0%;
-      }
-      #sub1 img, #sub2 img, #sub3 img, #sub4 img{
-      	position:relative;
-      	top: 5%;
-      }
-      #sub2{
-      	position: absolute;
-        width: 42%;
-        height: auto;
-        top: 14%;
-        left: 56%;
-      }
-      #sub3{
-      	position: absolute;
-        width: 39%;
-        height: auto;
-        top: 50%;
-        left: 64%;
-      }
-      #sub4{
-      	position: absolute;
-        width: 40%;
-        height: auto;
-        top: 51%;
-        left: 4.5%;
-      }
-    </style>
 </head>
 
 <body>
 <!-- Home Page -->
 	<div data-role="page" id="page" data-add-back-btn="true">
 		
-		<div data-role="content" style="background:url('img/class/bachelor1/back.png') no-repeat; background-size:100%; height:100%;">
-			<div data-role="header" data-theme="c">
+		<div data-role="content" style="background:url('img/class/bachelor1/back.png') no-repeat; background-size:100%; height:100%;overflow:hidden;">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
 				<a href="index.html#class_main" data-role="button" rel="external">返回</a>
 				<h1>学部文科类课程</h1>
 				<a href="index.html" data-icon="home"  rel="external">主页</a>
 			</div>
-			
+			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
 			<div id="main_class">
-			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-			<img id="m-mark" src="img/class/bachelor1/main.png"></img>
-				
-			<div id="sub1"><a href="#subpage1" data-transition="pop">
-				<img src="img/class/bachelor1/2-1.png" style="position: absolute; top: 95%; left: 45%; width:36%;"></img>
-				<img src="img/class/bachelor1/3-1.png"></img>
-				<img src="img/class/bachelor1/1.png" style="width: 66%;"></img>
-			</a></div>
-			<div id="sub2"><a href="#subpage2" data-transition="pop">
-				<img src="img/class/bachelor1/2-2.png" style="position: absolute; top: 52%; left: -1%; width:22%;"></img>
-				<img src="img/class/bachelor1/3-2.png"></img>
-				<img src="img/class/bachelor1/2.png"></img>
-			</a></div>
-			<div id="sub3"><a href="#subpage3" data-transition="pop">
-				<img src="img/class/bachelor1/2-3.png" style="position: absolute; top: -32%; left: 29%; width:17%;"></img>
-				<img src="img/class/bachelor1/3-3.png"></img>
-				<img src="img/class/bachelor1/3.png"></img>
-			</a></div>
-			<div id="sub4"><a href="#subpage4" data-transition="pop">
-				<img src="img/class/bachelor1/2-4.png" style="position: absolute; top: -3%; left: 52%; width:25%;"></img>
-				<img src="img/class/bachelor1/4-4.png"></img>
-				<img src="img/class/bachelor1/4.png"></img>
-			</a></div>
-			</div>
-			
-		</div>
-	</div>
-	<div data-role="page" id="subpage1" data-add-back-btn="true">
-		
-		<div data-role="content" style="background:url('img/class/bachelor1/back.png') no-repeat; background-size:100%; height:100%;">
-			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="fade">返回</a>
-				<h1>文科综合基础班</h1>
-				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-			    <a href="#subpage2" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
-			    </div>
-			</div>
-			
-			<div class="sub_class">
-			<div class="mc_sub_right"><img src="img/class/bachelor1/11-1.png"></img></div>
-			<div class="mc_sub_left">
-			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-			<div><img src="img/class/bachelor1/2-4.png"  style="position: absolute; top: 60%; left: 45%; width:20%;"></img></div>
-			<div class="sub_content">
-				<img src="img/class/bachelor1/3-1.png" style="top: 25%;"></img>
-				<img src="img/class/bachelor1/1.png"></img>
-			</div>
-			</div>
-			</div>
-			
-		</div>
-	</div>
-	<div data-role="page" id="subpage2" data-add-back-btn="true">
-		
-		<div data-role="content" style="background:url('img/class/bachelor1/back.png') no-repeat; background-size:100%; height:100%;">
-			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="fade">返回</a>
-				<h1>文科综合留考对策班</h1>
-				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-			    <a href="#subpage1" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
-			    <a href="#subpage3" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
-			    </div>
-			</div>
-			
-			<div class="sub_class">
-			<div class="mc_sub_right"><img src="img/class/bachelor1/22-1.png"></img></div>
-			<div class="mc_sub_left">
-			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-			<div><img src="img/class/bachelor1/2-1.png"  style="position: absolute; top: 61%; left: 45%; width:23%;"></img></div>
-			<div class="sub_content">
-				<img src="img/class/bachelor1/3-2.png"  style="top: 30%;"></img>
-				<img src="img/class/bachelor1/2.png"></img>
-			</div>
-			</div>
-			</div>
-			
-		</div>
-	</div>
-	<div data-role="page" id="subpage3" data-add-back-btn="true">
-		
-		<div data-role="content" style="background:url('img/class/bachelor1/back.png') no-repeat; background-size:100%; height:100%;">
-			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="fade">返回</a>
-				<h1>文科留考数学基础班</h1>
-				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-			    <a href="#subpage2" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
-			    <a href="#subpage4" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-inline="true" data-transition="slideup">下一页</a>
-			    </div>
-			</div>
-			<div class="sub_class">
-			<div class="mc_sub_right"><img src="img/class/bachelor1/33-1.png"></img></div>
-			<div class="mc_sub_left">
-			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-			<div><img src="img/class/bachelor1/2-4.png"  style="position: absolute; top: 62%; left: 48%; width:20%;"></img></div>
-			<div class="sub_content">
-				<img src="img/class/bachelor1/3-3.png" style="top: 30%;"></img>
-				<img src="img/class/bachelor1/3.png" ></img>
-			</div>
-			</div>
-			</div>
-			
-		</div>
-	</div>
-	<div data-role="page" id="subpage4" data-add-back-btn="true">
-		
-		<div data-role="content" style="background:url('img/class/bachelor1/back.png') no-repeat; background-size:100%; height:100%;">
-			<div data-role="header" data-theme="c">
-				<a href="#page" data-role="button"  data-transition="fade">返回</a>
-				<h1>文科数学留考对策班</h1>
-				<div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
-			    <a href="#subpage3" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-inline="true" data-transition="slidedown">上一页</a>
-			    </div>
-			</div>
-			<div class="sub_class">
-			<div class="mc_sub_right"><img src="img/class/bachelor1/44-1.png"></img></div>
-			<div class="mc_sub_left">
-			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-			<div><img src="img/class/bachelor1/1-4.png"  style="position: absolute; top: 69%; left: 45%; width:24%;"></img></div>
-			<div class="sub_content">
-				<img src="img/class/bachelor1/4-4.png" style="top: 30%;"></img>
-				<img src="img/class/bachelor1/4.png"></img>
-			</div>
-			</div>
+				<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
+				<div class="ani" id="m-mark"><img src="img/class/bachelor1/main_new.png"></img></div>
+					
+				<div class="ani" id="sub1">
+					<img src="img/class/bachelor1/2-1.png" style="position: absolute; top: 95%; left: 45%; width:36%;"></img>
+					<img src="img/class/bachelor1/3-1.png"></img>
+					<img src="img/class/bachelor1/1.png" style="width: 66%;"></img>
+				</div>
+				<div class="ani" id="sub2">
+					<img src="img/class/bachelor1/2-2.png" style="position: absolute; top: 52%; left: -1%; width:22%;"></img>
+					<img src="img/class/bachelor1/3-2.png"></img>
+					<img src="img/class/bachelor1/2.png"></img>
+				</div>
+				<div class="ani" id="sub3">
+					<img src="img/class/bachelor1/2-3.png" style="position: absolute; top: -32%; left: 29%; width:17%;"></img>
+					<img src="img/class/bachelor1/3-3.png"></img>
+					<img src="img/class/bachelor1/3.png"></img>
+				</div>
+				<div class="ani" id="sub4">
+					<img src="img/class/bachelor1/2-4.png" style="position: absolute; top: -3%; left: 52%; width:25%;"></img>
+					<img src="img/class/bachelor1/4-4.png"></img>
+					<img src="img/class/bachelor1/4.png"></img>
+				</div>
 			</div>
 		</div>
 	</div>
