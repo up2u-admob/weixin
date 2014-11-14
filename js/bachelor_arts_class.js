@@ -1,6 +1,7 @@
 var sub_big = false;
 var delta = 320;
 var cur_sub = 0;
+var count = 0;
 
 var isTouch = ('ontouchstart' in window);
 
@@ -36,10 +37,15 @@ $(document).ready(function () {
 	        deltaY = this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY);
 	        if (Math.abs(deltaY) > 15)
 	        {
-	        console.log(deltaY);
-	        	delta = delta + deltaY / Math.abs(deltaY) * 20;
-		        rotateMMark(delta);
-		        showSubBlock(delta);
+		        count++;
+		        if(count == 5)
+		        {
+		        	console.log(deltaY);
+		        	delta = delta + deltaY / Math.abs(deltaY) * 20;
+			        rotateMMark(delta);
+			        showSubBlock(delta);
+			        count = 0;
+		        }
 		    }
 /*			if (deltaY > 30)
 			{
