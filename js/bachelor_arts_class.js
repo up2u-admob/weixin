@@ -177,7 +177,7 @@ function moveSubBlock(subNumber, zoomParameter, titlePositionParameter, textPosi
 	zoomParameter = arguments[1] ? arguments[1] : 1;
 	titlePositionParameter = arguments[2] ? arguments[2] : "0%, 0%";
 	textPositionParameter = arguments[3] ? arguments[3] : "0%, 0%";
-	dotPositionParameter = arguments[4] ? arguments[4] : "28%, 392%";
+	dotPositionParameter = arguments[4] ? arguments[4] : "28%, 418%";
 	$("#title" + subNumber +" img").css({ 
 		"-webkit-transform":"scale("+ zoomParameter +") translate(" + titlePositionParameter + ")",
 		"-moz-transform":"scale("+ zoomParameter +") translate(" + titlePositionParameter + ")",
@@ -220,7 +220,7 @@ function setDotVisiility1to0to1(subNumber)
 	$("#dot"+subNumber).addClass("dotVisiility1to0to1");
 	setTimeout(function(){
 		$("#dot"+subNumber).removeClass("dotVisiility1to0to1");
-	},2000);
+	},1000);
 }
 
 function setDotVisibility(subNumber, opa, aniTime, startTime)
