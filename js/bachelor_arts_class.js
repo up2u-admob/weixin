@@ -34,13 +34,54 @@ $(document).ready(function () {
 	        this.top = this.top - (this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY) );
 	        deltaX = this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        deltaY = this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY);
-	        if (Math.abs(deltaY) > 3)
+	        if (Math.abs(deltaY) > 10)
 	        {
 	        	delta = delta + deltaY / Math.abs(deltaY) * 3;
 		        rotateMMark(delta);
 		        showSubBlock(delta);
 		    }
-
+/*			if (deltaY > 1)
+			{
+				sub_big = false;
+				switch (cur_sub)
+				{
+					case 1:
+						changeSubBlock(230);
+						break;
+					case 2:
+						changeSubBlock(140);
+						break;
+					case 3:
+						changeSubBlock(50);
+						break;
+					case 4:
+						changeSubBlock(320);
+						break;
+					default:
+						break;
+				}
+			}
+			else if (deltaY < -1)
+			{
+				sub_big = false;
+				switch (cur_sub)
+				{
+					case 1:
+						changeSubBlock(50);
+						break;
+					case 2:
+						changeSubBlock(320);
+						break;
+					case 3:
+						changeSubBlock(230);
+						break;
+					case 4:
+						changeSubBlock(140);
+						break;
+					default:
+						break;
+				}
+			}*/
 	        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
 	    },
