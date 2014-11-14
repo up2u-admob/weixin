@@ -35,60 +35,40 @@ $(document).ready(function () {
 	        this.top = this.top - (this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY) );
 	        deltaX = this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        deltaY = this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY);
-	        if (Math.abs(deltaY) > 15)
+/*	        if (Math.abs(deltaY) > 15)
 	        {
 		        count++;
 		        if(count == 5)
 		        {
 		        	console.log(deltaY);
-		        	delta = delta + deltaY / Math.abs(deltaY) * 20;
+		        	delta = delta + deltaY / Math.abs(deltaY) * 100;
 			        rotateMMark(delta);
 			        showSubBlock(delta);
 			        count = 0;
 		        }
-		    }
-/*			if (deltaY > 30)
+		    }*/
+			if (deltaY < -15)
 			{
-				sub_big = false;
-				switch (cur_sub)
-				{
-					case 1:
-						changeSubBlock(230);
-						break;
-					case 2:
-						changeSubBlock(140);
-						break;
-					case 3:
-						changeSubBlock(50);
-						break;
-					case 4:
-						changeSubBlock(320);
-						break;
-					default:
-						break;
+				count++;
+		        if(count == 5)
+		        {
+					sub_big = false;
+					delta = delta - 90;
+					changeSubBlock(delta);
+					count = 0;
 				}
 			}
-			else if (deltaY < -30)
+			else if (deltaY > 15)
 			{
-				sub_big = false;
-				switch (cur_sub)
-				{
-					case 1:
-						changeSubBlock(50);
-						break;
-					case 2:
-						changeSubBlock(320);
-						break;
-					case 3:
-						changeSubBlock(230);
-						break;
-					case 4:
-						changeSubBlock(140);
-						break;
-					default:
-						break;
+				count++;
+		        if(count == 5)
+		        {
+					sub_big = false;
+					delta = delta + 90;
+					changeSubBlock(delta);
+					count = 0;
 				}
-			}*/
+			}
 	        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
 	    },
