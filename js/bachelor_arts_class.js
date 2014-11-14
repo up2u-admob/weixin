@@ -126,10 +126,10 @@ function showSubBlock(degree)
 		{
 			setDotVisiility1to0to1(1);
 			cur_sub = 1;
-			setSubBlockVisibility(1, "1", 1, 1);
-			setSubBlockVisibility(2, "0", 1);
-			setSubBlockVisibility(3, "0", 1);
-			setSubBlockVisibility(4, "0", 1);
+			setSubBlockVisibility(1, "1", 0, 0.1);
+			setSubBlockVisibility(2, "0", 0.1);
+			setSubBlockVisibility(3, "0", 0.1);
+			setSubBlockVisibility(4, "0", 0.1);
 		}
 	}
 	else if (((degree-5) % 360 > 180) && ((degree-5) % 360 <= 270))//2
@@ -138,10 +138,10 @@ function showSubBlock(degree)
 		{
 			setDotVisiility1to0to1(1);
 			cur_sub = 2;
-			setSubBlockVisibility(1, "0", 1);
-			setSubBlockVisibility(2, "1", 1, 1);
-			setSubBlockVisibility(3, "0", 1);
-			setSubBlockVisibility(4, "0", 1);
+			setSubBlockVisibility(1, "0", 0.1);
+			setSubBlockVisibility(2, "1", 1, 0.1);
+			setSubBlockVisibility(3, "0", 0.1);
+			setSubBlockVisibility(4, "0", 0.1);
 		}
 	}
 	else if (((degree-5) % 360 > 90) && ((degree-5) % 360 <= 180))//3
@@ -150,10 +150,10 @@ function showSubBlock(degree)
 		{
 			setDotVisiility1to0to1(1);
 			cur_sub = 3;
-			setSubBlockVisibility(1, "0", 1);
-			setSubBlockVisibility(2, "0", 1);
-			setSubBlockVisibility(3, "1", 1, 1);
-			setSubBlockVisibility(4, "0", 1);
+			setSubBlockVisibility(1, "0", 0.1);
+			setSubBlockVisibility(2, "0", 0.1);
+			setSubBlockVisibility(3, "1", 1, 0.1);
+			setSubBlockVisibility(4, "0", 0.1);
 		}
 	}
 	else if (((degree-5) % 360 > 00) && ((degree-5) % 360 <= 90))//4
@@ -162,10 +162,10 @@ function showSubBlock(degree)
 		{
 			setDotVisiility1to0to1(1);
 			cur_sub = 4;
-			setSubBlockVisibility(1, "0", 1);
-			setSubBlockVisibility(2, "0", 1);
-			setSubBlockVisibility(3, "0", 1);
-			setSubBlockVisibility(4, "1", 1, 1);
+			setSubBlockVisibility(1, "0", 0.1);
+			setSubBlockVisibility(2, "0", 0.1);
+			setSubBlockVisibility(3, "0", 0.1);
+			setSubBlockVisibility(4, "1", 1, 0.1);
 		}
 	}
 	sub_big = true;
@@ -264,8 +264,8 @@ function rotateMMark(rotateParameter)
 		"-moz-transform":"rotate("+rotateParameter+"deg)",
     	"-webkit-transform-origin": "center center", 
 		"-moz-transform-origin": "center center",  
-		"-webkit-transition":"-webkit-transform 1s linear 0s",
-		"-moz-transition":"-moz-transform 1s linear 0s",});
+		"-webkit-transition":"-webkit-transform 0.5s linear 0s",
+		"-moz-transition":"-moz-transform 0.5s linear 0s",});
 }
 
 function zoomMainClass(zoomParameter, positionParameter)

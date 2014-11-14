@@ -109,16 +109,16 @@
 @-webkit-keyframes changeDotVisibility
 {
 	0%		{opacity:1;}
-	50%		{opacity:0;}
+	10%		{opacity:0;}
 	100%	{opacity:1;}
 }
 @-moz-keyframes changeDotVisibility
 {
 	0%		{opacity:1;}
-	50%		{opacity:0;}
+	10%		{opacity:0;}
 	100%	{opacity:1;}
 }
 .dotVisiility1to0to1{
-	-webkit-animation: changeDotVisibility 2s;
-	-moz-animation: changeDotVisibility 2s;
+	-webkit-animation: changeDotVisibility 1s;
+	-moz-animation: changeDotVisibility 1s;
 }
