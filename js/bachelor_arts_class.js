@@ -34,13 +34,13 @@ $(document).ready(function () {
 	        this.top = this.top - (this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY) );
 	        deltaX = this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        deltaY = this.pageY - (isTouch ? event.changedTouches[0].pageY : e.pageY);
-	        if (Math.abs(deltaY) > 1)
+	        if (Math.abs(deltaY) > 3)
 	        {
-	        	//console.log(deltaY);
 	        	delta = delta + deltaY / Math.abs(deltaY) * 3;
 		        rotateMMark(delta);
 		        showSubBlock(delta);
 		    }
+
 	        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
 	        this.pageY = (isTouch ? event.changedTouches[0].pageY : e.pageY);
 	    },
@@ -187,7 +187,7 @@ function setSubBlockVisibility(subNumber, opa, aniTime, startTime)
 
 function setDotVisiility1to0to1(subNumber)
 {
-console.log("aaaaaaaa");
+//console.log(document.getElementById(dotVisiility1to0to1).animation-duration);
 	subNumber = arguments[0] ? arguments[0] : 1;
 	$("#dot"+subNumber).addClass("dotVisiility1to0to1");
 	setTimeout(function(){
