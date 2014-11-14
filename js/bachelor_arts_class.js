@@ -119,6 +119,10 @@ function showSubBlock(degree)
 	{
 		degree = degree + 360;
 	}
+	while (degree>360)
+	{
+		degree = degree - 360;
+	}
 
 	if (((degree-5) % 360 > 270) && ((degree-5) % 360 <= 360))//1
 	{
