@@ -14,6 +14,10 @@ $(document).ready(function() {
 	$("#sub3").click(function() {zoomSubBlock3();});
 	$("#sub4").click(function() {zoomSubBlock4();});
 	$("#m-mark").click(function() {restore();});
+	$("#sub_content1").click(function() {restore();});
+	$("#sub_content2").click(function() {restore();});
+	$("#sub_content3").click(function() {restore();});
+	$("#sub_content4").click(function() {restore();});
 });
 
 function restore()
@@ -74,7 +78,7 @@ function restore()
 
 function zoomSubBlock1()
 {
-	if (!sub_1_big)
+	if ((!sub_2_big) && (!sub_3_big) && (!sub_4_big))
 	{
 		$("#main_class").css({ 
 			"-webkit-transform":"scale(0.4) translate(-32%, 7%)",
@@ -112,7 +116,7 @@ function zoomSubBlock1()
 
 function zoomSubBlock2()
 {
-	if (!sub_2_big)
+	if ((!sub_1_big) && (!sub_3_big) && (!sub_4_big))
 	{
 		$("#main_class").css({ 
 			"-webkit-transform":"scale(0.4) translate(-32%, -3%)",
@@ -152,7 +156,7 @@ function zoomSubBlock2()
 
 function zoomSubBlock3()
 {
-	if (!sub_3_big)
+	if ((!sub_1_big) && (!sub_2_big) && (!sub_4_big))
 	{
 		$("#main_class").css({ 
 			"-webkit-transform":"scale(0.4) translate(-32%, -7%)",
@@ -192,7 +196,7 @@ function zoomSubBlock3()
 
 function zoomSubBlock4()
 {
-	if (!sub_4_big)
+	if ((!sub_1_big) && (!sub_2_big) && (!sub_3_big))
 	{
 		$("#main_class").css({ 
 			"-webkit-transform":"scale(0.4) translate(-32%, -11%)",
