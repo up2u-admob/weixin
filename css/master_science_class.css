@@ -1,0 +1,44 @@
+#main_class
+{
+	position: absolute;
+	width: 250%;
+	top: 0%;
+	left: 0%;
+}
+
+#main_class img
+{
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 10%;
+	left: 46%;
+}
+
+#waku1
+{
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 19%;
+	left: -15.5%;
+	
+}
+
+#waku2
+{
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 30%;
+	left: 30%;
+}
+
+#waku3
+{
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 41%;
+	left: -15.5%;
+}
