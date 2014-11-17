@@ -5,8 +5,8 @@ var sub_4_big = false;
 
 mainInAni = "fadeInLeft";
 mainOutAni = "fadeOutLeft";
-itemInAni = "flipInY";
-itemOutAni = "flipOutY";
+itemInAni = "rotateIn";
+itemOutAni = "rotateOut";
 
 $(document).ready(function() {   
 	$("#sub1").click(function() {zoomSubBlock1();});
