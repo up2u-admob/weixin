@@ -40,9 +40,9 @@ $(document).ready(function () {
 		    }
 		});*/
 
-		$("#english_text_1").click(changeEnglishSubBlock1); 
-		$("#english_text_2").click(changeEnglishSubBlock2); 
-		$("#english_text_3").click(changeEnglishSubBlock3); 
+		$("#english_text_1").click(function(){changeEnglishSubBlock1();}); 
+		$("#english_text_2").click(function(){changeEnglishSubBlock2();}); 
+		$("#english_text_3").click(function(){changeEnglishSubBlock3();}); 
 });
 
 function changeEnglishSubBlock1()

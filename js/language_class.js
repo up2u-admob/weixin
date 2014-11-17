@@ -38,21 +38,21 @@ $(document).ready(function () {
 		    }
 		});*/
 		
-		$("#japanese_block_1").click(changeJapaneseSubBlock1);
-		$("#japanese_sub_block_1").click(changeJapaneseSubBlock1);
-		$("#japanese_sub_text_1").click(changeJapaneseSubBlock1);
-		$("#japanese_block_2").click(changeJapaneseSubBlock2);
-		$("#japanese_sub_block_2").click(changeJapaneseSubBlock2);
-		$("#japanese_sub_text_2").click(changeJapaneseSubBlock2);
-		$("#japanese_block_3").click(changeJapaneseSubBlock3);
-		$("#japanese_sub_block_3").click(changeJapaneseSubBlock3);
-		$("#japanese_sub_text_3").click(changeJapaneseSubBlock3);
-		$("#japanese_block_4").click(changeJapaneseSubBlock4);
-		$("#japanese_sub_block_4").click(changeJapaneseSubBlock4);
-		$("#japanese_sub_text_4").click(changeJapaneseSubBlock4);
-		$("#japanese_block_5").click(changeJapaneseSubBlock5);
-		$("#japanese_sub_block_5").click(changeJapaneseSubBlock5);
-		$("#japanese_sub_text_5").click(changeJapaneseSubBlock5);
+		$("#japanese_block_1").click(function () {changeJapaneseSubBlock1();});
+		$("#japanese_sub_block_1").click(function () {changeJapaneseSubBlock1();});
+		$("#japanese_sub_text_1").click(function () {changeJapaneseSubBlock1();});
+		$("#japanese_block_2").click(function () {changeJapaneseSubBlock2();});
+		$("#japanese_sub_block_2").click(function () {changeJapaneseSubBlock2();});
+		$("#japanese_sub_text_2").click(function () {changeJapaneseSubBlock2();});
+		$("#japanese_block_3").click(function () {changeJapaneseSubBlock3();});
+		$("#japanese_sub_block_3").click(function () {changeJapaneseSubBlock3();});
+		$("#japanese_sub_text_3").click(function () {changeJapaneseSubBlock3();});
+		$("#japanese_block_4").click(function () {changeJapaneseSubBlock4();});
+		$("#japanese_sub_block_4").click(function () {changeJapaneseSubBlock4();});
+		$("#japanese_sub_text_4").click(function () {changeJapaneseSubBlock4();});
+		$("#japanese_block_5").click(function () {changeJapaneseSubBlock5();});
+		$("#japanese_sub_block_5").click(function () {changeJapaneseSubBlock5();});
+		$("#japanese_sub_text_5").click(function () {changeJapaneseSubBlock5();});
 });
 
 
