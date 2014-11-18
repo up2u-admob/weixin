@@ -196,6 +196,7 @@ body {
 /*边框*/
 .border{
 	border:#909090 5px solid;
+	padding: 20px;
 }
 /*阴影*/
 .shadow{
