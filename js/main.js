@@ -53,7 +53,7 @@ $(document).ready(function(){
 				{
 					teachermain_page_load();
 				}
-				else if (source_img== "#class_main")
+				else if (source_img == "#class_main")
 				{
 					classmain_page_load();
 				}
