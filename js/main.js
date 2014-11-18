@@ -49,11 +49,11 @@ $(document).ready(function(){
 			    $(".main_nav img").removeClass("animated fadeOutDown");
 				location.href = href;
 				$(".main_nav img").addClass("animated fadeInUp");
-				if (source_img == "teacher_main")
+				if (source_img == "#teacher_main")
 				{
 					teachermain_page_load();
 				}
-				else if (source_img== "class_main")
+				else if (source_img== "#class_main")
 				{
 					classmain_page_load();
 				}
