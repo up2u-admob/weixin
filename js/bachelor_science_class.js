@@ -80,8 +80,8 @@ function changeBlock5()
 function zoomSubBlock1()
 {
 	$("#main_class").css({ 
-		"-webkit-transform":"scale(0.9) translate(-4%, 3%)",
-		"-moz-transform":"scale(0.9) translate(-4%, 3%)",
+		"-webkit-transform":"scale(0.85) translate(-4%, 1%)",
+		"-moz-transform":"scale(0.85) translate(-4%, 1%)",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
  	sub_1_big = true;
@@ -94,8 +94,8 @@ function zoomSubBlock1()
 function zoomSubBlock2()
 {
 	$("#main_class").css({ 
-		"-webkit-transform":"scale(0.9) translate(-4%, 3%)",
-		"-moz-transform":"scale(0.9) translate(-4%, 3%)",
+		"-webkit-transform":"scale(0.85) translate(-46%, -8%)",
+		"-moz-transform":"scale(0.85) translate(-46%, -8%)",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
  	sub_1_big = false;
@@ -108,22 +108,22 @@ function zoomSubBlock2()
 function zoomSubBlock3()
 {
 	$("#main_class").css({ 
-		"-webkit-transform":"scale(0.9) translate(-4%, 3%)",
-		"-moz-transform":"scale(0.9) translate(-4%, 3%)",
+		"-webkit-transform":"scale(0.85) translate(-9%, -20%)",
+		"-moz-transform":"scale(0.85) translate(-9%, -20%)",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
  	sub_1_big = false;
 	sub_2_big = false;
-	sub_3_big = false;
-	sub_4_big = true;
+	sub_3_big = true;
+	sub_4_big = false;
 	sub_5_big = false;
 }
 
 function zoomSubBlock4()
 {
 	$("#main_class").css({ 
-		"-webkit-transform":"scale(0.9) translate(-4%, 3%)",
-		"-moz-transform":"scale(0.9) translate(-4%, 3%)",
+		"-webkit-transform":"scale(0.85) translate(-36%, -37%)",
+		"-moz-transform":"scale(0.85) translate(-36%, -37%)",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
  	sub_1_big = false;
@@ -136,8 +136,8 @@ function zoomSubBlock4()
 function zoomSubBlock5()
 {
 	$("#main_class").css({ 
-		"-webkit-transform":"scale(0.9) translate(-4%, 3%)",
-		"-moz-transform":"scale(0.9) translate(-4%, 3%)",
+		"-webkit-transform":"scale(0.85) translate(-48%, -52%)",
+		"-moz-transform":"scale(0.85) translate(-48%, -52%)",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
  	sub_1_big = false;
