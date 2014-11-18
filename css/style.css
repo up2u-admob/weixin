@@ -193,9 +193,12 @@ body {
 }
 
 
+/*边框*/
+.border{
+	border:#909090 5px solid;
+}
 /*阴影*/
 .shadow{
-	border:#909090 0px solid;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/
 	-moz-box-shadow: 20px 20px 50px #909090;/*firefox*/
 	-webkit-box-shadow: 20px 20px 50px #909090;/*safari或chrome*/
