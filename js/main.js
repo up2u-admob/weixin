@@ -33,9 +33,9 @@ $(document).ready(function(){
             _this.addClass("animated bounceIn");
 			
 			//get page url
-			var href = "#"+this.alt;
+			var href = this.alt;
 			
-			if (this.alt == "contact_main")
+			if (this.alt == "#contact_main")
 			{
 				href = "contact.html";
 			}
