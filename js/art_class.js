@@ -1,6 +1,6 @@
 mainInAni = "zoomIn";
 mainOutAni = "zoomOut";
-itemInAni = "zoomIn";
+itemInAni = "flash";
 itemOutAni = "zoomOut";
 
 $(document).ready(function () {   		
