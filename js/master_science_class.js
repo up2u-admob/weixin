@@ -53,8 +53,8 @@ function changeBlock3()
 function zoomSubBlock1()
 {
 	$("#main_class").css({ 
-		"-webkit-transform":"scale(1) translate(-10%, 0%)",
-		"-moz-transform":"scale(1) translate(-10%, 0%)",
+		"-webkit-transform":"scale(1) translate(-10%, -4%)",
+		"-moz-transform":"scale(1) translate(-10%, -4%)",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
  	sub_1_big = true;
