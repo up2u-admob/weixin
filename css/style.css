@@ -193,5 +193,32 @@ body {
 }
 
 
+/*阴影*/
+.shadow{
+	border:#909090 0px solid;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/
+	-moz-box-shadow: 20px 20px 50px #909090;/*firefox*/
+	-webkit-box-shadow: 20px 20px 50px #909090;/*safari或chrome*/
+	box-shadow:20px 20px 50px #909090;/*opera或ie9*/
+}
 
-
+/*无限抖动*/
+.unlimitedShake
+{
+	-webkit-animation: shakeshake 3s linear infinite;
+	-moz-animation: shakeshake 3s linear infinite;
+}
+@-webkit-keyframes shakeshake
+{
+	0%		{-webkit-transform: translate(0%, 0%);}
+	33%		{-webkit-transform: translate(0%, -20%);}
+	66%		{-webkit-transform: translate(0%, 20%);}
+	100%	{-webkit-transform: translate(0%, 0%);}
+}
+@-moz-keyframes shakeshake
+{
+	0%		{-webkit-transform: translate(0%, 0%);}
+	33%		{-webkit-transform: translate(0%, -20%);}
+	66%		{-webkit-transform: translate(0%, 20%);}
+	100%	{-webkit-transform: translate(0%, 0%);}
+}
