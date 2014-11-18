@@ -207,6 +207,7 @@ body {
 {
 	-webkit-animation: shakeshake 3s linear infinite;
 	-moz-animation: shakeshake 3s linear infinite;
+	-animation: shakeshake 3s linear infinite;
 }
 @-webkit-keyframes shakeshake
 {
@@ -216,6 +217,13 @@ body {
 	100%	{-webkit-transform: translate(0%, 0%);}
 }
 @-moz-keyframes shakeshake
+{
+	0%		{-webkit-transform: translate(0%, 0%);}
+	33%		{-webkit-transform: translate(0%, -20%);}
+	66%		{-webkit-transform: translate(0%, 20%);}
+	100%	{-webkit-transform: translate(0%, 0%);}
+}
+@keyframes shakeshake
 {
 	0%		{-webkit-transform: translate(0%, 0%);}
 	33%		{-webkit-transform: translate(0%, -20%);}
