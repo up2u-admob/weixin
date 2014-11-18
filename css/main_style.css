@@ -45,7 +45,7 @@
 .main_default li{
 	float:left;
 	display:inline;
-	margin:50% 10% 0% 0%;
+	margin:59% 10% 0% 0%;
 	width:5%;
 }
 
@@ -68,7 +68,7 @@
 	display:inline;
 	background: url("../img/main/2-1_0007s_0000_jiantou.png") no-repeat top center;
 	background-size: 55%;
-	margin:50% 10% 0% 0%;
+	margin:59% 10% 0% 0%;
 	width:5%;
 }
 
@@ -115,7 +115,7 @@
  .main_word li{
 	float:left;
 	display:inline;
-	margin:50% 10% 60% 0%;
+	margin:59% 10% 60% 0%;
 	width:5%;
 	display: none;
 }

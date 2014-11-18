@@ -7,104 +7,32 @@
 <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+<link rel="stylesheet" type="text/css" href="./css/bachelor_science_class.css" />
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/class.js"></script>
-<script>
-    mainInAni = "flipInX";
-    mainOutAni = "flipOutX";
-    itemInAni = "fadeInUp";
-    itemOutAni = "fadeOutDown";
-    </script>
-<style type="text/css">
-	#main_class{
-		position: absolute;
-		width: 100%;
-	}
-	
-	#main_class img{
-		width: 100%;
-	}
-
-#waku1
-{
-	position: absolute;
-	width: 42%;
-	height: auto;
-	top:2.5%;
-	left: 5%;
-}
-
-#waku2
-{
-	position: absolute;
-	width: 42%;
-	height: auto;
-	top:15%;
-	left: 50%;
-}
-
-#waku3
-{
-	position: absolute;
-	width: 42%;
-	height: auto;
-	top:35%;
-	left: 12%;
-}
-
-
-#waku4
-{
-	position: absolute;
-	width: 42%;
-	height: auto;
-	top:50%;
-	left: 39%;
-}
-
-#waku5
-{
-	position: absolute;
-	width: 42%;
-	height: auto;
-	top: 68%;
-	left: 50%;
-}
-
-
-</style>
+<script src="js/bachelor_science_class.js"></script>
 
 </head>
 
 <body>
-	<div data-role="page" id="page" data-add-back-btn="true"  style="background:url('img/class/math/back.png') no-repeat; background-size:100%; height:100%; z-index: 0; overflow:hidden;">
+	<div data-role="page" id="page" data-add-back-btn="true"  style="background:url('img/class/math/back.png') no-repeat; background-size:100%; height:100%; overflow:hidden;">
 		
 		<div data-role="content">
-			<div data-role="header" data-theme="c">
+			<div data-role="header" data-theme="c" style="z-index: 1;">
 				<a href="index.html#class_main" data-role="button" rel="external">返回</a>
 				<h1>学部理科课程</h1>
 				<a href="index.html" data-icon="home"  rel="external">主页</a>
 			</div>
-			
+			<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
 			<div id="main_class">
 				<img src="img/no.png" style="position:static; width:100%; visibility:hidden"></img>
-				<div id="waku1"><a href="#subpage1" data-transition="fade">
-                    <img src="img/class/math/a.png"></img>
-                </a></div>
-				<div id="waku2"><a href="#subpage2" data-transition="fade">
-                    <img src="img/class/math/b.png"></img>
-                </a></div>
-				<div id="waku3"><a href="#subpage3" data-transition="fade">
-                    <img src="img/class/math/c.png"></img>
-                </a></div>
-				<div id="waku4"><a href="#subpage4" data-transition="fade">
-                    <img src="img/class/math/d.png"></img>
-                </a></div>
-				<div id="waku5"><a href="#subpage5" data-transition="fade">
-                    <img src="img/class/math/e.png"></img>
-                </a></div>
+				<div id="waku1"><img src="img/class/math/a.png"></img></div>
+				<div id="waku2"><img src="img/class/math/b.png"></img></div>
+				<div id="waku3"><img src="img/class/math/c.png"></img></div>
+				<div id="waku4"><img src="img/class/math/d.png"></img></div>
+				<div id="waku5"><img src="img/class/math/e.png"></img></div>
 			</div>
 						
 		</div>
