@@ -66,19 +66,31 @@
 }
 
 
+#contact_page3_1
+{
+	position: absolute;
+	width:100%;
+	height: auto;
+	top: 25%;
+	left: 12%;
+}
 #contact_page3_1 img
 {
 	position: absolute;
 	width:75%;
 	height: auto;
-	top: 25%;
-	left: 12%;
+}
+#contact_page3_2
+{
+	position: absolute;
+	width:100%;
+	height: auto;
+	top: 62%;
+	left: 15%;
 }
 #contact_page3_2 img
 {
 	position: absolute;
 	width:70%;
 	height: auto;
-	top: 62%;
-	left: 15%;
 }
