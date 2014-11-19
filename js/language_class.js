@@ -8,6 +8,7 @@ var isTouch = ('ontouchstart' in window);
 
 
 $(document).ready(function () {   
+
 /*		$("#main_class").bind({
 		    'touchstart mousedown': function(e) {
 		        e.preventDefault();

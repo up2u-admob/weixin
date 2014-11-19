@@ -9,7 +9,12 @@ mainOutAni = "flipOut";
 itemInAni = "flipInX";
 itemOutAni = "flipOutX";
 		
-$(document).ready(function () {   
+$(document).ready(function () {  
+	setTimeout(function(){  
+		$("#english_text_1 img").addClass("unlimitedBlinking");
+		$("#english_text_2 img").addClass("unlimitedBlinking");
+		$("#english_text_3 img").addClass("unlimitedBlinking");
+	},3000); 
 /*		$("#main_class").bind({
 		    'touchstart mousedown': function(e) {
 		        e.preventDefault();
@@ -50,6 +55,7 @@ function changeEnglishSubBlock1()
 	if (!english_1_big)
 	{
 		zoomEnglishSubBlock1();
+		$("#english_text_1 img").removeClass("unlimitedBlinking");
 	}
 	else
 	{
@@ -62,6 +68,7 @@ function changeEnglishSubBlock2()
 	if (!english_2_big)
 	{
 		zoomEnglishSubBlock2();
+		$("#english_text_2 img").removeClass("unlimitedBlinking");
 	}
 	else
 	{
@@ -74,6 +81,7 @@ function changeEnglishSubBlock3()
 	if (!english_3_big)
 	{
 		zoomEnglishSubBlock3();
+		$("#english_text_3 img").removeClass("unlimitedBlinking");
 	}
 	else
 	{
@@ -127,4 +135,7 @@ function restoreEnglishMenu()
 	english_1_big = false;
 	english_2_big = false;
 	english_3_big = false;
+	$("#english_text_1 img").addClass("unlimitedBlinking");
+	$("#english_text_2 img").addClass("unlimitedBlinking");
+	$("#english_text_3 img").addClass("unlimitedBlinking");
 }

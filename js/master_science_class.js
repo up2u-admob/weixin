@@ -9,7 +9,7 @@ itemOutAni = "flipOutX";
 
 
 $(document).ready(function () {
-setTimeout(function(){  
+	setTimeout(function(){  
 		$("#waku1 img").addClass("unlimitedBlinking");
 		$("#waku2 img").addClass("unlimitedBlinking");
 		$("#waku3 img").addClass("unlimitedBlinking");
