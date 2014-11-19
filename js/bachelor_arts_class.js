@@ -134,6 +134,14 @@ function changeSubBlock(degree)
 		setDotVisibility(4, "0", 1);
 		rotateMMark(degree);
 		showSubBlock(degree);
+		moveArrows(1, "0%, 0%", "0%, 0%", 0, 0);
+		setTimeout(function(){
+			setArrowVisibility("1", 0, 0);
+			moveArrows(1, "0%, -300%", "0%, 300%", 1, 0);
+		}, 1000);
+		setTimeout(function(){
+			setArrowVisibility("0", 0, 0);
+		}, 2000);
 	}
 	else
 	{
@@ -276,6 +284,7 @@ function restore()
 	setSubBlockVisibility(3, "0", 0.5);
 	setSubBlockVisibility(4, "0", 0.5);
 	setDotVisibility(1, "0", 0.5);
+	setArrowVisibility("0");
 	setTimeout(function(){
 		moveSubBlock(1, 1, "0%, 0%", "0%, 0%", "0%, 0%");
 		moveSubBlock(2, 1, "0%, 0%", "0%, 0%", "0%, 0%");
@@ -329,4 +338,40 @@ function zoomMainClass(zoomParameter, positionParameter)
 		"-moz-transform":"scale("+ zoomParameter +") translate(" + positionParameter + ")",
 		"-webkit-transition":"-webkit-transform 1s linear 0s",
 		"-moz-transition":"-moz-transform 1s linear 0s",});
+}
+
+function moveArrows(zoomParameter, positionParameterUp, positionParameterDown, aniTime, startTime)
+{
+	zoomParameter = arguments[0] ? arguments[0] : 1;
+	positionParameterUp = arguments[1] ? arguments[1] : "0%, 0%";
+	positionParameterDown = arguments[2] ? arguments[2] : "0%, 0%";
+	aniTime = arguments[3] ? arguments[3] : 0;
+	startTime = arguments[4] ? arguments[4] : 0;
+	$("#arrowUp img").css({ 
+		"-webkit-transform":"scale("+ zoomParameter +") translate(" + positionParameterUp + ")",
+		"-moz-transform":"scale("+ zoomParameter +") translate(" + positionParameterUp + ")",
+		"-webkit-transition":"-webkit-transform " + aniTime + "s linear "+ startTime +"s",
+		"-moz-transition":"-moz-transform " + aniTime + "s linear "+ startTime +"s",});
+	$("#arrowDown img").css({ 
+		"-webkit-transform":"scale("+ zoomParameter +") translate(" + positionParameterDown + ")",
+		"-moz-transform":"scale("+ zoomParameter +") translate(" + positionParameterDown + ")",
+		"-webkit-transition":"-webkit-transform  " + aniTime + "s linear "+ startTime +"s",
+		"-moz-transition":"-moz-transform " + aniTime + "s linear "+ startTime +"s",});
+}
+
+function setArrowVisibility(opa, aniTime, startTime)
+{
+	opa = arguments[0] ? arguments[0] : "1";
+	aniTime = arguments[1] ? arguments[1] : 0;
+	startTime = arguments[2] ? arguments[2] : 0;
+	$("#arrowUp").css({ 
+		"-webkit-opacity": opa,
+		"-moz-opacity": opa,
+		"-webkit-transition":"-webkit-opacity "+ aniTime +"s linear " + startTime + "s",
+		"-moz-transition":"-moz-opacity "+ aniTime +"s linear " + startTime + "s",});	
+	$("#arrowDown").css({ 
+		"-webkit-opacity": opa,
+		"-moz-opacity": opa,
+		"-webkit-transition":"-webkit-opacity "+ aniTime +"s linear " + startTime + "s",
+		"-moz-transition":"-moz-opacity "+ aniTime +"s linear " + startTime + "s",});	
 }

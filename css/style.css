@@ -265,9 +265,9 @@ body {
 /*无限闪烁*/
 .unlimitedBlinking
 {
-	-webkit-animation: blinking 3s linear infinite;
-	-moz-animation: blinking 3s linear infinite;
-	-animation: blinking 3s linear infinite;
+	-webkit-animation: blinking 2s linear infinite;
+	-moz-animation: blinking 2s linear infinite;
+	-animation: blinking 2s linear infinite;
 }
 @-webkit-keyframes blinking
 {
