@@ -10,10 +10,10 @@ itemOutAni = "rotateOut";
 
 $(document).ready(function() { 
 	setTimeout(function(){  
-		$("#sub1 img").addClass("unlimitedShake");
-		$("#sub2 img").addClass("unlimitedShake");
-		$("#sub3 img").addClass("unlimitedShake");
-		$("#sub4 img").addClass("unlimitedShake");
+		$("#sub1 img").addClass("unlimitedShakeUpDown");
+		$("#sub2 img").addClass("unlimitedShakeUpDown");
+		$("#sub3 img").addClass("unlimitedShakeUpDown");
+		$("#sub4 img").addClass("unlimitedShakeUpDown");
 	},4000);
 
 	$("#sub1").click(function() {zoomSubBlock1();});

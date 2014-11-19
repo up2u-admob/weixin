@@ -9,6 +9,12 @@ itemOutAni = "flipOutX";
 
 
 $(document).ready(function () {
+setTimeout(function(){  
+		$("#waku1 img").addClass("unlimitedBlinking");
+		$("#waku2 img").addClass("unlimitedBlinking");
+		$("#waku3 img").addClass("unlimitedBlinking");
+	},3000);
+	
 	$("#waku1").click(function () {changeBlock1();});
 	$("#waku2").click(function () {changeBlock2();});
 	$("#waku3").click(function () {changeBlock3();});
@@ -19,6 +25,7 @@ function changeBlock1()
 	if (!sub_1_big)
 	{
 		zoomSubBlock1();
+		$("#waku1 img").removeClass("unlimitedBlinking");
 	}
 	else
 	{
@@ -31,6 +38,7 @@ function changeBlock2()
 	if (!sub_2_big)
 	{
 		zoomSubBlock2();
+		$("#waku2 img").removeClass("unlimitedBlinking");
 	}
 	else
 	{
@@ -43,6 +51,7 @@ function changeBlock3()
 	if (!sub_3_big)
 	{
 		zoomSubBlock3();
+		$("#waku3 img").removeClass("unlimitedBlinking");
 	}
 	else
 	{
@@ -96,4 +105,7 @@ function restore()
 	sub_1_big = false;
 	sub_2_big = false;
 	sub_3_big = false;
+	$("#waku1 img").addClass("unlimitedBlinking");
+	$("#waku2 img").addClass("unlimitedBlinking");
+	$("#waku3 img").addClass("unlimitedBlinking");
 }

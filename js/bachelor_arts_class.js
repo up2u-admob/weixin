@@ -7,10 +7,26 @@ var isTouch = ('ontouchstart' in window);
 
 mainInAni = "rollIn";
 mainOutAni = "rollOut";
-itemInAni = "zoomInLeft";
+itemInAni = "bounceIn";
 itemOutAni = "flipOutX";
 
 $(document).ready(function () {   
+
+	setTimeout(function(){  
+		$("#title1 img").addClass("unlimitedShakeLeftRight");
+		$("#text1 img").addClass("unlimitedShakeLeftRight");
+		$("#dot1 img").addClass("unlimitedShakeLeftRight");
+		$("#title2 img").addClass("unlimitedShakeLeftRight");
+		$("#text2 img").addClass("unlimitedShakeLeftRight");
+		$("#dot2 img").addClass("unlimitedShakeLeftRight");
+		$("#title3 img").addClass("unlimitedShakeLeftRight");
+		$("#text3 img").addClass("unlimitedShakeLeftRight");
+		$("#dot3 img").addClass("unlimitedShakeLeftRight");
+		$("#title4 img").addClass("unlimitedShakeLeftRight");
+		$("#text4 img").addClass("unlimitedShakeLeftRight");
+		$("#dot4 img").addClass("unlimitedShakeLeftRight");
+	},3000);
+
 	$("#m-mark img").bind({
 	    'touchstart mousedown': function(e) {
 	        e.preventDefault();
@@ -94,6 +110,18 @@ function changeSubBlock(degree)
 {
 	if (!sub_big)
 	{
+		$("#title1 img").removeClass("unlimitedShakeLeftRight");
+		$("#text1 img").removeClass("unlimitedShakeLeftRight");
+		$("#dot1 img").removeClass("unlimitedShakeLeftRight");
+		$("#title2 img").removeClass("unlimitedShakeLeftRight");
+		$("#text2 img").removeClass("unlimitedShakeLeftRight");
+		$("#dot2 img").removeClass("unlimitedShakeLeftRight");
+		$("#title3 img").removeClass("unlimitedShakeLeftRight");
+		$("#text3 img").removeClass("unlimitedShakeLeftRight");
+		$("#dot3 img").removeClass("unlimitedShakeLeftRight");
+		$("#title4 img").removeClass("unlimitedShakeLeftRight");
+		$("#text4 img").removeClass("unlimitedShakeLeftRight");
+		$("#dot4 img").removeClass("unlimitedShakeLeftRight");
 		zoomMainClass("1", "-3%, -24%");
 		moveSubBlock(1, 1, "0%, 196%", "0%, 176%");
 		moveSubBlock(2, 1, "-375%, 340%", "-318%, 229%");
@@ -105,7 +133,7 @@ function changeSubBlock(degree)
 		setDotVisibility(3, "0", 1);
 		setDotVisibility(4, "0", 1);
 		rotateMMark(degree);
-		showSubBlock(degree);	 	
+		showSubBlock(degree);
 	}
 	else
 	{
@@ -115,16 +143,17 @@ function changeSubBlock(degree)
 
 function showSubBlock(degree)
 {
-	while (degree<5)
+	while (degree < 5)
 	{
 		degree = degree + 360;
 	}
-	while (degree>360)
+	while (degree > 360)
 	{
 		degree = degree - 360;
 	}
+	
 
-	if (((degree-5) % 360 > 270) && ((degree-5) % 360 <= 360))//1
+	if (((degree - 5) % 360 > 270) && ((degree - 5) % 360 <= 360))//1
 	{
 		if (cur_sub != 1)
 		{
@@ -136,7 +165,7 @@ function showSubBlock(degree)
 			setSubBlockVisibility(4, "0", 0.1);
 		}
 	}
-	else if (((degree-5) % 360 > 180) && ((degree-5) % 360 <= 270))//2
+	else if (((degree - 5) % 360 > 180) && ((degree - 5) % 360 <= 270))//2
 	{
 		if (cur_sub != 2)
 		{
@@ -148,7 +177,7 @@ function showSubBlock(degree)
 			setSubBlockVisibility(4, "0", 0.1);
 		}
 	}
-	else if (((degree-5) % 360 > 90) && ((degree-5) % 360 <= 180))//3
+	else if (((degree - 5) % 360 > 90) && ((degree - 5) % 360 <= 180))//3
 	{
 		if (cur_sub != 3)
 		{
@@ -160,7 +189,7 @@ function showSubBlock(degree)
 			setSubBlockVisibility(4, "0", 0.1);
 		}
 	}
-	else if (((degree-5) % 360 > 00) && ((degree-5) % 360 <= 90))//4
+	else if (((degree - 5) % 360 > 00) && ((degree - 5) % 360 <= 90))//4
 	{
 		if (cur_sub != 4)
 		{
@@ -242,22 +271,41 @@ function setDotVisibility(subNumber, opa, aniTime, startTime)
 
 function restore()
 {
-	moveSubBlock(1, 1, "0%, 0%", "0%, 0%", "0%, 0%");
-	moveSubBlock(2, 1, "0%, 0%", "0%, 0%", "0%, 0%");
-	moveSubBlock(3, 1, "0%, 0%", "0%, 0%", "0%, 0%");
-	moveSubBlock(4, 1, "0%, 0%", "0%, 0%", "0%, 0%");
-	rotateMMark();
-	zoomMainClass("0.4", "0%, 0%");
-	setSubBlockVisibility(1, "1", 1);
-	setSubBlockVisibility(2, "1", 1);
-	setSubBlockVisibility(3, "1", 1);
-	setSubBlockVisibility(4, "1", 1);
-	setDotVisibility(1, "1");
-	setDotVisibility(2, "1");
-	setDotVisibility(3, "1");
-	setDotVisibility(4, "1");
-	sub_big = false;
-	cur_sub = 0;
+	setSubBlockVisibility(1, "0", 0.5);
+	setSubBlockVisibility(2, "0", 0.5);
+	setSubBlockVisibility(3, "0", 0.5);
+	setSubBlockVisibility(4, "0", 0.5);
+	setDotVisibility(1, "0", 0.5);
+	setTimeout(function(){
+		moveSubBlock(1, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+		moveSubBlock(2, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+		moveSubBlock(3, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+		moveSubBlock(4, 1, "0%, 0%", "0%, 0%", "0%, 0%");
+		rotateMMark(0);
+		zoomMainClass("0.4", "0%, 0%");
+		setSubBlockVisibility(1, "1", 1);
+		setSubBlockVisibility(2, "1", 1);
+		setSubBlockVisibility(3, "1", 1);
+		setSubBlockVisibility(4, "1", 1);
+		setDotVisibility(1, "1", 1);
+		setDotVisibility(2, "1", 1);
+		setDotVisibility(3, "1", 1);
+		setDotVisibility(4, "1", 1);
+		sub_big = false;
+		cur_sub = 0;
+		$("#title1 img").addClass("unlimitedShakeLeftRight");
+		$("#text1 img").addClass("unlimitedShakeLeftRight");
+		$("#dot1 img").addClass("unlimitedShakeLeftRight");
+		$("#title2 img").addClass("unlimitedShakeLeftRight");
+		$("#text2 img").addClass("unlimitedShakeLeftRight");
+		$("#dot2 img").addClass("unlimitedShakeLeftRight");
+		$("#title3 img").addClass("unlimitedShakeLeftRight");
+		$("#text3 img").addClass("unlimitedShakeLeftRight");
+		$("#dot3 img").addClass("unlimitedShakeLeftRight");
+		$("#title4 img").addClass("unlimitedShakeLeftRight");
+		$("#text4 img").addClass("unlimitedShakeLeftRight");
+		$("#dot4 img").addClass("unlimitedShakeLeftRight");
+	},500);
 }
 
 function rotateMMark(rotateParameter)

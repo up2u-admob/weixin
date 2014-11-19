@@ -207,30 +207,85 @@ body {
 }
 
 /*无限抖动*/
-.unlimitedShake
+.unlimitedShakeUpDown
 {
-	-webkit-animation: shakeshake 3s linear infinite;
-	-moz-animation: shakeshake 3s linear infinite;
-	-animation: shakeshake 3s linear infinite;
+	-webkit-animation: shakeUpDown 3s linear infinite;
+	-moz-animation: shakeUpDown 3s linear infinite;
+	-animation: shakeUpDown 3s linear infinite;
 }
-@-webkit-keyframes shakeshake
+.unlimitedShakeLeftRight
 {
-	0%		{-webkit-transform: translate(0%, 0%);}
-	33%		{-webkit-transform: translate(0%, -30%);}
-	66%		{-webkit-transform: translate(0%, 50%);}
-	100%	{-webkit-transform: translate(0%, 0%);}
+	-webkit-animation: shakeLeftRight 5s linear infinite;
+	-moz-animation: shakeLeftRight 5s linear infinite;
+	-animation: shakeLeftRight 5s linear infinite;
 }
-@-moz-keyframes shakeshake
-{
-	0%		{-webkit-transform: translate(0%, 0%);}
-	33%		{-webkit-transform: translate(0%, -30%);}
-	66%		{-webkit-transform: translate(0%, 50%);}
-	100%	{-webkit-transform: translate(0%, 0%);}
-}
-@keyframes shakeshake
+@-webkit-keyframes shakeUpDown
 {
 	0%		{-webkit-transform: translate(0%, 0%);}
 	33%		{-webkit-transform: translate(0%, -30%);}
 	66%		{-webkit-transform: translate(0%, 50%);}
 	100%	{-webkit-transform: translate(0%, 0%);}
 }
+@-moz-keyframes shakeUpDown
+{
+	0%		{-moz-transform: translate(0%, 0%);}
+	33%		{-moz-transform: translate(0%, -30%);}
+	66%		{-moz-transform: translate(0%, 50%);}
+	100%	{-moz-transform: translate(0%, 0%);}
+}
+@keyframes shakeUpDown
+{
+	0%		{transform: translate(0%, 0%);}
+	33%		{transform: translate(0%, -30%);}
+	66%		{transform: translate(0%, 50%);}
+	100%	{transform: translate(0%, 0%);}
+}
+@-webkit-keyframes shakeLeftRight
+{
+	0%		{-webkit-transform: translate(0%, 0%);}
+	33%		{-webkit-transform: translate(-3%, 0%);}
+	66%		{-webkit-transform: translate(3%, 0%);}
+	100%	{-webkit-transform: translate(0%, 0%);}
+}
+@-moz-keyframes shakeLeftRight
+{
+	0%		{-moz-transform: translate(0%, 0%);}
+	33%		{-moz-transform: translate(-3%, 0%);}
+	66%		{-moz-transform: translate(3%, 0%);}
+	100%	{-moz-transform: translate(0%, 0%);}
+}
+@keyframes shakeLeftRight
+{
+	0%		{transform: translate(0%, 0%);}
+	33%		{transform: translate(-3%, 0%);}
+	66%		{transform: translate(3%, 0%);}
+	100%	{transform: translate(0%, 0%);}
+}
+
+/*无限闪烁*/
+.unlimitedBlinking
+{
+	-webkit-animation: blinking 3s linear infinite;
+	-moz-animation: blinking 3s linear infinite;
+	-animation: blinking 3s linear infinite;
+}
+@-webkit-keyframes blinking
+{
+	0%		{opacity: 1;}
+	50%		{opacity: 0.5;}
+	100%	{opacity: 1;}
+}
+@-moz-keyframes blinking
+{
+	0%		{opacity: 1;}
+	50%		{opacity: 0.5;}
+	100%	{opacity: 1;}
+}
+@keyframes blinking
+{
+	0%		{opacity: 1;}
+	50%		{opacity: 0.5;}
+	100%	{opacity: 1;}
+}
+
+
