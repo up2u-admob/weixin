@@ -10,6 +10,14 @@
 	width: 100%;
 }
 
+#bnd
+{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top:0%;
+	left: 0%;
+}
 #waku1
 {
 	position: absolute;
@@ -33,8 +41,8 @@
 	position: absolute;
 	width: 42%;
 	height: auto;
-	top:35%;
-	left: 12%;
+	top: 42%;
+	left: 18%;
 }
 
 
@@ -43,8 +51,8 @@
 	position: absolute;
 	width: 42%;
 	height: auto;
-	top:52%;
-	left: 39%;
+	top: 60%;
+	left: 36%;
 }
 
 #waku5
@@ -52,6 +60,6 @@
 	position: absolute;
 	width: 42%;
 	height: auto;
-	top: 70%;
+	top: 79%;
 	left: 50%;
 }
