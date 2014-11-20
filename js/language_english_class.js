@@ -14,7 +14,7 @@ $(document).ready(function () {
 		$("#english_text_1 img").addClass("unlimitedBlinking");
 		$("#english_text_2 img").addClass("unlimitedBlinking");
 		$("#english_text_3 img").addClass("unlimitedBlinking");
-	},3000); 
+	},2000); 
 /*		$("#main_class").bind({
 		    'touchstart mousedown': function(e) {
 		        e.preventDefault();
@@ -48,6 +48,7 @@ $(document).ready(function () {
 		$("#english_text_1").click(function(){changeEnglishSubBlock1();}); 
 		$("#english_text_2").click(function(){changeEnglishSubBlock2();}); 
 		$("#english_text_3").click(function(){changeEnglishSubBlock3();}); 
+		$("#m-mark").click(function(){changeBnd();}); 
 });
 
 function changeEnglishSubBlock1()
@@ -82,6 +83,18 @@ function changeEnglishSubBlock3()
 	{
 		zoomEnglishSubBlock3();
 		$("#english_text_3 img").removeClass("unlimitedBlinking");
+	}
+	else
+	{
+		restoreEnglishMenu();
+	}
+}
+
+function changeBnd()
+{
+	if ((!english_1_big) && (!english_2_big) && (!english_3_big))
+	{
+		;
 	}
 	else
 	{

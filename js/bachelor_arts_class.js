@@ -104,7 +104,20 @@ $(document).ready(function () {
 	$("#text3").click(function(){changeSubBlock(140);}); 
 	$("#title4").click(function(){changeSubBlock(50);}); 
 	$("#text4").click(function(){changeSubBlock(50);}); 
+	$("#bnd").click(function(){changeBnd();}); 
 });
+
+function changeBnd()
+{
+	if (!sub_big)
+	{
+		;
+	}
+	else
+	{
+		restore();
+	}
+}
 
 function changeSubBlock(degree)
 {

@@ -5,6 +5,16 @@
 	top: 0%;
 	left: 0%;
 }
+
+#bnd
+{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top:0%;
+	left: 0%;
+}
+
 #english_background_1 img
 {
 	position: absolute;
@@ -42,7 +52,7 @@
 	position: absolute;
 	width: 100%;
 	height: auto;
-	top: 37%;
+	top: 49%;
 	left: 0%;
 }
 #english_text_1
