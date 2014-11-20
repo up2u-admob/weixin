@@ -23,6 +23,7 @@ $(document).ready(function () {
 	$("#waku3").click(function () {changeBlock3();});
 	$("#waku4").click(function () {changeBlock4();});
 	$("#waku5").click(function () {changeBlock5();});
+	$("#bnd").click(function () {changeBnd();});
 });
 
 function changeBlock1()
@@ -83,6 +84,18 @@ function changeBlock5()
 	{
 		zoomSubBlock5();
 		$("#waku5 img").removeClass("unlimitedShakeLeftRight");
+	}
+	else
+	{
+		restore();
+	}
+}
+
+function changeBnd()
+{
+	if ((!sub_1_big) && (!sub_2_big) && (!sub_3_big) && (!sub_4_big) && (!sub_5_big))
+	{
+		;
 	}
 	else
 	{
