@@ -69,13 +69,18 @@
 {
 	position: absolute;
 	top: 18%;
-	left: 12%;
+	left: 6%;
 }
 #contact_page3 img
 {
 	position: relative;
-	width:75%;
+	width:83%;
 	height: auto;
+}
+
+#contact_page3_1
+{
+	position: absolute;
 }
 
 #contact_page3_2
